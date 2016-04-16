@@ -28,6 +28,8 @@
 		304BD85C1CC2236F00385489 /* StorageMgr.m in Sources */ = {isa = PBXBuildFile; fileRef = 304BD8591CC2236F00385489 /* StorageMgr.m */; };
 		304BD85D1CC2236F00385489 /* Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 304BD85B1CC2236F00385489 /* Utilities.m */; };
 		4AA9D874EF33A19F94C329C4 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F361D44665A011FD4EACBC70 /* libPods.a */; };
+		A9F967011CC23ABD00A8593A /* SignInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9F967001CC23ABD00A8593A /* SignInViewController.m */; };
+		A9F967041CC24FA600A8593A /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9F967031CC24FA600A8593A /* SignUpViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +84,10 @@
 		304BD85B1CC2236F00385489 /* Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Utilities.m; path = "最新3rd/Utilities.m"; sourceTree = SOURCE_ROOT; };
 		304BD8601CC223DF00385489 /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Constants.h; path = "最新3rd/Constants.h"; sourceTree = SOURCE_ROOT; };
 		324CB3A1FA6F567D67D536EF /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		A9F966FF1CC23ABD00A8593A /* SignInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignInViewController.h; sourceTree = "<group>"; };
+		A9F967001CC23ABD00A8593A /* SignInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignInViewController.m; sourceTree = "<group>"; };
+		A9F967021CC24FA600A8593A /* SignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpViewController.h; sourceTree = "<group>"; };
+		A9F967031CC24FA600A8593A /* SignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpViewController.m; sourceTree = "<group>"; };
 		F361D44665A011FD4EACBC70 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -209,6 +215,10 @@
 			children = (
 				304BD8111CC20F9600385489 /* ViewController.h */,
 				304BD8121CC20F9600385489 /* ViewController.m */,
+				A9F966FF1CC23ABD00A8593A /* SignInViewController.h */,
+				A9F967001CC23ABD00A8593A /* SignInViewController.m */,
+				A9F967021CC24FA600A8593A /* SignUpViewController.h */,
+				A9F967031CC24FA600A8593A /* SignUpViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -446,11 +456,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9F967011CC23ABD00A8593A /* SignInViewController.m in Sources */,
 				304BD85D1CC2236F00385489 /* Utilities.m in Sources */,
 				304BD8131CC20F9600385489 /* ViewController.m in Sources */,
 				304BD8101CC20F9600385489 /* AppDelegate.m in Sources */,
 				304BD80D1CC20F9600385489 /* main.m in Sources */,
 				304BD8191CC20F9600385489 /* EZCar.xcdatamodeld in Sources */,
+				A9F967041CC24FA600A8593A /* SignUpViewController.m in Sources */,
 				304BD85C1CC2236F00385489 /* StorageMgr.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
