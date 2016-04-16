@@ -16,6 +16,17 @@
 		304BD81E1CC20F9600385489 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 304BD81C1CC20F9600385489 /* LaunchScreen.storyboard */; };
 		304BD8291CC20F9600385489 /* EZCarTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 304BD8281CC20F9600385489 /* EZCarTests.m */; };
 		304BD8341CC20F9600385489 /* EZCarUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 304BD8331CC20F9600385489 /* EZCarUITests.m */; };
+		304BD8461CC221C700385489 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 304BD8451CC221C700385489 /* AudioToolbox.framework */; };
+		304BD8481CC221D200385489 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 304BD8471CC221D200385489 /* SystemConfiguration.framework */; };
+		304BD84A1CC221E700385489 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 304BD8491CC221E700385489 /* libsqlite3.tbd */; };
+		304BD84C1CC221F400385489 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 304BD84B1CC221F400385489 /* Social.framework */; };
+		304BD84E1CC221FC00385489 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 304BD84D1CC221FC00385489 /* CoreLocation.framework */; };
+		304BD8501CC2220500385489 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 304BD84F1CC2220500385489 /* StoreKit.framework */; };
+		304BD8521CC2220D00385489 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 304BD8511CC2220D00385489 /* Accounts.framework */; };
+		304BD8551CC2224D00385489 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 304BD8531CC2224D00385489 /* Bolts.framework */; };
+		304BD8561CC2224D00385489 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 304BD8541CC2224D00385489 /* Parse.framework */; };
+		304BD85C1CC2236F00385489 /* StorageMgr.m in Sources */ = {isa = PBXBuildFile; fileRef = 304BD8591CC2236F00385489 /* StorageMgr.m */; };
+		304BD85D1CC2236F00385489 /* Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 304BD85B1CC2236F00385489 /* Utilities.m */; };
 		4AA9D874EF33A19F94C329C4 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F361D44665A011FD4EACBC70 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -55,6 +66,21 @@
 		304BD82F1CC20F9600385489 /* EZCarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EZCarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		304BD8331CC20F9600385489 /* EZCarUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EZCarUITests.m; sourceTree = "<group>"; };
 		304BD8351CC20F9600385489 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		304BD8451CC221C700385489 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		304BD8471CC221D200385489 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		304BD8491CC221E700385489 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		304BD84B1CC221F400385489 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		304BD84D1CC221FC00385489 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		304BD84F1CC2220500385489 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		304BD8511CC2220D00385489 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		304BD8531CC2224D00385489 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		304BD8541CC2224D00385489 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		304BD8571CC2227D00385489 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		304BD8581CC2236F00385489 /* StorageMgr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StorageMgr.h; path = "最新3rd/StorageMgr.h"; sourceTree = SOURCE_ROOT; };
+		304BD8591CC2236F00385489 /* StorageMgr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StorageMgr.m; path = "最新3rd/StorageMgr.m"; sourceTree = SOURCE_ROOT; };
+		304BD85A1CC2236F00385489 /* Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Utilities.h; path = "最新3rd/Utilities.h"; sourceTree = SOURCE_ROOT; };
+		304BD85B1CC2236F00385489 /* Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Utilities.m; path = "最新3rd/Utilities.m"; sourceTree = SOURCE_ROOT; };
+		304BD8601CC223DF00385489 /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Constants.h; path = "最新3rd/Constants.h"; sourceTree = SOURCE_ROOT; };
 		324CB3A1FA6F567D67D536EF /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		F361D44665A011FD4EACBC70 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -64,6 +90,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				304BD8551CC2224D00385489 /* Bolts.framework in Frameworks */,
+				304BD8561CC2224D00385489 /* Parse.framework in Frameworks */,
+				304BD8521CC2220D00385489 /* Accounts.framework in Frameworks */,
+				304BD8501CC2220500385489 /* StoreKit.framework in Frameworks */,
+				304BD84E1CC221FC00385489 /* CoreLocation.framework in Frameworks */,
+				304BD84C1CC221F400385489 /* Social.framework in Frameworks */,
+				304BD84A1CC221E700385489 /* libsqlite3.tbd in Frameworks */,
+				304BD8481CC221D200385489 /* SystemConfiguration.framework in Frameworks */,
+				304BD8461CC221C700385489 /* AudioToolbox.framework in Frameworks */,
 				4AA9D874EF33A19F94C329C4 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -110,15 +145,12 @@
 		304BD80A1CC20F9600385489 /* EZCar */ = {
 			isa = PBXGroup;
 			children = (
-				304BD80E1CC20F9600385489 /* AppDelegate.h */,
-				304BD80F1CC20F9600385489 /* AppDelegate.m */,
-				304BD8111CC20F9600385489 /* ViewController.h */,
-				304BD8121CC20F9600385489 /* ViewController.m */,
-				304BD8141CC20F9600385489 /* Main.storyboard */,
-				304BD81A1CC20F9600385489 /* Assets.xcassets */,
-				304BD81C1CC20F9600385489 /* LaunchScreen.storyboard */,
-				304BD81F1CC20F9600385489 /* Info.plist */,
-				304BD8171CC20F9600385489 /* EZCar.xcdatamodeld */,
+				304BD8611CC223F400385489 /* 3rd */,
+				304BD85F1CC223C700385489 /* Constant */,
+				304BD8441CC2211F00385489 /* Utility */,
+				304BD8431CC2210A00385489 /* Controller */,
+				304BD8421CC220FC00385489 /* View */,
+				304BD8411CC2209F00385489 /* Model */,
 				304BD80B1CC20F9600385489 /* Supporting Files */,
 			);
 			path = EZCar;
@@ -128,6 +160,11 @@
 			isa = PBXGroup;
 			children = (
 				304BD80C1CC20F9600385489 /* main.m */,
+				304BD80E1CC20F9600385489 /* AppDelegate.h */,
+				304BD80F1CC20F9600385489 /* AppDelegate.m */,
+				304BD81F1CC20F9600385489 /* Info.plist */,
+				304BD8171CC20F9600385489 /* EZCar.xcdatamodeld */,
+				304BD8571CC2227D00385489 /* PrefixHeader.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -150,9 +187,70 @@
 			path = EZCarUITests;
 			sourceTree = "<group>";
 		};
+		304BD8411CC2209F00385489 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		304BD8421CC220FC00385489 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				304BD8141CC20F9600385489 /* Main.storyboard */,
+				304BD81A1CC20F9600385489 /* Assets.xcassets */,
+				304BD81C1CC20F9600385489 /* LaunchScreen.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		304BD8431CC2210A00385489 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				304BD8111CC20F9600385489 /* ViewController.h */,
+				304BD8121CC20F9600385489 /* ViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		304BD8441CC2211F00385489 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				304BD8581CC2236F00385489 /* StorageMgr.h */,
+				304BD8591CC2236F00385489 /* StorageMgr.m */,
+				304BD85A1CC2236F00385489 /* Utilities.h */,
+				304BD85B1CC2236F00385489 /* Utilities.m */,
+			);
+			name = Utility;
+			sourceTree = "<group>";
+		};
+		304BD85F1CC223C700385489 /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				304BD8601CC223DF00385489 /* Constants.h */,
+			);
+			name = Constant;
+			sourceTree = "<group>";
+		};
+		304BD8611CC223F400385489 /* 3rd */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = 3rd;
+			sourceTree = "<group>";
+		};
 		AD4DBC324B9C1ED7581284F2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				304BD8531CC2224D00385489 /* Bolts.framework */,
+				304BD8541CC2224D00385489 /* Parse.framework */,
+				304BD8511CC2220D00385489 /* Accounts.framework */,
+				304BD84F1CC2220500385489 /* StoreKit.framework */,
+				304BD84D1CC221FC00385489 /* CoreLocation.framework */,
+				304BD84B1CC221F400385489 /* Social.framework */,
+				304BD8491CC221E700385489 /* libsqlite3.tbd */,
+				304BD8471CC221D200385489 /* SystemConfiguration.framework */,
+				304BD8451CC221C700385489 /* AudioToolbox.framework */,
 				F361D44665A011FD4EACBC70 /* libPods.a */,
 			);
 			name = Frameworks;
@@ -348,10 +446,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				304BD85D1CC2236F00385489 /* Utilities.m in Sources */,
 				304BD8131CC20F9600385489 /* ViewController.m in Sources */,
 				304BD8101CC20F9600385489 /* AppDelegate.m in Sources */,
 				304BD80D1CC20F9600385489 /* main.m in Sources */,
 				304BD8191CC20F9600385489 /* EZCar.xcdatamodeld in Sources */,
+				304BD85C1CC2236F00385489 /* StorageMgr.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -493,6 +593,12 @@
 			baseConfigurationReference = 28129776EE044DFB77950430 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = EZCar/PrefixHeader.pch;
 				INFOPLIST_FILE = EZCar/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = EZ.EZCar;
@@ -505,6 +611,12 @@
 			baseConfigurationReference = 324CB3A1FA6F567D67D536EF /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = EZCar/PrefixHeader.pch;
 				INFOPLIST_FILE = EZCar/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = EZ.EZCar;
