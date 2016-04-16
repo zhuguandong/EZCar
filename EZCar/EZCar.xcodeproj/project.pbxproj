@@ -1,0 +1,538 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		304BD80D1CC20F9600385489 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 304BD80C1CC20F9600385489 /* main.m */; };
+		304BD8101CC20F9600385489 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 304BD80F1CC20F9600385489 /* AppDelegate.m */; };
+		304BD8131CC20F9600385489 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 304BD8121CC20F9600385489 /* ViewController.m */; };
+		304BD8161CC20F9600385489 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 304BD8141CC20F9600385489 /* Main.storyboard */; };
+		304BD8191CC20F9600385489 /* EZCar.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 304BD8171CC20F9600385489 /* EZCar.xcdatamodeld */; };
+		304BD81B1CC20F9600385489 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 304BD81A1CC20F9600385489 /* Assets.xcassets */; };
+		304BD81E1CC20F9600385489 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 304BD81C1CC20F9600385489 /* LaunchScreen.storyboard */; };
+		304BD8291CC20F9600385489 /* EZCarTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 304BD8281CC20F9600385489 /* EZCarTests.m */; };
+		304BD8341CC20F9600385489 /* EZCarUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 304BD8331CC20F9600385489 /* EZCarUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		304BD8251CC20F9600385489 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 304BD8001CC20F9600385489 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 304BD8071CC20F9600385489;
+			remoteInfo = EZCar;
+		};
+		304BD8301CC20F9600385489 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 304BD8001CC20F9600385489 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 304BD8071CC20F9600385489;
+			remoteInfo = EZCar;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		304BD8081CC20F9600385489 /* EZCar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EZCar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		304BD80C1CC20F9600385489 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		304BD80E1CC20F9600385489 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		304BD80F1CC20F9600385489 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		304BD8111CC20F9600385489 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		304BD8121CC20F9600385489 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		304BD8151CC20F9600385489 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		304BD8181CC20F9600385489 /* EZCar.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = EZCar.xcdatamodel; sourceTree = "<group>"; };
+		304BD81A1CC20F9600385489 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		304BD81D1CC20F9600385489 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		304BD81F1CC20F9600385489 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		304BD8241CC20F9600385489 /* EZCarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EZCarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		304BD8281CC20F9600385489 /* EZCarTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EZCarTests.m; sourceTree = "<group>"; };
+		304BD82A1CC20F9600385489 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		304BD82F1CC20F9600385489 /* EZCarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EZCarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		304BD8331CC20F9600385489 /* EZCarUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EZCarUITests.m; sourceTree = "<group>"; };
+		304BD8351CC20F9600385489 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		304BD8051CC20F9600385489 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		304BD8211CC20F9600385489 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		304BD82C1CC20F9600385489 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		304BD7FF1CC20F9600385489 = {
+			isa = PBXGroup;
+			children = (
+				304BD80A1CC20F9600385489 /* EZCar */,
+				304BD8271CC20F9600385489 /* EZCarTests */,
+				304BD8321CC20F9600385489 /* EZCarUITests */,
+				304BD8091CC20F9600385489 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		304BD8091CC20F9600385489 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				304BD8081CC20F9600385489 /* EZCar.app */,
+				304BD8241CC20F9600385489 /* EZCarTests.xctest */,
+				304BD82F1CC20F9600385489 /* EZCarUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		304BD80A1CC20F9600385489 /* EZCar */ = {
+			isa = PBXGroup;
+			children = (
+				304BD80E1CC20F9600385489 /* AppDelegate.h */,
+				304BD80F1CC20F9600385489 /* AppDelegate.m */,
+				304BD8111CC20F9600385489 /* ViewController.h */,
+				304BD8121CC20F9600385489 /* ViewController.m */,
+				304BD8141CC20F9600385489 /* Main.storyboard */,
+				304BD81A1CC20F9600385489 /* Assets.xcassets */,
+				304BD81C1CC20F9600385489 /* LaunchScreen.storyboard */,
+				304BD81F1CC20F9600385489 /* Info.plist */,
+				304BD8171CC20F9600385489 /* EZCar.xcdatamodeld */,
+				304BD80B1CC20F9600385489 /* Supporting Files */,
+			);
+			path = EZCar;
+			sourceTree = "<group>";
+		};
+		304BD80B1CC20F9600385489 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				304BD80C1CC20F9600385489 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		304BD8271CC20F9600385489 /* EZCarTests */ = {
+			isa = PBXGroup;
+			children = (
+				304BD8281CC20F9600385489 /* EZCarTests.m */,
+				304BD82A1CC20F9600385489 /* Info.plist */,
+			);
+			path = EZCarTests;
+			sourceTree = "<group>";
+		};
+		304BD8321CC20F9600385489 /* EZCarUITests */ = {
+			isa = PBXGroup;
+			children = (
+				304BD8331CC20F9600385489 /* EZCarUITests.m */,
+				304BD8351CC20F9600385489 /* Info.plist */,
+			);
+			path = EZCarUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		304BD8071CC20F9600385489 /* EZCar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 304BD8381CC20F9600385489 /* Build configuration list for PBXNativeTarget "EZCar" */;
+			buildPhases = (
+				304BD8041CC20F9600385489 /* Sources */,
+				304BD8051CC20F9600385489 /* Frameworks */,
+				304BD8061CC20F9600385489 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EZCar;
+			productName = EZCar;
+			productReference = 304BD8081CC20F9600385489 /* EZCar.app */;
+			productType = "com.apple.product-type.application";
+		};
+		304BD8231CC20F9600385489 /* EZCarTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 304BD83B1CC20F9600385489 /* Build configuration list for PBXNativeTarget "EZCarTests" */;
+			buildPhases = (
+				304BD8201CC20F9600385489 /* Sources */,
+				304BD8211CC20F9600385489 /* Frameworks */,
+				304BD8221CC20F9600385489 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				304BD8261CC20F9600385489 /* PBXTargetDependency */,
+			);
+			name = EZCarTests;
+			productName = EZCarTests;
+			productReference = 304BD8241CC20F9600385489 /* EZCarTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		304BD82E1CC20F9600385489 /* EZCarUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 304BD83E1CC20F9600385489 /* Build configuration list for PBXNativeTarget "EZCarUITests" */;
+			buildPhases = (
+				304BD82B1CC20F9600385489 /* Sources */,
+				304BD82C1CC20F9600385489 /* Frameworks */,
+				304BD82D1CC20F9600385489 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				304BD8311CC20F9600385489 /* PBXTargetDependency */,
+			);
+			name = EZCarUITests;
+			productName = EZCarUITests;
+			productReference = 304BD82F1CC20F9600385489 /* EZCarUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		304BD8001CC20F9600385489 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = EZone;
+				TargetAttributes = {
+					304BD8071CC20F9600385489 = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					304BD8231CC20F9600385489 = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = 304BD8071CC20F9600385489;
+					};
+					304BD82E1CC20F9600385489 = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = 304BD8071CC20F9600385489;
+					};
+				};
+			};
+			buildConfigurationList = 304BD8031CC20F9600385489 /* Build configuration list for PBXProject "EZCar" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 304BD7FF1CC20F9600385489;
+			productRefGroup = 304BD8091CC20F9600385489 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				304BD8071CC20F9600385489 /* EZCar */,
+				304BD8231CC20F9600385489 /* EZCarTests */,
+				304BD82E1CC20F9600385489 /* EZCarUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		304BD8061CC20F9600385489 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				304BD81E1CC20F9600385489 /* LaunchScreen.storyboard in Resources */,
+				304BD81B1CC20F9600385489 /* Assets.xcassets in Resources */,
+				304BD8161CC20F9600385489 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		304BD8221CC20F9600385489 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		304BD82D1CC20F9600385489 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		304BD8041CC20F9600385489 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				304BD8131CC20F9600385489 /* ViewController.m in Sources */,
+				304BD8101CC20F9600385489 /* AppDelegate.m in Sources */,
+				304BD80D1CC20F9600385489 /* main.m in Sources */,
+				304BD8191CC20F9600385489 /* EZCar.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		304BD8201CC20F9600385489 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				304BD8291CC20F9600385489 /* EZCarTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		304BD82B1CC20F9600385489 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				304BD8341CC20F9600385489 /* EZCarUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		304BD8261CC20F9600385489 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 304BD8071CC20F9600385489 /* EZCar */;
+			targetProxy = 304BD8251CC20F9600385489 /* PBXContainerItemProxy */;
+		};
+		304BD8311CC20F9600385489 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 304BD8071CC20F9600385489 /* EZCar */;
+			targetProxy = 304BD8301CC20F9600385489 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		304BD8141CC20F9600385489 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				304BD8151CC20F9600385489 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		304BD81C1CC20F9600385489 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				304BD81D1CC20F9600385489 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		304BD8361CC20F9600385489 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		304BD8371CC20F9600385489 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		304BD8391CC20F9600385489 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = EZCar/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = EZ.EZCar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		304BD83A1CC20F9600385489 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = EZCar/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = EZ.EZCar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		304BD83C1CC20F9600385489 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = EZCarTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = EZ.EZCarTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EZCar.app/EZCar";
+			};
+			name = Debug;
+		};
+		304BD83D1CC20F9600385489 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = EZCarTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = EZ.EZCarTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EZCar.app/EZCar";
+			};
+			name = Release;
+		};
+		304BD83F1CC20F9600385489 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = EZCarUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = EZ.EZCarUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = EZCar;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		304BD8401CC20F9600385489 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = EZCarUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = EZ.EZCarUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = EZCar;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		304BD8031CC20F9600385489 /* Build configuration list for PBXProject "EZCar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				304BD8361CC20F9600385489 /* Debug */,
+				304BD8371CC20F9600385489 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		304BD8381CC20F9600385489 /* Build configuration list for PBXNativeTarget "EZCar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				304BD8391CC20F9600385489 /* Debug */,
+				304BD83A1CC20F9600385489 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		304BD83B1CC20F9600385489 /* Build configuration list for PBXNativeTarget "EZCarTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				304BD83C1CC20F9600385489 /* Debug */,
+				304BD83D1CC20F9600385489 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		304BD83E1CC20F9600385489 /* Build configuration list for PBXNativeTarget "EZCarUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				304BD83F1CC20F9600385489 /* Debug */,
+				304BD8401CC20F9600385489 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		304BD8171CC20F9600385489 /* EZCar.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				304BD8181CC20F9600385489 /* EZCar.xcdatamodel */,
+			);
+			currentVersion = 304BD8181CC20F9600385489 /* EZCar.xcdatamodel */;
+			path = EZCar.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 304BD8001CC20F9600385489 /* Project object */;
+}
