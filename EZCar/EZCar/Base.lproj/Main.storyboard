@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1713" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
@@ -85,6 +85,7 @@
                                 </state>
                                 <connections>
                                     <action selector="siginUp:forEvent:" destination="BYZ-38-t0r" eventType="touchUpInside" id="I3g-G1-MR6"/>
+                                    <segue destination="qEJ-9P-XgJ" kind="show" id="Aea-yZ-dvZ"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5yo-S7-Iyf">
@@ -230,6 +231,7 @@
                             <constraint firstItem="PGQ-cx-XHs" firstAttribute="leading" secondItem="Yad-tY-dIp" secondAttribute="leading" id="uga-Qe-2Wr"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="DI9-Bk-M9v"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="EmailTF" destination="6Ek-Bg-aez" id="2pz-Tt-M2b"/>
