@@ -8,8 +8,12 @@
 
 #import "SignInViewController.h"
 #import "TabViewController.h"
+#import <ECSlidingViewController/ECSlidingViewController.h>
+#import "LeftViewController.h"
 
 @interface SignInViewController ()
+
+@property(strong, nonatomic) ECSlidingViewController *slidingVC;
 
 @end
 
@@ -106,10 +110,26 @@
     //根据故事版的名称和故事版中页面的名称获得这个页面
     TabViewController *tabVC = [Utilities getStoryboardInstance:@"Main" byIdentity:@"Tab"];
     
-    //modal方式跳转到上述页面
-    [self presentViewController:tabVC animated:YES completion:nil];
+    //初始化移门的门框,并设置中间那扇门
+    _slidingVC = [ECSlidingViewController slidingWithTopViewController:tabVC];
+    //设置开门关门的耗时
+    _slidingVC.defaultTransitionDuration = 0.25f;
+    //设置控制门开关的手势(这里同时对触摸和拖拽响应)
+    _slidingVC.topViewAnchoredGesture = ECSlidingViewControllerAnchoredGesturePanning|ECSlidingViewControllerAnchoredGestureTapping;
     
-
+    //设置上述手势的识别范围
+    [tabVC.view addGestureRecognizer:_slidingVC.panGesture];
+    
+    //根据故事版id获得左滑页面的实例
+     LeftViewController *leftVC = [Utilities getStoryboardInstance:@"Main" byIdentity:@"Left"];
+    //设置移门靠左的那扇门
+    _slidingVC.underLeftViewController = leftVC;
+    //设置移门的开闭程度(设置左侧页面显示时，可以显示屏幕宽度3/4宽度)
+    _slidingVC.anchorRightPeekAmount = UI_SCREEN_W / 3;
+    
+    //modal方式跳转到上述页面
+    [self presentViewController:_slidingVC animated:YES completion:nil];
+    
 }
 
 

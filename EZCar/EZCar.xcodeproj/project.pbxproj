@@ -28,6 +28,7 @@
 		304BD85C1CC2236F00385489 /* StorageMgr.m in Sources */ = {isa = PBXBuildFile; fileRef = 304BD8591CC2236F00385489 /* StorageMgr.m */; };
 		304BD85D1CC2236F00385489 /* Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 304BD85B1CC2236F00385489 /* Utilities.m */; };
 		304BD8641CC25E7B00385489 /* TabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 304BD8631CC25E7B00385489 /* TabViewController.m */; };
+		3F44A9021CC37F4200A6A5AB /* LeftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F44A9011CC37F4200A6A5AB /* LeftViewController.m */; };
 		4AA9D874EF33A19F94C329C4 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F361D44665A011FD4EACBC70 /* libPods.a */; };
 		A9F967011CC23ABD00A8593A /* SignInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9F967001CC23ABD00A8593A /* SignInViewController.m */; };
 		A9F967041CC24FA600A8593A /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9F967031CC24FA600A8593A /* SignUpViewController.m */; };
@@ -87,6 +88,8 @@
 		304BD8621CC25E7B00385489 /* TabViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabViewController.h; sourceTree = "<group>"; };
 		304BD8631CC25E7B00385489 /* TabViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabViewController.m; sourceTree = "<group>"; };
 		324CB3A1FA6F567D67D536EF /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		3F44A9001CC37F4200A6A5AB /* LeftViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftViewController.h; sourceTree = "<group>"; };
+		3F44A9011CC37F4200A6A5AB /* LeftViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftViewController.m; sourceTree = "<group>"; };
 		A9F966FF1CC23ABD00A8593A /* SignInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignInViewController.h; sourceTree = "<group>"; };
 		A9F967001CC23ABD00A8593A /* SignInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignInViewController.m; sourceTree = "<group>"; };
 		A9F967021CC24FA600A8593A /* SignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpViewController.h; sourceTree = "<group>"; };
@@ -224,6 +227,8 @@
 				A9F967031CC24FA600A8593A /* SignUpViewController.m */,
 				304BD8621CC25E7B00385489 /* TabViewController.h */,
 				304BD8631CC25E7B00385489 /* TabViewController.m */,
+				3F44A9001CC37F4200A6A5AB /* LeftViewController.h */,
+				3F44A9011CC37F4200A6A5AB /* LeftViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -462,6 +467,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A9F967011CC23ABD00A8593A /* SignInViewController.m in Sources */,
+				3F44A9021CC37F4200A6A5AB /* LeftViewController.m in Sources */,
 				304BD85D1CC2236F00385489 /* Utilities.m in Sources */,
 				304BD8131CC20F9600385489 /* ViewController.m in Sources */,
 				304BD8641CC25E7B00385489 /* TabViewController.m in Sources */,
