@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		300B15231CC39FB0000793FE /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 300B15221CC39FB0000793FE /* FirstViewController.m */; };
 		304BD80D1CC20F9600385489 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 304BD80C1CC20F9600385489 /* main.m */; };
 		304BD8101CC20F9600385489 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 304BD80F1CC20F9600385489 /* AppDelegate.m */; };
-		304BD8131CC20F9600385489 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 304BD8121CC20F9600385489 /* ViewController.m */; };
 		304BD8161CC20F9600385489 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 304BD8141CC20F9600385489 /* Main.storyboard */; };
 		304BD8191CC20F9600385489 /* EZCar.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 304BD8171CC20F9600385489 /* EZCar.xcdatamodeld */; };
 		304BD81B1CC20F9600385489 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 304BD81A1CC20F9600385489 /* Assets.xcassets */; };
@@ -53,12 +53,12 @@
 
 /* Begin PBXFileReference section */
 		28129776EE044DFB77950430 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		300B15211CC39FB0000793FE /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		300B15221CC39FB0000793FE /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
 		304BD8081CC20F9600385489 /* EZCar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EZCar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		304BD80C1CC20F9600385489 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		304BD80E1CC20F9600385489 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		304BD80F1CC20F9600385489 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		304BD8111CC20F9600385489 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		304BD8121CC20F9600385489 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		304BD8151CC20F9600385489 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		304BD8181CC20F9600385489 /* EZCar.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = EZCar.xcdatamodel; sourceTree = "<group>"; };
 		304BD81A1CC20F9600385489 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -219,8 +219,6 @@
 		304BD8431CC2210A00385489 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				304BD8111CC20F9600385489 /* ViewController.h */,
-				304BD8121CC20F9600385489 /* ViewController.m */,
 				A9F966FF1CC23ABD00A8593A /* SignInViewController.h */,
 				A9F967001CC23ABD00A8593A /* SignInViewController.m */,
 				A9F967021CC24FA600A8593A /* SignUpViewController.h */,
@@ -229,6 +227,8 @@
 				304BD8631CC25E7B00385489 /* TabViewController.m */,
 				3F44A9001CC37F4200A6A5AB /* LeftViewController.h */,
 				3F44A9011CC37F4200A6A5AB /* LeftViewController.m */,
+				300B15211CC39FB0000793FE /* FirstViewController.h */,
+				300B15221CC39FB0000793FE /* FirstViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -469,11 +469,11 @@
 				A9F967011CC23ABD00A8593A /* SignInViewController.m in Sources */,
 				3F44A9021CC37F4200A6A5AB /* LeftViewController.m in Sources */,
 				304BD85D1CC2236F00385489 /* Utilities.m in Sources */,
-				304BD8131CC20F9600385489 /* ViewController.m in Sources */,
 				304BD8641CC25E7B00385489 /* TabViewController.m in Sources */,
 				304BD8101CC20F9600385489 /* AppDelegate.m in Sources */,
 				304BD80D1CC20F9600385489 /* main.m in Sources */,
 				304BD8191CC20F9600385489 /* EZCar.xcdatamodeld in Sources */,
+				300B15231CC39FB0000793FE /* FirstViewController.m in Sources */,
 				A9F967041CC24FA600A8593A /* SignUpViewController.m in Sources */,
 				304BD85C1CC2236F00385489 /* StorageMgr.m in Sources */,
 			);
