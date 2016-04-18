@@ -10,6 +10,9 @@
 
 @interface FirstViewController : UIViewController
 
-@property (weak, nonatomic) IBOutlet UIView *firstView;
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
+
+- (IBAction)menuAction:(UIButton *)sender forEvent:(UIEvent *)event;
+
 
 @end

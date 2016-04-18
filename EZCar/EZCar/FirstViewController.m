@@ -8,6 +8,7 @@
 
 #import "FirstViewController.h"
 #import <SDCycleScrollView.h>
+#import "FirstTableViewCell.h"
 
 @interface FirstViewController ()<UISearchBarDelegate,SDCycleScrollViewDelegate>
 
@@ -72,6 +73,30 @@
     // Dispose of any resources that can be recreated.
 }
 
+
+//tableView  多少行
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return 5;
+}
+//tableView 的显示
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+
+    FirstTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
+    
+    
+    
+    
+    
+    return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(nonnull NSIndexPath *)indexPath{
+    //按钮取消选中
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+}
+
+
 /*
 #pragma mark - Navigation
 
@@ -81,7 +106,24 @@
     // Pass the selected object to the new view controller.
 }
 */
+//每次首页出现后
+-(void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    
+    [[NSNotificationCenter defaultCenter]postNotificationName:@"EnableGesture" object:nil];
+    
+}
+//每次首页消失后
+-(void)viewDidDisappear:(BOOL)animated {
+    [super viewDidDisappear:animated];
+    
+    [[NSNotificationCenter defaultCenter]postNotificationName:@"DisableGesture" object:nil];
+}
 
 
 
+
+- (IBAction)menuAction:(UIButton *)sender forEvent:(UIEvent *)event {
+     [[NSNotificationCenter defaultCenter] postNotificationName:@"MenuSwitch" object:nil];
+}
 @end

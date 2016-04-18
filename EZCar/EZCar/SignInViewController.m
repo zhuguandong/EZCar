@@ -127,10 +127,48 @@
     //设置移门的开闭程度(设置左侧页面显示时，可以显示屏幕宽度3/4宽度)
     _slidingVC.anchorRightPeekAmount = UI_SCREEN_W / 3;
     
+    //创建一个菜单按钮被按时要执行侧滑方法的通知
+    [[NSNotificationCenter defaultCenter ] addObserver:self selector:@selector(menuSwitchAction) name:@"MenuSwitch" object:nil];
+    
+    [[NSNotificationCenter defaultCenter ] addObserver:self selector:@selector(EnableGestureAction) name:@"EnableGesture" object:nil];
+    
+    [[NSNotificationCenter defaultCenter ] addObserver:self selector:@selector(DisableGestureAtion) name:@"DisableGesture" object:nil];
+    
     //modal方式跳转到上述页面
     [self presentViewController:_slidingVC animated:YES completion:nil];
     
 }
+
+-(void)menuSwitchAction {
+    NSLog(@"菜单被按了");
+    if (_slidingVC.currentTopViewPosition == ECSlidingViewControllerTopViewPositionAnchoredRight) {
+        //上述表示中间门在右侧，说明门是打开的，因此我们要将它关闭，移回中间
+        [_slidingVC resetTopViewAnimated:YES];
+        
+    }else {
+        //反之将中间的门移到右边
+        [_slidingVC anchorTopViewToRightAnimated:YES];
+        
+    }
+    
+}
+
+
+//激活移门手势
+-(void)EnableGestureAction {
+    _slidingVC.panGesture.enabled = YES;
+    
+}
+
+//关闭移门手势
+-(void)DisableGestureAtion {
+    _slidingVC.panGesture.enabled = NO;
+    
+    
+}
+
+
+
 
 
 
