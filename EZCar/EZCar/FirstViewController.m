@@ -8,7 +8,7 @@
 
 #import "FirstViewController.h"
 
-@interface FirstViewController ()
+@interface FirstViewController ()<UISearchBarDelegate>
 
 @end
 
@@ -26,7 +26,7 @@
     
     
     searchBar.delegate = self;
-    searchBar.frame = CGRectMake(0, 0, 200, 35);
+    searchBar.frame = CGRectMake(0, 0, 250, 30);
     searchBar.backgroundColor = color;
     searchBar.layer.cornerRadius = 18;
     searchBar.layer.masksToBounds = YES;
