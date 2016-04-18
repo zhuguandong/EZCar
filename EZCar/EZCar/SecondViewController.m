@@ -35,6 +35,8 @@
     [_carNameForShow removeAllObjects];
     
     PFQuery *query = [PFQuery queryWithClassName:@"PinPai"];
+    [query addAscendingOrder:@"Carname"];
+   
     //让导航条失去交互能力
     self.navigationController.view.userInteractionEnabled = NO;
     //在根视图上创建一朵菊花，并转动

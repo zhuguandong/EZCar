@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		300B15231CC39FB0000793FE /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 300B15221CC39FB0000793FE /* FirstViewController.m */; };
 		301B43761CC4AE4300516B76 /* SecondTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 301B43751CC4AE4300516B76 /* SecondTableViewCell.m */; };
+		301B43791CC4C59000516B76 /* XingHaoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 301B43781CC4C59000516B76 /* XingHaoViewController.m */; };
 		302166A41CC49CCD002AB087 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 302166A31CC49CCD002AB087 /* SecondViewController.m */; };
 		304BD80D1CC20F9600385489 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 304BD80C1CC20F9600385489 /* main.m */; };
 		304BD8101CC20F9600385489 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 304BD80F1CC20F9600385489 /* AppDelegate.m */; };
@@ -59,6 +60,8 @@
 		300B15221CC39FB0000793FE /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
 		301B43741CC4AE4300516B76 /* SecondTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondTableViewCell.h; sourceTree = "<group>"; };
 		301B43751CC4AE4300516B76 /* SecondTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondTableViewCell.m; sourceTree = "<group>"; };
+		301B43771CC4C59000516B76 /* XingHaoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XingHaoViewController.h; sourceTree = "<group>"; };
+		301B43781CC4C59000516B76 /* XingHaoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XingHaoViewController.m; sourceTree = "<group>"; };
 		302166A21CC49CCD002AB087 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
 		302166A31CC49CCD002AB087 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		304BD8081CC20F9600385489 /* EZCar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EZCar.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -231,14 +234,16 @@
 				A9F967031CC24FA600A8593A /* SignUpViewController.m */,
 				304BD8621CC25E7B00385489 /* TabViewController.h */,
 				304BD8631CC25E7B00385489 /* TabViewController.m */,
-				3F44A9001CC37F4200A6A5AB /* LeftViewController.h */,
-				3F44A9011CC37F4200A6A5AB /* LeftViewController.m */,
 				300B15211CC39FB0000793FE /* FirstViewController.h */,
 				300B15221CC39FB0000793FE /* FirstViewController.m */,
-				302166A21CC49CCD002AB087 /* SecondViewController.h */,
-				302166A31CC49CCD002AB087 /* SecondViewController.m */,
+				3F44A9001CC37F4200A6A5AB /* LeftViewController.h */,
+				3F44A9011CC37F4200A6A5AB /* LeftViewController.m */,
 				301B43741CC4AE4300516B76 /* SecondTableViewCell.h */,
 				301B43751CC4AE4300516B76 /* SecondTableViewCell.m */,
+				301B43771CC4C59000516B76 /* XingHaoViewController.h */,
+				301B43781CC4C59000516B76 /* XingHaoViewController.m */,
+				302166A21CC49CCD002AB087 /* SecondViewController.h */,
+				302166A31CC49CCD002AB087 /* SecondViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -486,6 +491,7 @@
 				304BD8191CC20F9600385489 /* EZCar.xcdatamodeld in Sources */,
 				300B15231CC39FB0000793FE /* FirstViewController.m in Sources */,
 				302166A41CC49CCD002AB087 /* SecondViewController.m in Sources */,
+				301B43791CC4C59000516B76 /* XingHaoViewController.m in Sources */,
 				A9F967041CC24FA600A8593A /* SignUpViewController.m in Sources */,
 				304BD85C1CC2236F00385489 /* StorageMgr.m in Sources */,
 			);
