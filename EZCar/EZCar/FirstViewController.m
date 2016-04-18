@@ -7,8 +7,9 @@
 //
 
 #import "FirstViewController.h"
+#import <SDCycleScrollView.h>
 
-@interface FirstViewController ()<UISearchBarDelegate>
+@interface FirstViewController ()<UISearchBarDelegate,SDCycleScrollViewDelegate>
 
 @end
 
@@ -41,6 +42,27 @@
     self.navigationItem.titleView = titleView;
     
     // Do any additional setup after loading the view.
+    
+//    UIImageView *backgroundView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"Image-22"]];
+//    backgroundView.frame = self.view.bounds;
+//    [self.view addSubview:backgroundView];
+    
+    UIScrollView *demoContainerView = [[UIScrollView alloc] initWithFrame:self.view.frame];
+    demoContainerView.contentSize = CGSizeMake(self.view.frame.size.width, 1200);
+    
+    [self.view addSubview:demoContainerView];
+    
+    NSArray *imageNames = @[@"aa",@"bb",@"cc", @"dd",@"ee"];
+    
+    CGFloat w = self.view.bounds.size.width;
+    
+    SDCycleScrollView *cycleScrollView = [SDCycleScrollView cycleScrollViewWithFrame:CGRectMake(0, 64, w, 180) delegate:self placeholderImage:[UIImage imageNamed:@"placeholder"]];
+    cycleScrollView.currentPageDotImage = [UIImage imageNamed:@"pageControlCurrentDot"];
+    cycleScrollView.pageDotImage = [UIImage imageNamed:@"pageControlDot"];
+    cycleScrollView.imageURLStringsGroup = imageNames;
+    
+    [demoContainerView addSubview:cycleScrollView];
+    
 }
 
 - (void)didReceiveMemoryWarning {
