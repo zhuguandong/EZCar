@@ -9,6 +9,7 @@
 #import "SecondViewController.h"
 #import "SecondTableViewCell.h"
 #import "UIImageView+WebCache.h"
+#import "XingHaoViewController.h"
 
 @interface SecondViewController ()
 @property(strong,nonatomic) NSMutableArray *carNameForShow;
@@ -35,6 +36,7 @@
     [_carNameForShow removeAllObjects];
     
     PFQuery *query = [PFQuery queryWithClassName:@"PinPai"];
+    
     [query addAscendingOrder:@"Carname"];
    
     //让导航条失去交互能力
@@ -98,14 +100,20 @@
     
 }
 
-/*
+
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
+    NSIndexPath *indexPath = _tableView.indexPathForSelectedRow;
+    //根据上诉行数，获取该行所对应的数据
+    PFObject *obj = _carNameForShow[indexPath.row];
+    
+    XingHaoViewController *cdVC = segue.destinationViewController;
+    cdVC.objectForXH = obj;
+    
+    
+   }
+
 
 @end

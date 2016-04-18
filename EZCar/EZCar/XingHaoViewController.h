@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface XingHaoViewController : UIViewController
+@property(strong,nonatomic) PFObject *objectForXH;
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 @end
