@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface XingHaoViewController : UIViewController
+@property(strong,nonatomic) NSMutableArray *xh;
 
 @end

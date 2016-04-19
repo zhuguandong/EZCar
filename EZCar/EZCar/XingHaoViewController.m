@@ -16,6 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self requestData];
     // Do any additional setup after loading the view.
 }
 
@@ -23,6 +24,33 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+- (void)requestData {
+    PFQuery *query = [PFQuery queryWithClassName:@"Xinghao"];
+    [query includeKey:@"info"];
+    [query findObjectsInBackgroundWithBlock:^(NSArray * _Nullable objects, NSError * _Nullable error) {
+        if (!error) {
+            NSLog(@"objects = %@",objects);
+            for (PFObject *object in objects) {
+                PFRelation *relation = [object relationForKey:@"info"];
+                PFQuery *subQuery = [relation query];
+                [subQuery findObjectsInBackgroundWithBlock:^(NSArray * _Nullable subObjects, NSError * _Nullable error) {
+                    if (!error) {
+                        NSLog(@"subObjects = %@",subObjects);
+                    }
+                    
+                }];
+            }
+        } else {
+            NSLog(@"%@",error.description);
+        }
+    }];
+    
+}
+
+
+
+
 
 /*
 #pragma mark - Navigation

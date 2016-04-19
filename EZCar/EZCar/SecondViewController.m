@@ -35,7 +35,7 @@
     [_carNameForShow removeAllObjects];
     
     PFQuery *query = [PFQuery queryWithClassName:@"PinPai"];
-    [query addAscendingOrder:@"Carname"];
+    [query orderByAscending:@"carname"];
    
     //让导航条失去交互能力
     self.navigationController.view.userInteractionEnabled = NO;
@@ -43,6 +43,7 @@
     UIActivityIndicatorView *avi = [Utilities getCoverOnView:self.view];
     //查询语句
     [query findObjectsInBackgroundWithBlock:^(NSArray * _Nullable objects, NSError * _Nullable error) {
+        
         //让导航条恢复交互能力
         self.navigationController.view.userInteractionEnabled = YES;
         //停止菊花动画
@@ -56,6 +57,11 @@
             [Utilities popUpAlertViewWithMsg:@"请保持网络连接畅通" andTitle:nil onView:self];
         }
     }];
+    
+    
+    
+    
+    
 }
 
 
@@ -98,7 +104,7 @@
     
 }
 
-/*
+
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
@@ -106,6 +112,6 @@
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
 }
-*/
+
 
 @end
