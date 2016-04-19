@@ -10,7 +10,7 @@
 
 @interface XingHaoViewController : UIViewController
 
-@property(strong,nonatomic) NSMutableArray *xh;
+
 @property(strong,nonatomic) PFObject *objectForXH;
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 

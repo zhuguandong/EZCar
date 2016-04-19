@@ -31,6 +31,7 @@
 		304BD85C1CC2236F00385489 /* StorageMgr.m in Sources */ = {isa = PBXBuildFile; fileRef = 304BD8591CC2236F00385489 /* StorageMgr.m */; };
 		304BD85D1CC2236F00385489 /* Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 304BD85B1CC2236F00385489 /* Utilities.m */; };
 		304BD8641CC25E7B00385489 /* TabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 304BD8631CC25E7B00385489 /* TabViewController.m */; };
+		3080EBD31CC5D0C9007A81F8 /* XingHaoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3080EBD21CC5D0C9007A81F8 /* XingHaoTableViewCell.m */; };
 		3F44A9021CC37F4200A6A5AB /* LeftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F44A9011CC37F4200A6A5AB /* LeftViewController.m */; };
 		3F7A81D91CC4E0CD00ABA3E1 /* FirstTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F7A81D81CC4E0CD00ABA3E1 /* FirstTableViewCell.m */; };
 		4AA9D874EF33A19F94C329C4 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F361D44665A011FD4EACBC70 /* libPods.a */; };
@@ -97,6 +98,8 @@
 		304BD8601CC223DF00385489 /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Constants.h; path = "最新3rd/Constants.h"; sourceTree = SOURCE_ROOT; };
 		304BD8621CC25E7B00385489 /* TabViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabViewController.h; sourceTree = "<group>"; };
 		304BD8631CC25E7B00385489 /* TabViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabViewController.m; sourceTree = "<group>"; };
+		3080EBD11CC5D0C9007A81F8 /* XingHaoTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XingHaoTableViewCell.h; sourceTree = "<group>"; };
+		3080EBD21CC5D0C9007A81F8 /* XingHaoTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XingHaoTableViewCell.m; sourceTree = "<group>"; };
 		324CB3A1FA6F567D67D536EF /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		3F44A9001CC37F4200A6A5AB /* LeftViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftViewController.h; sourceTree = "<group>"; };
 		3F44A9011CC37F4200A6A5AB /* LeftViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftViewController.m; sourceTree = "<group>"; };
@@ -249,6 +252,8 @@
 				301B43781CC4C59000516B76 /* XingHaoViewController.m */,
 				302166A21CC49CCD002AB087 /* SecondViewController.h */,
 				302166A31CC49CCD002AB087 /* SecondViewController.m */,
+				3080EBD11CC5D0C9007A81F8 /* XingHaoTableViewCell.h */,
+				3080EBD21CC5D0C9007A81F8 /* XingHaoTableViewCell.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -497,6 +502,7 @@
 				300B15231CC39FB0000793FE /* FirstViewController.m in Sources */,
 				302166A41CC49CCD002AB087 /* SecondViewController.m in Sources */,
 				301B43791CC4C59000516B76 /* XingHaoViewController.m in Sources */,
+				3080EBD31CC5D0C9007A81F8 /* XingHaoTableViewCell.m in Sources */,
 				A9F967041CC24FA600A8593A /* SignUpViewController.m in Sources */,
 				3F7A81D91CC4E0CD00ABA3E1 /* FirstTableViewCell.m in Sources */,
 				304BD85C1CC2236F00385489 /* StorageMgr.m in Sources */,

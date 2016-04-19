@@ -31,23 +31,22 @@
 
 - (void)requestData {
     PFQuery *query = [PFQuery queryWithClassName:@"Xinghao"];
+    [query whereKey:@"info" equalTo:_objectForXH];
     [query includeKey:@"info"];
+    UIActivityIndicatorView *avi = [Utilities getCoverOnView:self.view];
     [query findObjectsInBackgroundWithBlock:^(NSArray * _Nullable objects, NSError * _Nullable error) {
+        self.navigationController.view.userInteractionEnabled = YES;
+        [avi stopAnimating];
         if (!error) {
             NSLog(@"objects = %@",objects);
-            for (PFObject *object in objects) {
-                PFRelation *relation = [object relationForKey:@"info"];
-                PFQuery *subQuery = [relation query];
-                [subQuery findObjectsInBackgroundWithBlock:^(NSArray * _Nullable subObjects, NSError * _Nullable error) {
-                    if (!error) {
-                        NSLog(@"subObjects = %@",subObjects);
-                    }
-                    
-                }];
-            }
-        } else {
-            NSLog(@"%@",error.description);
+            _xingHaoForShow = [NSMutableArray arrayWithArray:objects];
+            [_tableView reloadData];
+        
+        }else {
+            NSLog(@"Error: %@",error.userInfo);
+            [Utilities popUpAlertViewWithMsg:@"请保持网络连接畅通" andTitle:nil onView:self];
         }
+        
     }];
     
 }
