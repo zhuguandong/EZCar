@@ -38,6 +38,11 @@
 		3080EBDF1CC62CCB007A81F8 /* CanShuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3080EBDE1CC62CCB007A81F8 /* CanShuViewController.m */; };
 		3F44A9021CC37F4200A6A5AB /* LeftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F44A9011CC37F4200A6A5AB /* LeftViewController.m */; };
 		3F7A81D91CC4E0CD00ABA3E1 /* FirstTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F7A81D81CC4E0CD00ABA3E1 /* FirstTableViewCell.m */; };
+		3FFFEA1D1CC64F190078655A /* KSGuideManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FFFEA1C1CC64F190078655A /* KSGuideManager.m */; };
+		3FFFEA231CC64F310078655A /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3FFFEA1F1CC64F310078655A /* 1.jpg */; };
+		3FFFEA241CC64F310078655A /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3FFFEA201CC64F310078655A /* 2.jpg */; };
+		3FFFEA251CC64F310078655A /* 3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3FFFEA211CC64F310078655A /* 3.jpg */; };
+		3FFFEA261CC64F310078655A /* 4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3FFFEA221CC64F310078655A /* 4.jpg */; };
 		4AA9D874EF33A19F94C329C4 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F361D44665A011FD4EACBC70 /* libPods.a */; };
 		A9F967011CC23ABD00A8593A /* SignInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9F967001CC23ABD00A8593A /* SignInViewController.m */; };
 		A9F967041CC24FA600A8593A /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9F967031CC24FA600A8593A /* SignUpViewController.m */; };
@@ -117,6 +122,12 @@
 		3F44A9011CC37F4200A6A5AB /* LeftViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftViewController.m; sourceTree = "<group>"; };
 		3F7A81D71CC4E0CD00ABA3E1 /* FirstTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstTableViewCell.h; sourceTree = "<group>"; };
 		3F7A81D81CC4E0CD00ABA3E1 /* FirstTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstTableViewCell.m; sourceTree = "<group>"; };
+		3FFFEA1B1CC64F190078655A /* KSGuideManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSGuideManager.h; sourceTree = "<group>"; };
+		3FFFEA1C1CC64F190078655A /* KSGuideManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSGuideManager.m; sourceTree = "<group>"; };
+		3FFFEA1F1CC64F310078655A /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
+		3FFFEA201CC64F310078655A /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpg; sourceTree = "<group>"; };
+		3FFFEA211CC64F310078655A /* 3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3.jpg; sourceTree = "<group>"; };
+		3FFFEA221CC64F310078655A /* 4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 4.jpg; sourceTree = "<group>"; };
 		A9F966FF1CC23ABD00A8593A /* SignInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignInViewController.h; sourceTree = "<group>"; };
 		A9F967001CC23ABD00A8593A /* SignInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignInViewController.m; sourceTree = "<group>"; };
 		A9F967021CC24FA600A8593A /* SignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpViewController.h; sourceTree = "<group>"; };
@@ -300,8 +311,22 @@
 		304BD8611CC223F400385489 /* 3rd */ = {
 			isa = PBXGroup;
 			children = (
+				3FFFEA1E1CC64F1C0078655A /* image */,
+				3FFFEA1B1CC64F190078655A /* KSGuideManager.h */,
+				3FFFEA1C1CC64F190078655A /* KSGuideManager.m */,
 			);
 			name = 3rd;
+			sourceTree = "<group>";
+		};
+		3FFFEA1E1CC64F1C0078655A /* image */ = {
+			isa = PBXGroup;
+			children = (
+				3FFFEA1F1CC64F310078655A /* 1.jpg */,
+				3FFFEA201CC64F310078655A /* 2.jpg */,
+				3FFFEA211CC64F310078655A /* 3.jpg */,
+				3FFFEA221CC64F310078655A /* 4.jpg */,
+			);
+			name = image;
 			sourceTree = "<group>";
 		};
 		AD4DBC324B9C1ED7581284F2 /* Frameworks */ = {
@@ -437,6 +462,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				304BD81E1CC20F9600385489 /* LaunchScreen.storyboard in Resources */,
+				3FFFEA261CC64F310078655A /* 4.jpg in Resources */,
+				3FFFEA231CC64F310078655A /* 1.jpg in Resources */,
+				3FFFEA241CC64F310078655A /* 2.jpg in Resources */,
+				3FFFEA251CC64F310078655A /* 3.jpg in Resources */,
 				304BD81B1CC20F9600385489 /* Assets.xcassets in Resources */,
 				304BD8161CC20F9600385489 /* Main.storyboard in Resources */,
 			);
@@ -513,6 +542,7 @@
 			files = (
 				A9F967011CC23ABD00A8593A /* SignInViewController.m in Sources */,
 				3F44A9021CC37F4200A6A5AB /* LeftViewController.m in Sources */,
+				3FFFEA1D1CC64F190078655A /* KSGuideManager.m in Sources */,
 				304BD85D1CC2236F00385489 /* Utilities.m in Sources */,
 				301B43761CC4AE4300516B76 /* SecondTableViewCell.m in Sources */,
 				304BD8641CC25E7B00385489 /* TabViewController.m in Sources */,

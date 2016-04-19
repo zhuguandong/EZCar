@@ -10,6 +10,7 @@
 #import <SDCycleScrollView.h>
 #import "FirstTableViewCell.h"
 #import "UIImageView+WebCache.h"
+#import "KSGuideManager.h"
 
 @interface FirstViewController ()<UISearchBarDelegate,SDCycleScrollViewDelegate>
 
@@ -70,6 +71,14 @@
     [self requestData];
     
     _tableView.tableFooterView = [[UITableView alloc]init];
+    
+    NSMutableArray *paths = [NSMutableArray new];
+    [paths addObject:[[NSBundle mainBundle] pathForResource:@"1" ofType:@"jpg"]];
+    [paths addObject:[[NSBundle mainBundle] pathForResource:@"2" ofType:@"jpg"]];
+    [paths addObject:[[NSBundle mainBundle] pathForResource:@"3" ofType:@"jpg"]];
+    [paths addObject:[[NSBundle mainBundle] pathForResource:@"4" ofType:@"jpg"]];
+    [[KSGuideManager shared] showGuideViewWithImages:paths];
+    
     
 }
 
