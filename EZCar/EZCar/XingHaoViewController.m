@@ -7,6 +7,8 @@
 //
 
 #import "XingHaoViewController.h"
+#import "XingHaoTableViewCell.h"
+#import "UIImageView+WebCache.h"
 
 @interface XingHaoViewController ()
 @property(strong,nonatomic) NSMutableArray *xingHaoForShow;
@@ -33,12 +35,14 @@
     PFQuery *query = [PFQuery queryWithClassName:@"Xinghao"];
     [query whereKey:@"info" equalTo:_objectForXH];
     [query includeKey:@"info"];
+    self.navigationController.view.userInteractionEnabled = NO;
     UIActivityIndicatorView *avi = [Utilities getCoverOnView:self.view];
     [query findObjectsInBackgroundWithBlock:^(NSArray * _Nullable objects, NSError * _Nullable error) {
         self.navigationController.view.userInteractionEnabled = YES;
         [avi stopAnimating];
         if (!error) {
             NSLog(@"objects = %@",objects);
+            
             _xingHaoForShow = [NSMutableArray arrayWithArray:objects];
             [_tableView reloadData];
         
@@ -48,6 +52,36 @@
         }
         
     }];
+    
+}
+
+//tableView  多少行
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return _xingHaoForShow.count;
+}
+//tableView 的显示
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+   
+    XingHaoTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
+    PFObject *obj = _xingHaoForShow[indexPath.row];
+    NSString *carxinghao = obj[@"xinghao"];
+    cell.name.text = carxinghao;
+    PFFile *photoFile = obj[@"carimg"];
+    //获取数据库中某个文件的网络路径1
+    NSString *photoURLStr = photoFile.url;
+    NSURL *photoURL = [NSURL URLWithString:photoURLStr];
+    //结合SDWebImage通过图片路径来实现异步加载和缓存（本案中加载到一个图片视图上）
+    [cell.image sd_setImageWithURL:photoURL placeholderImage:[UIImage imageNamed:@"Image-5"]];
+    
+    
+    
+    
+    return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(nonnull NSIndexPath *)indexPath{
+    //按钮取消选中
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
 }
 

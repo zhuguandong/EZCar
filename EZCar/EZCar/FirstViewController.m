@@ -51,8 +51,8 @@
 //    backgroundView.frame = self.view.bounds;
 //    [self.view addSubview:backgroundView];
     
-    UIScrollView *demoContainerView = [[UIScrollView alloc] initWithFrame:self.view.frame];
-    demoContainerView.contentSize = CGSizeMake(self.view.frame.size.width, 1200);
+    UIScrollView *demoContainerView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, -64, UI_SCREEN_W, 180 + 64)];
+    demoContainerView.contentSize = CGSizeMake(UI_SCREEN_W, 180 + 64);
     
     [_Upview addSubview:demoContainerView];
     
