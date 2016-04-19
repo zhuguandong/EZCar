@@ -24,6 +24,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
     _carNameForShow = [NSMutableArray new];
     _sectionTitles = [NSMutableArray new];
     [self requestData];
@@ -74,7 +75,7 @@
     
     
 }
-
+//
 //- (NSArray *)sectionIndexTitlesForTableView:(UITableView *)tableView {
 //    NSMutableArray *sectionIndex = [NSMutableArray new];
 //    for (int i = 0; i < _carNameForShow.count; i ++) {
