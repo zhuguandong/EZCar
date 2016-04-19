@@ -9,8 +9,11 @@
 #import "FirstViewController.h"
 #import <SDCycleScrollView.h>
 #import "FirstTableViewCell.h"
+#import "UIImageView+WebCache.h"
 
 @interface FirstViewController ()<UISearchBarDelegate,SDCycleScrollViewDelegate>
+
+@property(strong,nonatomic) NSMutableArray *objectsForShow;
 
 @end
 
@@ -63,6 +66,9 @@
     cycleScrollView.imageURLStringsGroup = imageNames;
     
     [demoContainerView addSubview:cycleScrollView];
+    [self requestData];
+    
+    _tableView.tableFooterView = [[UITableView alloc]init];
     
 }
 
@@ -76,17 +82,26 @@
 
 //tableView  多少行
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 5;
+    return _objectsForShow.count;
 }
 //tableView 的显示
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
 
-    FirstTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
+    FirstTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
     
+    PFObject *obj = _objectsForShow[indexPath.row];
     
-    
-    
-    
+    NSString *shopName = obj[@"shopname"];
+    NSString *address = obj[@"address"];
+    cell.shopName.text = shopName;
+    cell.shopAdress.text = address;
+    PFFile *photoFile = obj[@"shanghuimg"];
+    //获取数据库中某个文件的网络路径1
+    NSString *photoURLStr = photoFile.url;
+    NSURL *photoURL = [NSURL URLWithString:photoURLStr];
+    //结合SDWebImage通过图片路径来实现异步加载和缓存（本案中加载到一个图片视图上）
+    [cell.shopImage sd_setImageWithURL:photoURL placeholderImage:[UIImage imageNamed:@"Image"]];
+
     return cell;
 }
 
@@ -96,6 +111,30 @@
     
 }
 
+- (void)requestData {
+    [_objectsForShow removeAllObjects];
+    
+    PFQuery *query = [PFQuery queryWithClassName:@"Shop"];
+    //让导航条失去交互能力
+    self.navigationController.view.userInteractionEnabled = NO;
+    //在根视图上创建一朵菊花，并转动
+    UIActivityIndicatorView *avi = [Utilities getCoverOnView:self.view];
+    //查询语句
+    [query findObjectsInBackgroundWithBlock:^(NSArray * _Nullable objects, NSError * _Nullable error) {
+        //让导航条恢复交互能力
+        self.navigationController.view.userInteractionEnabled = YES;
+        //停止菊花动画
+        [avi stopAnimating];
+        if (!error) {
+            _objectsForShow = [NSMutableArray arrayWithArray:objects];
+            NSLog(@"objects = %@",_objectsForShow);
+            [_tableView reloadData];
+        }else{
+            NSLog(@"Error: %@",error.userInfo);
+            [Utilities popUpAlertViewWithMsg:@"请保持网络连接畅通" andTitle:nil onView:self];
+        }
+    }];
+}
 
 /*
 #pragma mark - Navigation
