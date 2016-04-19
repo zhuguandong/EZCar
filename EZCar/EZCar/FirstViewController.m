@@ -54,7 +54,8 @@
     UIScrollView *demoContainerView = [[UIScrollView alloc] initWithFrame:self.view.frame];
     demoContainerView.contentSize = CGSizeMake(self.view.frame.size.width, 1200);
     
-    [self.view addSubview:demoContainerView];
+    [_Upview addSubview:demoContainerView];
+    
     
     NSArray *imageNames = @[@"aa",@"bb",@"cc", @"dd",@"ee"];
     

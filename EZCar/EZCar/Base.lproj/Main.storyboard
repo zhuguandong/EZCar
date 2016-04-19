@@ -524,7 +524,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TOe-6A-RjM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1685" y="1146"/>
+            <point key="canvasLocation" x="1732" y="1142"/>
         </scene>
         <!--Xing Hao View Controller-->
         <scene sceneID="fdD-nj-jCr">
@@ -569,7 +569,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0H3-66-a0F" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2035" y="1152"/>
+            <point key="canvasLocation" x="2168" y="1142"/>
         </scene>
         <!--首页-->
         <scene sceneID="QAQ-tx-reg">
@@ -605,7 +605,7 @@
                                                         <constraint firstAttribute="width" secondItem="TgZ-XK-Qgp" secondAttribute="height" multiplier="4:3" id="n5j-Xd-6iL"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VTX-BS-zGU">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VTX-BS-zGU">
                                                     <rect key="frame" x="108" y="8" width="212" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -638,6 +638,10 @@
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="nG6-vP-EfO" id="08p-Ec-lHL"/>
+                                    <outlet property="delegate" destination="nG6-vP-EfO" id="8ua-Wo-eZK"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -663,6 +667,7 @@
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
+                        <outlet property="Upview" destination="Cod-rn-oYJ" id="YCU-dZ-Ci8"/>
                         <outlet property="tableView" destination="suw-P2-Ipk" id="InE-JK-TkI"/>
                     </connections>
                 </viewController>
@@ -786,7 +791,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Jg-62-OfG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1624" y="1165"/>
+            <point key="canvasLocation" x="1602" y="1165"/>
         </scene>
         <!--对比-->
         <scene sceneID="HxU-WZ-PDo">

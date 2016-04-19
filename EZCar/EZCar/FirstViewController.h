@@ -14,5 +14,6 @@
 
 - (IBAction)menuAction:(UIButton *)sender forEvent:(UIEvent *)event;
 
+@property (weak, nonatomic) IBOutlet UIView *Upview;
 
 @end
