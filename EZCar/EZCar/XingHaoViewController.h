@@ -9,6 +9,11 @@
 #import <UIKit/UIKit.h>
 
 @interface XingHaoViewController : UIViewController
+<<<<<<< HEAD
 @property(strong,nonatomic) NSMutableArray *xh;
+=======
+@property(strong,nonatomic) PFObject *objectForXH;
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
+>>>>>>> c95330b7399e2402a273bc2bb7f16392b125778d
 
 @end
