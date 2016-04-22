@@ -11,6 +11,7 @@
 #import "FirstTableViewCell.h"
 #import "UIImageView+WebCache.h"
 #import "KSGuideManager.h"
+#import "ShopXQViewController.h"
 
 @interface FirstViewController ()<UISearchBarDelegate,SDCycleScrollViewDelegate>
 
@@ -22,6 +23,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    _objectsForShow = [NSMutableArray new];
     //加上 搜索栏
     UIView *titleView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 200, 35)];//allocate titleView
     UIColor *color =  self.navigationController.navigationBar.barTintColor;
@@ -110,7 +112,7 @@
     NSString *photoURLStr = photoFile.url;
     NSURL *photoURL = [NSURL URLWithString:photoURLStr];
     //结合SDWebImage通过图片路径来实现异步加载和缓存（本案中加载到一个图片视图上）
-    [cell.shopImage sd_setImageWithURL:photoURL placeholderImage:[UIImage imageNamed:@"Image"]];
+    [cell.shopImage sd_setImageWithURL:photoURL placeholderImage:[UIImage imageNamed:@"ee"]];
 
     return cell;
 }
@@ -146,15 +148,24 @@
     }];
 }
 
-/*
+
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
+    NSIndexPath *indexPath = _tableView.indexPathForSelectedRow;
+    //根据上诉行数，获取该行所对应的数据
+    PFObject *obj = _objectsForShow[indexPath.row];
+    
+    ShopXQViewController  *shopVC = segue.destinationViewController;
+    shopVC.obj = obj;
+    
 }
-*/
+
+
+
 //每次首页出现后
 -(void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];

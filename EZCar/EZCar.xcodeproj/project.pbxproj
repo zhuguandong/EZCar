@@ -36,6 +36,8 @@
 		3080EBD91CC60B69007A81F8 /* KuanShiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3080EBD81CC60B69007A81F8 /* KuanShiViewController.m */; };
 		3080EBDC1CC61942007A81F8 /* KuanShiTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3080EBDB1CC61942007A81F8 /* KuanShiTableViewCell.m */; };
 		3080EBDF1CC62CCB007A81F8 /* CanShuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3080EBDE1CC62CCB007A81F8 /* CanShuViewController.m */; };
+		3F1F02901CCA03C7003C52FE /* ShopXQViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F1F028F1CCA03C7003C52FE /* ShopXQViewController.m */; };
+		3F1F02931CCA0E17003C52FE /* ShopXQTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F1F02921CCA0E17003C52FE /* ShopXQTableViewCell.m */; };
 		3F44A9021CC37F4200A6A5AB /* LeftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F44A9011CC37F4200A6A5AB /* LeftViewController.m */; };
 		3F7A81D91CC4E0CD00ABA3E1 /* FirstTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F7A81D81CC4E0CD00ABA3E1 /* FirstTableViewCell.m */; };
 		3FFFEA1D1CC64F190078655A /* KSGuideManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FFFEA1C1CC64F190078655A /* KSGuideManager.m */; };
@@ -118,6 +120,10 @@
 		3080EBDD1CC62CCB007A81F8 /* CanShuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CanShuViewController.h; sourceTree = "<group>"; };
 		3080EBDE1CC62CCB007A81F8 /* CanShuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CanShuViewController.m; sourceTree = "<group>"; };
 		324CB3A1FA6F567D67D536EF /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		3F1F028E1CCA03C7003C52FE /* ShopXQViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShopXQViewController.h; sourceTree = "<group>"; };
+		3F1F028F1CCA03C7003C52FE /* ShopXQViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShopXQViewController.m; sourceTree = "<group>"; };
+		3F1F02911CCA0E17003C52FE /* ShopXQTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShopXQTableViewCell.h; sourceTree = "<group>"; };
+		3F1F02921CCA0E17003C52FE /* ShopXQTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShopXQTableViewCell.m; sourceTree = "<group>"; };
 		3F44A9001CC37F4200A6A5AB /* LeftViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftViewController.h; sourceTree = "<group>"; };
 		3F44A9011CC37F4200A6A5AB /* LeftViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftViewController.m; sourceTree = "<group>"; };
 		3F7A81D71CC4E0CD00ABA3E1 /* FirstTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstTableViewCell.h; sourceTree = "<group>"; };
@@ -259,6 +265,8 @@
 			children = (
 				3F7A81D71CC4E0CD00ABA3E1 /* FirstTableViewCell.h */,
 				3F7A81D81CC4E0CD00ABA3E1 /* FirstTableViewCell.m */,
+				3F1F02911CCA0E17003C52FE /* ShopXQTableViewCell.h */,
+				3F1F02921CCA0E17003C52FE /* ShopXQTableViewCell.m */,
 				A9F966FF1CC23ABD00A8593A /* SignInViewController.h */,
 				A9F967001CC23ABD00A8593A /* SignInViewController.m */,
 				A9F967021CC24FA600A8593A /* SignUpViewController.h */,
@@ -271,6 +279,8 @@
 				3F44A9011CC37F4200A6A5AB /* LeftViewController.m */,
 				301B43741CC4AE4300516B76 /* SecondTableViewCell.h */,
 				301B43751CC4AE4300516B76 /* SecondTableViewCell.m */,
+				3F1F028E1CCA03C7003C52FE /* ShopXQViewController.h */,
+				3F1F028F1CCA03C7003C52FE /* ShopXQViewController.m */,
 				3080EBD11CC5D0C9007A81F8 /* XingHaoTableViewCell.h */,
 				3080EBD21CC5D0C9007A81F8 /* XingHaoTableViewCell.m */,
 				3080EBDA1CC61942007A81F8 /* KuanShiTableViewCell.h */,
@@ -544,6 +554,7 @@
 				3F44A9021CC37F4200A6A5AB /* LeftViewController.m in Sources */,
 				3FFFEA1D1CC64F190078655A /* KSGuideManager.m in Sources */,
 				304BD85D1CC2236F00385489 /* Utilities.m in Sources */,
+				3F1F02901CCA03C7003C52FE /* ShopXQViewController.m in Sources */,
 				301B43761CC4AE4300516B76 /* SecondTableViewCell.m in Sources */,
 				304BD8641CC25E7B00385489 /* TabViewController.m in Sources */,
 				3080EBDC1CC61942007A81F8 /* KuanShiTableViewCell.m in Sources */,
@@ -557,6 +568,7 @@
 				301B43791CC4C59000516B76 /* XingHaoViewController.m in Sources */,
 				3080EBD31CC5D0C9007A81F8 /* XingHaoTableViewCell.m in Sources */,
 				A9F967041CC24FA600A8593A /* SignUpViewController.m in Sources */,
+				3F1F02931CCA0E17003C52FE /* ShopXQTableViewCell.m in Sources */,
 				3F7A81D91CC4E0CD00ABA3E1 /* FirstTableViewCell.m in Sources */,
 				3080EBD91CC60B69007A81F8 /* KuanShiViewController.m in Sources */,
 				304BD85C1CC2236F00385489 /* StorageMgr.m in Sources */,
