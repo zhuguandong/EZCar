@@ -105,7 +105,8 @@
     PFObject *obj = _KuanShiForShow[indexPath.row];
     
     CanShuViewController  *cdVC = segue.destinationViewController;
-    cdVC.objectForCS = obj;}
+    cdVC.objectForCS = obj;
+}
 
 
 @end
