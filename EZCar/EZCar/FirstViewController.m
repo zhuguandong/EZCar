@@ -13,15 +13,33 @@
 #import "KSGuideManager.h"
 #import "ShopXQViewController.h"
 
+#import <ECSlidingViewController/ECSlidingViewController.h>
+
+
 @interface FirstViewController ()<UISearchBarDelegate,SDCycleScrollViewDelegate>
 
 @property(strong,nonatomic) NSMutableArray *objectsForShow;
+@property(strong, nonatomic) ECSlidingViewController *slidingVC;
 
 @end
 
 @implementation FirstViewController
 
 - (void)viewDidLoad {
+    
+    
+//    
+//    NSMutableArray *paths = [NSMutableArray new];
+//    [paths addObject:[[NSBundle mainBundle] pathForResource:@"1" ofType:@"jpg"]];
+//    [paths addObject:[[NSBundle mainBundle] pathForResource:@"2" ofType:@"jpg"]];
+//    [paths addObject:[[NSBundle mainBundle] pathForResource:@"3" ofType:@"jpg"]];
+//    [paths addObject:[[NSBundle mainBundle] pathForResource:@"4" ofType:@"jpg"]];
+//    [[KSGuideManager shared] showGuideViewWithImages:paths];
+//
+    
+    
+    
+    
     [super viewDidLoad];
     _objectsForShow = [NSMutableArray new];
     //加上 搜索栏
@@ -73,14 +91,7 @@
     [self requestData];
     
     _tableView.tableFooterView = [[UITableView alloc]init];
-    
-//    NSMutableArray *paths = [NSMutableArray new];
-//    [paths addObject:[[NSBundle mainBundle] pathForResource:@"1" ofType:@"jpg"]];
-//    [paths addObject:[[NSBundle mainBundle] pathForResource:@"2" ofType:@"jpg"]];
-//    [paths addObject:[[NSBundle mainBundle] pathForResource:@"3" ofType:@"jpg"]];
-//    [paths addObject:[[NSBundle mainBundle] pathForResource:@"4" ofType:@"jpg"]];
-//    [[KSGuideManager shared] showGuideViewWithImages:paths];
-//    
+   
     
 }
 
@@ -166,12 +177,14 @@
 
 
 
+
+
 //每次首页出现后
 -(void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
     
     [[NSNotificationCenter defaultCenter]postNotificationName:@"EnableGesture" object:nil];
-    
+       
 }
 //每次首页消失后
 -(void)viewDidDisappear:(BOOL)animated {
@@ -179,6 +192,9 @@
     
     [[NSNotificationCenter defaultCenter]postNotificationName:@"DisableGesture" object:nil];
 }
+
+
+
 
 
 

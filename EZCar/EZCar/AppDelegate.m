@@ -7,8 +7,11 @@
 //
 
 #import "AppDelegate.h"
-
+#import <ECSlidingViewController/ECSlidingViewController.h>
+#import "LeftViewController.h"
+#import "TabViewController.h"
 @interface AppDelegate ()
+@property(strong, nonatomic) ECSlidingViewController *slidingVC;
 
 @end
 
@@ -19,7 +22,10 @@
     // Override point for customization after application launch.
     [Parse setApplicationId:@"lPLtC83ope4BhdJJc1UxABwseWQihsLwe7qFZsWy" clientKey:@"3KRj0Nbd6GjjLPuPlcxtJRpa52xqQwAU7KQSghft"];
     [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
+    
+   
     return YES;
+    
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
