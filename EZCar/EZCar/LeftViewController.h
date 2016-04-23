@@ -11,6 +11,8 @@
 @interface LeftViewController : UIViewController
 
 - (IBAction)signOutAction:(UIButton *)sender forEvent:(UIEvent *)event;
+@property (weak, nonatomic) IBOutlet UIButton *headbutton;
+- (IBAction)headAction:(UIButton *)sender forEvent:(UIEvent *)event;
 
 
 @end

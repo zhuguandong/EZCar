@@ -12,14 +12,18 @@
 #import "UIImageView+WebCache.h"
 #import "KSGuideManager.h"
 #import "ShopXQViewController.h"
+#import <CoreLocation/CoreLocation.h>
 
 #import <ECSlidingViewController/ECSlidingViewController.h>
 
 
-@interface FirstViewController ()<UISearchBarDelegate,SDCycleScrollViewDelegate>
+@interface FirstViewController ()<UISearchBarDelegate,SDCycleScrollViewDelegate,CLLocationManagerDelegate>{
+    BOOL flag;  //用来表示是否已经成功获取到了距离
+}
 
 @property(strong,nonatomic) NSMutableArray *objectsForShow;
 @property(strong, nonatomic) ECSlidingViewController *slidingVC;
+@property(strong,nonatomic) CLLocationManager *locationManager;
 
 @end
 
@@ -28,14 +32,14 @@
 - (void)viewDidLoad {
     
     
-//    
-//    NSMutableArray *paths = [NSMutableArray new];
-//    [paths addObject:[[NSBundle mainBundle] pathForResource:@"1" ofType:@"jpg"]];
-//    [paths addObject:[[NSBundle mainBundle] pathForResource:@"2" ofType:@"jpg"]];
-//    [paths addObject:[[NSBundle mainBundle] pathForResource:@"3" ofType:@"jpg"]];
-//    [paths addObject:[[NSBundle mainBundle] pathForResource:@"4" ofType:@"jpg"]];
-//    [[KSGuideManager shared] showGuideViewWithImages:paths];
-//
+    
+    NSMutableArray *paths = [NSMutableArray new];
+    [paths addObject:[[NSBundle mainBundle] pathForResource:@"1" ofType:@"jpg"]];
+    [paths addObject:[[NSBundle mainBundle] pathForResource:@"2" ofType:@"jpg"]];
+    [paths addObject:[[NSBundle mainBundle] pathForResource:@"3" ofType:@"jpg"]];
+    [paths addObject:[[NSBundle mainBundle] pathForResource:@"4" ofType:@"jpg"]];
+    [[KSGuideManager shared] showGuideViewWithImages:paths];
+
     
     
     
@@ -90,8 +94,22 @@
     [demoContainerView addSubview:cycleScrollView];
     [self requestData];
     
+    //将是否成功获取距离初始化为NO（没有）
+    flag =NO;
     _tableView.tableFooterView = [[UITableView alloc]init];
-   
+    //初始化定位管理器
+    _locationManager = [[CLLocationManager alloc]init];
+    //签协议
+    _locationManager.delegate = self;
+    //第一次打开App或者用户致歉没有选择是否要统一使用定位时，询问用户是否同意打开定位
+    if ([CLLocationManager authorizationStatus] == kCLAuthorizationStatusNotDetermined) {
+#ifdef __IPHONE_8_0
+        //询问用户是否同意当App运行过程中使用定位
+        [_locationManager requestWhenInUseAuthorization];
+#endif
+    }
+    //打开定位开关
+    [_locationManager startUpdatingLocation];
     
 }
 
@@ -118,13 +136,17 @@
     NSString *address = obj[@"address"];
     cell.shopName.text = shopName;
     cell.shopAdress.text = address;
+    
     PFFile *photoFile = obj[@"shanghuimg"];
     //获取数据库中某个文件的网络路径1
     NSString *photoURLStr = photoFile.url;
     NSURL *photoURL = [NSURL URLWithString:photoURLStr];
     //结合SDWebImage通过图片路径来实现异步加载和缓存（本案中加载到一个图片视图上）
     [cell.shopImage sd_setImageWithURL:photoURL placeholderImage:[UIImage imageNamed:@"ee"]];
-
+    
+    
+    
+    
     return cell;
 }
 
@@ -160,6 +182,7 @@
 }
 
 
+
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
@@ -175,28 +198,20 @@
     
 }
 
-
-
-
-
 //每次首页出现后
 -(void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
     
     [[NSNotificationCenter defaultCenter]postNotificationName:@"EnableGesture" object:nil];
-       
+    
 }
+
 //每次首页消失后
 -(void)viewDidDisappear:(BOOL)animated {
     [super viewDidDisappear:animated];
     
     [[NSNotificationCenter defaultCenter]postNotificationName:@"DisableGesture" object:nil];
 }
-
-
-
-
-
 
 
 - (IBAction)menuAction:(UIButton *)sender forEvent:(UIEvent *)event {

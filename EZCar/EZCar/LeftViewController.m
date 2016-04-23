@@ -8,6 +8,7 @@
 
 #import "LeftViewController.h"
 #import "TabViewController.h"
+#import "SignInViewController.h"
 
 @interface LeftViewController ()
 
@@ -43,10 +44,32 @@
         //判断推出是否成功
         if (!error) {
             //返回登录界面
-            [self dismissViewControllerAnimated:YES completion:nil];
+            UINavigationController *tabVC = [Utilities getStoryboardInstance:@"Main" byIdentity:@"sigin"];
+            [self presentViewController:tabVC animated:YES completion:nil];
         } else {
             [Utilities popUpAlertViewWithMsg:@"请保持网络连接畅通" andTitle:nil onView:self];
         }
     }];
 }
+
+- (IBAction)headAction:(UIButton *)sender forEvent:(UIEvent *)event {
+    PFUser *user = [PFUser currentUser];
+    if (user) {
+        //        _headbutton.titleLabel.text = user.username;
+        [_headbutton setTitle:user.username forState:UIControlStateNormal];
+    } else {
+        UINavigationController *tabVC = [Utilities getStoryboardInstance:@"Main" byIdentity:@"sigin"];
+        [self presentViewController:tabVC animated:YES completion:nil];
+    }
+}
+
+-(void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
+    PFUser *user = [PFUser currentUser];
+    if (user) {
+        //        _headbutton.titleLabel.text = user.username;
+        [_headbutton setTitle:user.username forState:UIControlStateNormal];
+    }
+}
+
 @end
