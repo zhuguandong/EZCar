@@ -63,6 +63,13 @@
     }
 }
 
+- (IBAction)ReMenAction:(UIButton *)sender forEvent:(UIEvent *)event {
+    //根据故事版的名称和故事版中页面的名称获得这个页面
+    TabViewController *tabVC = [Utilities getStoryboardInstance:@"Main" byIdentity:@"RM"];
+    [self presentViewController:tabVC animated:YES completion:nil];
+
+}
+
 -(void)viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
     PFUser *user = [PFUser currentUser];

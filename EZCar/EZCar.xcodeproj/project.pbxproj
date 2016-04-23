@@ -48,6 +48,9 @@
 		4AA9D874EF33A19F94C329C4 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F361D44665A011FD4EACBC70 /* libPods.a */; };
 		A9F967011CC23ABD00A8593A /* SignInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9F967001CC23ABD00A8593A /* SignInViewController.m */; };
 		A9F967041CC24FA600A8593A /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9F967031CC24FA600A8593A /* SignUpViewController.m */; };
+		C47AFFD11CCB6423003BB32B /* ReMenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C47AFFD01CCB6423003BB32B /* ReMenViewController.m */; };
+		C47AFFD41CCB645E003BB32B /* ReMenTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C47AFFD31CCB645E003BB32B /* ReMenTableViewCell.m */; };
+		C47AFFD71CCB7235003BB32B /* ReMenCSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C47AFFD61CCB7235003BB32B /* ReMenCSViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -138,6 +141,12 @@
 		A9F967001CC23ABD00A8593A /* SignInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignInViewController.m; sourceTree = "<group>"; };
 		A9F967021CC24FA600A8593A /* SignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpViewController.h; sourceTree = "<group>"; };
 		A9F967031CC24FA600A8593A /* SignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpViewController.m; sourceTree = "<group>"; };
+		C47AFFCF1CCB6423003BB32B /* ReMenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReMenViewController.h; sourceTree = "<group>"; };
+		C47AFFD01CCB6423003BB32B /* ReMenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReMenViewController.m; sourceTree = "<group>"; };
+		C47AFFD21CCB645E003BB32B /* ReMenTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReMenTableViewCell.h; sourceTree = "<group>"; };
+		C47AFFD31CCB645E003BB32B /* ReMenTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReMenTableViewCell.m; sourceTree = "<group>"; };
+		C47AFFD51CCB7235003BB32B /* ReMenCSViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReMenCSViewController.h; sourceTree = "<group>"; };
+		C47AFFD61CCB7235003BB32B /* ReMenCSViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReMenCSViewController.m; sourceTree = "<group>"; };
 		F361D44665A011FD4EACBC70 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -277,6 +286,12 @@
 				300B15221CC39FB0000793FE /* FirstViewController.m */,
 				3F44A9001CC37F4200A6A5AB /* LeftViewController.h */,
 				3F44A9011CC37F4200A6A5AB /* LeftViewController.m */,
+				C47AFFD21CCB645E003BB32B /* ReMenTableViewCell.h */,
+				C47AFFD31CCB645E003BB32B /* ReMenTableViewCell.m */,
+				C47AFFCF1CCB6423003BB32B /* ReMenViewController.h */,
+				C47AFFD01CCB6423003BB32B /* ReMenViewController.m */,
+				C47AFFD51CCB7235003BB32B /* ReMenCSViewController.h */,
+				C47AFFD61CCB7235003BB32B /* ReMenCSViewController.m */,
 				301B43741CC4AE4300516B76 /* SecondTableViewCell.h */,
 				301B43751CC4AE4300516B76 /* SecondTableViewCell.m */,
 				3F1F028E1CCA03C7003C52FE /* ShopXQViewController.h */,
@@ -551,12 +566,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				A9F967011CC23ABD00A8593A /* SignInViewController.m in Sources */,
+				C47AFFD41CCB645E003BB32B /* ReMenTableViewCell.m in Sources */,
 				3F44A9021CC37F4200A6A5AB /* LeftViewController.m in Sources */,
 				3FFFEA1D1CC64F190078655A /* KSGuideManager.m in Sources */,
 				304BD85D1CC2236F00385489 /* Utilities.m in Sources */,
 				3F1F02901CCA03C7003C52FE /* ShopXQViewController.m in Sources */,
+				C47AFFD71CCB7235003BB32B /* ReMenCSViewController.m in Sources */,
 				301B43761CC4AE4300516B76 /* SecondTableViewCell.m in Sources */,
 				304BD8641CC25E7B00385489 /* TabViewController.m in Sources */,
+				C47AFFD11CCB6423003BB32B /* ReMenViewController.m in Sources */,
 				3080EBDC1CC61942007A81F8 /* KuanShiTableViewCell.m in Sources */,
 				3080EBD61CC5DA36007A81F8 /* ChineseToPinyin.m in Sources */,
 				304BD8101CC20F9600385489 /* AppDelegate.m in Sources */,

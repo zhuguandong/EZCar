@@ -187,11 +187,11 @@
     return cell;
 }
 
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(nonnull NSIndexPath *)indexPath{
-    //按钮取消选中
-    [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    
-}
+//- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(nonnull NSIndexPath *)indexPath{
+//    //按钮取消选中
+//    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+//    
+//}
 
 
 
