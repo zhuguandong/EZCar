@@ -26,7 +26,7 @@
     _tableView.allowsSelection = NO;//让tableview不被按
     //[_tableView setSeparatorColor:[UIColor grayColor]];  //设置分割线为蓝色
 
-    _objiectForShow = @[@"品牌",@"厂商报价",@"上市年份",@"变速箱",@"车身结构",@"车型级别",@"排量",@"最大马力",@"变速箱",@"底盘转向",@"驱动方式",@"车体结构",@"助力类型",@"车轮制动",@"前轮胎规格",@"后轮胎规格",@"备胎",@"安全配置",@"驾驶座安全气囊",@"副驾驶安全气囊",@"前排侧气囊",@"后排侧气囊",@"ASB防抱死",@"防盗警报器",@"玻璃/后视镜",@"电动后视镜",@"发动机防盗锁止",@"车内中控锁",@"遥控钥匙",@"疲劳驾驶提示",@"蓝牙/车载电话",@"行李架",];
+    _objiectForShow = @[@"品牌",@"厂商报价",@"上市年份",@"变速箱",@"车身结构",@"车型级别",@"排量",@"最大马力",@"油耗",@"燃料形式",@"驱动方式",@"进气形式",@"助力类型",@"前悬架类型",@"前轮胎规格",@"后轮胎规格",@"备胎规格",@"后悬架类型",@"主/副驾驶安全气囊",@"前/后排头部气囊(气帘)",@"前制动器类型",@"整车质保",@"ASB防抱死",@"方向盘调节",@"最大扭矩转速(rpm)",@"配气机构",@"行李厢容积(L)",@"长*宽*高(mm)",@"发动机",@"供油方式",@"座椅材质",@"环保标准",];
 
 }
 - (void)requestData {
@@ -80,14 +80,106 @@
 //        cell.detailTextLabel.text = content2 ;
     switch (indexPath.row) {
         case 0:
-            cell.detailTextLabel.text = _object[@"baojia"];
+            cell.detailTextLabel.text = _object[@"info"][@"info"][@"info"][@"carname"];;
             break;
         case 1:
-            cell.detailTextLabel.text = _object[@"info"][@"info"][@"info"][@"carname"];
+            cell.detailTextLabel.text = _object[@"a2"];
             break;
         case 2:
-            cell.detailTextLabel.text = _object[@"biansuxiang"];
+            cell.detailTextLabel.text = _object[@"a3"];
             break;
+        case 3:
+            cell.detailTextLabel.text = _object[@"a4"];
+            break;
+        case 4:
+            cell.detailTextLabel.text = _object[@"a5"];
+            break;
+        case 5:
+            cell.detailTextLabel.text = _object[@"a6"];
+            break;
+        case 6:
+            cell.detailTextLabel.text = _object[@"a7"];
+            break;
+        case 7:
+            cell.detailTextLabel.text = _object[@"a8"];
+            break;
+        case 8:
+            cell.detailTextLabel.text = _object[@"a9"];
+            break;
+        case 9:
+            cell.detailTextLabel.text = _object[@"a10"];
+            break;
+        case 10:
+            cell.detailTextLabel.text = _object[@"a11"];
+            break;
+        case 11:
+            cell.detailTextLabel.text = _object[@"a12"];
+            break;
+        case 12:
+            cell.detailTextLabel.text = _object[@"a13"];
+            break;
+        case 13:
+            cell.detailTextLabel.text = _object[@"a14"];
+            break;
+        case 14:
+            cell.detailTextLabel.text = _object[@"a15"];
+            break;
+        case 15:
+            cell.detailTextLabel.text = _object[@"a16"];
+            break;
+        case 16:
+            cell.detailTextLabel.text = _object[@"a17"];
+            break;
+        case 17:
+            cell.detailTextLabel.text = _object[@"a18"];
+            break;
+        case 18:
+            cell.detailTextLabel.text = _object[@"a19"];
+            break;
+        case 19:
+            cell.detailTextLabel.text = _object[@"a20"];
+            break;
+        case 20:
+            cell.detailTextLabel.text = _object[@"a21"];
+            break;
+        case 21:
+            cell.detailTextLabel.text = _object[@"a22"];
+            break;
+        case 22:
+            cell.detailTextLabel.text = _object[@"a23"];
+            break;
+        case 23:
+            cell.detailTextLabel.text = _object[@"a24"];
+            break;
+        case 24:
+            cell.detailTextLabel.text = _object[@"a25"];
+            break;
+        case 25:
+            cell.detailTextLabel.text = _object[@"a26"];
+            break;
+        case 26:
+            cell.detailTextLabel.text = _object[@"a27"];
+            break;
+        case 27:
+            cell.detailTextLabel.text = _object[@"a28"];
+            break;
+        case 28:
+            cell.detailTextLabel.text = _object[@"a29"];
+            break;
+        case 29:
+            cell.detailTextLabel.text = _object[@"a30"];
+            break;
+        case 30:
+            cell.detailTextLabel.text = _object[@"a31"];
+            break;
+        case 31:
+            cell.detailTextLabel.text = _object[@"a32"];
+            break;
+        case 32:
+            cell.detailTextLabel.text = _object[@"a33"];
+            break;
+        
+            
         default:
             break;
     }
