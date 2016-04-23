@@ -36,6 +36,12 @@
 		3080EBD91CC60B69007A81F8 /* KuanShiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3080EBD81CC60B69007A81F8 /* KuanShiViewController.m */; };
 		3080EBDC1CC61942007A81F8 /* KuanShiTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3080EBDB1CC61942007A81F8 /* KuanShiTableViewCell.m */; };
 		3080EBDF1CC62CCB007A81F8 /* CanShuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3080EBDE1CC62CCB007A81F8 /* CanShuViewController.m */; };
+		3F10359B1CCB89180084532C /* XRWaterfallLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F10359A1CCB89180084532C /* XRWaterfallLayout.m */; };
+		3F1035A11CCB893A0084532C /* XRCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F10359D1CCB893A0084532C /* XRCollectionViewCell.m */; };
+		3F1035A21CCB893A0084532C /* XRCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F10359E1CCB893A0084532C /* XRCollectionViewCell.xib */; };
+		3F1035A31CCB893A0084532C /* XRImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F1035A01CCB893A0084532C /* XRImage.m */; };
+		3F1035A51CCB89480084532C /* 1.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3F1035A41CCB89480084532C /* 1.plist */; };
+		3F1035A81CCB899C0084532C /* ImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F1035A71CCB899C0084532C /* ImageViewController.m */; };
 		3F1F02901CCA03C7003C52FE /* ShopXQViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F1F028F1CCA03C7003C52FE /* ShopXQViewController.m */; };
 		3F1F02931CCA0E17003C52FE /* ShopXQTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F1F02921CCA0E17003C52FE /* ShopXQTableViewCell.m */; };
 		3F44A9021CC37F4200A6A5AB /* LeftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F44A9011CC37F4200A6A5AB /* LeftViewController.m */; };
@@ -123,6 +129,16 @@
 		3080EBDD1CC62CCB007A81F8 /* CanShuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CanShuViewController.h; sourceTree = "<group>"; };
 		3080EBDE1CC62CCB007A81F8 /* CanShuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CanShuViewController.m; sourceTree = "<group>"; };
 		324CB3A1FA6F567D67D536EF /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		3F1035991CCB89180084532C /* XRWaterfallLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XRWaterfallLayout.h; sourceTree = "<group>"; };
+		3F10359A1CCB89180084532C /* XRWaterfallLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XRWaterfallLayout.m; sourceTree = "<group>"; };
+		3F10359C1CCB893A0084532C /* XRCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XRCollectionViewCell.h; sourceTree = "<group>"; };
+		3F10359D1CCB893A0084532C /* XRCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XRCollectionViewCell.m; sourceTree = "<group>"; };
+		3F10359E1CCB893A0084532C /* XRCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XRCollectionViewCell.xib; sourceTree = "<group>"; };
+		3F10359F1CCB893A0084532C /* XRImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XRImage.h; sourceTree = "<group>"; };
+		3F1035A01CCB893A0084532C /* XRImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XRImage.m; sourceTree = "<group>"; };
+		3F1035A41CCB89480084532C /* 1.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = 1.plist; sourceTree = "<group>"; };
+		3F1035A61CCB899C0084532C /* ImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageViewController.h; sourceTree = "<group>"; };
+		3F1035A71CCB899C0084532C /* ImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageViewController.m; sourceTree = "<group>"; };
 		3F1F028E1CCA03C7003C52FE /* ShopXQViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShopXQViewController.h; sourceTree = "<group>"; };
 		3F1F028F1CCA03C7003C52FE /* ShopXQViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShopXQViewController.m; sourceTree = "<group>"; };
 		3F1F02911CCA0E17003C52FE /* ShopXQTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShopXQTableViewCell.h; sourceTree = "<group>"; };
@@ -230,6 +246,7 @@
 				304BD81F1CC20F9600385489 /* Info.plist */,
 				304BD8171CC20F9600385489 /* EZCar.xcdatamodeld */,
 				304BD8571CC2227D00385489 /* PrefixHeader.pch */,
+				3F1035A41CCB89480084532C /* 1.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -262,6 +279,7 @@
 		304BD8421CC220FC00385489 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				3F10359E1CCB893A0084532C /* XRCollectionViewCell.xib */,
 				304BD8141CC20F9600385489 /* Main.storyboard */,
 				304BD81A1CC20F9600385489 /* Assets.xcassets */,
 				304BD81C1CC20F9600385489 /* LaunchScreen.storyboard */,
@@ -286,6 +304,8 @@
 				300B15221CC39FB0000793FE /* FirstViewController.m */,
 				3F44A9001CC37F4200A6A5AB /* LeftViewController.h */,
 				3F44A9011CC37F4200A6A5AB /* LeftViewController.m */,
+				3F1035A61CCB899C0084532C /* ImageViewController.h */,
+				3F1035A71CCB899C0084532C /* ImageViewController.m */,
 				C47AFFD21CCB645E003BB32B /* ReMenTableViewCell.h */,
 				C47AFFD31CCB645E003BB32B /* ReMenTableViewCell.m */,
 				C47AFFCF1CCB6423003BB32B /* ReMenViewController.h */,
@@ -339,6 +359,12 @@
 				3FFFEA1E1CC64F1C0078655A /* image */,
 				3FFFEA1B1CC64F190078655A /* KSGuideManager.h */,
 				3FFFEA1C1CC64F190078655A /* KSGuideManager.m */,
+				3F1035991CCB89180084532C /* XRWaterfallLayout.h */,
+				3F10359A1CCB89180084532C /* XRWaterfallLayout.m */,
+				3F10359C1CCB893A0084532C /* XRCollectionViewCell.h */,
+				3F10359D1CCB893A0084532C /* XRCollectionViewCell.m */,
+				3F10359F1CCB893A0084532C /* XRImage.h */,
+				3F1035A01CCB893A0084532C /* XRImage.m */,
 			);
 			name = 3rd;
 			sourceTree = "<group>";
@@ -488,9 +514,11 @@
 			files = (
 				304BD81E1CC20F9600385489 /* LaunchScreen.storyboard in Resources */,
 				3FFFEA261CC64F310078655A /* 4.jpg in Resources */,
+				3F1035A21CCB893A0084532C /* XRCollectionViewCell.xib in Resources */,
 				3FFFEA231CC64F310078655A /* 1.jpg in Resources */,
 				3FFFEA241CC64F310078655A /* 2.jpg in Resources */,
 				3FFFEA251CC64F310078655A /* 3.jpg in Resources */,
+				3F1035A51CCB89480084532C /* 1.plist in Resources */,
 				304BD81B1CC20F9600385489 /* Assets.xcassets in Resources */,
 				304BD8161CC20F9600385489 /* Main.storyboard in Resources */,
 			);
@@ -572,6 +600,7 @@
 				304BD85D1CC2236F00385489 /* Utilities.m in Sources */,
 				3F1F02901CCA03C7003C52FE /* ShopXQViewController.m in Sources */,
 				C47AFFD71CCB7235003BB32B /* ReMenCSViewController.m in Sources */,
+				3F1035A11CCB893A0084532C /* XRCollectionViewCell.m in Sources */,
 				301B43761CC4AE4300516B76 /* SecondTableViewCell.m in Sources */,
 				304BD8641CC25E7B00385489 /* TabViewController.m in Sources */,
 				C47AFFD11CCB6423003BB32B /* ReMenViewController.m in Sources */,
@@ -581,6 +610,7 @@
 				304BD80D1CC20F9600385489 /* main.m in Sources */,
 				3080EBDF1CC62CCB007A81F8 /* CanShuViewController.m in Sources */,
 				304BD8191CC20F9600385489 /* EZCar.xcdatamodeld in Sources */,
+				3F1035A31CCB893A0084532C /* XRImage.m in Sources */,
 				300B15231CC39FB0000793FE /* FirstViewController.m in Sources */,
 				302166A41CC49CCD002AB087 /* SecondViewController.m in Sources */,
 				301B43791CC4C59000516B76 /* XingHaoViewController.m in Sources */,
@@ -588,7 +618,9 @@
 				A9F967041CC24FA600A8593A /* SignUpViewController.m in Sources */,
 				3F1F02931CCA0E17003C52FE /* ShopXQTableViewCell.m in Sources */,
 				3F7A81D91CC4E0CD00ABA3E1 /* FirstTableViewCell.m in Sources */,
+				3F1035A81CCB899C0084532C /* ImageViewController.m in Sources */,
 				3080EBD91CC60B69007A81F8 /* KuanShiViewController.m in Sources */,
+				3F10359B1CCB89180084532C /* XRWaterfallLayout.m in Sources */,
 				304BD85C1CC2236F00385489 /* StorageMgr.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
