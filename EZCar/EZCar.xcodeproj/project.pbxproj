@@ -36,6 +36,8 @@
 		3080EBD91CC60B69007A81F8 /* KuanShiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3080EBD81CC60B69007A81F8 /* KuanShiViewController.m */; };
 		3080EBDC1CC61942007A81F8 /* KuanShiTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3080EBDB1CC61942007A81F8 /* KuanShiTableViewCell.m */; };
 		3080EBDF1CC62CCB007A81F8 /* CanShuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3080EBDE1CC62CCB007A81F8 /* CanShuViewController.m */; };
+		30D8463A1CCCB8B700003F37 /* PKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D846391CCCB8B700003F37 /* PKViewController.m */; };
+		30D8463D1CCCB8D000003F37 /* PKTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D8463C1CCCB8D000003F37 /* PKTableViewCell.m */; };
 		3F10359B1CCB89180084532C /* XRWaterfallLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F10359A1CCB89180084532C /* XRWaterfallLayout.m */; };
 		3F1035A11CCB893A0084532C /* XRCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F10359D1CCB893A0084532C /* XRCollectionViewCell.m */; };
 		3F1035A21CCB893A0084532C /* XRCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F10359E1CCB893A0084532C /* XRCollectionViewCell.xib */; };
@@ -128,6 +130,10 @@
 		3080EBDB1CC61942007A81F8 /* KuanShiTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KuanShiTableViewCell.m; sourceTree = "<group>"; };
 		3080EBDD1CC62CCB007A81F8 /* CanShuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CanShuViewController.h; sourceTree = "<group>"; };
 		3080EBDE1CC62CCB007A81F8 /* CanShuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CanShuViewController.m; sourceTree = "<group>"; };
+		30D846381CCCB8B700003F37 /* PKViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKViewController.h; sourceTree = "<group>"; };
+		30D846391CCCB8B700003F37 /* PKViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKViewController.m; sourceTree = "<group>"; };
+		30D8463B1CCCB8D000003F37 /* PKTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKTableViewCell.h; sourceTree = "<group>"; };
+		30D8463C1CCCB8D000003F37 /* PKTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKTableViewCell.m; sourceTree = "<group>"; };
 		324CB3A1FA6F567D67D536EF /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		3F1035991CCB89180084532C /* XRWaterfallLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XRWaterfallLayout.h; sourceTree = "<group>"; };
 		3F10359A1CCB89180084532C /* XRWaterfallLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XRWaterfallLayout.m; sourceTree = "<group>"; };
@@ -328,6 +334,10 @@
 				3080EBD81CC60B69007A81F8 /* KuanShiViewController.m */,
 				3080EBDD1CC62CCB007A81F8 /* CanShuViewController.h */,
 				3080EBDE1CC62CCB007A81F8 /* CanShuViewController.m */,
+				30D8463B1CCCB8D000003F37 /* PKTableViewCell.h */,
+				30D8463C1CCCB8D000003F37 /* PKTableViewCell.m */,
+				30D846381CCCB8B700003F37 /* PKViewController.h */,
+				30D846391CCCB8B700003F37 /* PKViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -612,6 +622,7 @@
 				304BD8191CC20F9600385489 /* EZCar.xcdatamodeld in Sources */,
 				3F1035A31CCB893A0084532C /* XRImage.m in Sources */,
 				300B15231CC39FB0000793FE /* FirstViewController.m in Sources */,
+				30D8463A1CCCB8B700003F37 /* PKViewController.m in Sources */,
 				302166A41CC49CCD002AB087 /* SecondViewController.m in Sources */,
 				301B43791CC4C59000516B76 /* XingHaoViewController.m in Sources */,
 				3080EBD31CC5D0C9007A81F8 /* XingHaoTableViewCell.m in Sources */,
@@ -621,6 +632,7 @@
 				3F1035A81CCB899C0084532C /* ImageViewController.m in Sources */,
 				3080EBD91CC60B69007A81F8 /* KuanShiViewController.m in Sources */,
 				3F10359B1CCB89180084532C /* XRWaterfallLayout.m in Sources */,
+				30D8463D1CCCB8D000003F37 /* PKTableViewCell.m in Sources */,
 				304BD85C1CC2236F00385489 /* StorageMgr.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
