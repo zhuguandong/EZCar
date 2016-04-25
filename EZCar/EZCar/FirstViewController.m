@@ -19,12 +19,14 @@
 
 @interface FirstViewController ()<UISearchBarDelegate,SDCycleScrollViewDelegate,CLLocationManagerDelegate>{
     BOOL flag;  //用来表示是否已经成功获取到了距离
+    BOOL isLoading;
 }
 
 @property(strong,nonatomic) NSMutableArray *objectsForShow;
 @property(strong, nonatomic) ECSlidingViewController *slidingVC;
 @property(strong,nonatomic) CLLocationManager *locationManager;
 @property (strong,nonatomic) NSMutableArray *objectForJL;
+@property (strong, nonatomic) UIActivityIndicatorView *aiv;
 
 @end
 
@@ -36,7 +38,14 @@
     _objectsForShow = [NSMutableArray new];
     _objectForJL = [NSMutableArray new];
     
+    //下拉刷新
+    UIRefreshControl *rc = [[UIRefreshControl alloc] init];
+    rc.tag = 1001;
+    rc.tintColor = [UIColor darkGrayColor];
+    [rc addTarget:self action:@selector(canToRequestData) forControlEvents:UIControlEventValueChanged];
+    [_tableView addSubview:rc];
     
+    //引导页
     NSMutableArray *paths = [NSMutableArray new];
     [paths addObject:[[NSBundle mainBundle] pathForResource:@"1" ofType:@"jpg"]];
     [paths addObject:[[NSBundle mainBundle] pathForResource:@"2" ofType:@"jpg"]];
@@ -84,7 +93,7 @@
     [demoContainerView addSubview:cycleScrollView];
     
     
-    [self requestData];
+    [self refreshData];
 //    //将是否成功获取距离初始化为NO（没有）
 //    flag = NO;
 //    _tableView.tableFooterView = [[UITableView alloc]init];
@@ -112,6 +121,29 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)refreshData {
+    
+    isLoading = NO;//刚来到页面进行数据初始化时将“是否正在加载数据”指针设为否
+    
+    //在根视图上创建一朵菊花，并转动
+    _aiv = [Utilities getCoverOnView:self.view];
+    [self canToRequestData];
+    
+    
+}
+
+-(void)canToRequestData{
+    //只有当加载任务不在进行时，我们才该同意一个新的加载任务
+    if (!isLoading ) {
+        //当开始执行下拉刷新（包括刚来到页面执行的第一次请求）时将“是否正在加载数据”指针设为是
+        
+        isLoading = YES;
+        
+       
+        [self requestData];
+    }
+}
+
 
 
 - (void)requestData {
@@ -122,13 +154,19 @@
     //让导航条失去交互能力
     self.navigationController.view.userInteractionEnabled = NO;
     //在根视图上创建一朵菊花，并转动
-    UIActivityIndicatorView *avi = [Utilities getCoverOnView:self.view];
+    //UIActivityIndicatorView *avi = [Utilities getCoverOnView:self.view];
     //查询语句
     [query findObjectsInBackgroundWithBlock:^(NSArray * _Nullable objects, NSError * _Nullable error) {
+        
+        isLoading = NO;
+        //根据下标找到刷新器
+        UIRefreshControl *rc = (UIRefreshControl *)[_tableView viewWithTag:1001];
+        [rc endRefreshing];
+        
         //让导航条恢复交互能力
         self.navigationController.view.userInteractionEnabled = YES;
         //停止菊花动画
-        [avi stopAnimating];
+        [_aiv stopAnimating];
         if (!error) {
             _objectsForShow = [NSMutableArray arrayWithArray:objects];
             NSLog(@"objects = %@",_objectsForShow);
