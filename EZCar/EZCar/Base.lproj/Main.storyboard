@@ -1181,6 +1181,20 @@
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="upc-JT-67d">
+                                                    <rect key="frame" x="289" y="54" width="31" height="15"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="60" id="n0j-ZU-kOW"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <variation key="default">
+                                                        <mask key="constraints">
+                                                            <exclude reference="n0j-ZU-kOW"/>
+                                                        </mask>
+                                                    </variation>
+                                                </label>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstAttribute="trailing" secondItem="Oqz-gi-ffm" secondAttribute="trailing" id="L6W-l4-jqs"/>
@@ -1191,10 +1205,13 @@
                                                 <constraint firstItem="VTX-BS-zGU" firstAttribute="top" secondItem="uGv-MI-sFm" secondAttribute="top" constant="8" id="eoU-7L-HrM"/>
                                                 <constraint firstItem="Oqz-gi-ffm" firstAttribute="top" secondItem="VTX-BS-zGU" secondAttribute="bottom" constant="8" id="hPw-LD-OlB"/>
                                                 <constraint firstItem="TgZ-XK-Qgp" firstAttribute="leading" secondItem="uGv-MI-sFm" secondAttribute="leading" constant="8" id="rQh-Sj-3La"/>
+                                                <constraint firstAttribute="bottom" secondItem="upc-JT-67d" secondAttribute="bottom" id="tUV-kv-eEv"/>
                                                 <constraint firstAttribute="bottom" secondItem="TgZ-XK-Qgp" secondAttribute="bottom" id="uCu-bB-z91"/>
+                                                <constraint firstAttribute="trailing" secondItem="upc-JT-67d" secondAttribute="trailing" id="vbt-dn-ge1"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="juli" destination="upc-JT-67d" id="5D1-Jz-eaZ"/>
                                             <outlet property="shopAdress" destination="Oqz-gi-ffm" id="Lxq-Ms-ahP"/>
                                             <outlet property="shopImage" destination="TgZ-XK-Qgp" id="vPk-8w-t6W"/>
                                             <outlet property="shopName" destination="VTX-BS-zGU" id="Swu-8G-9uR"/>

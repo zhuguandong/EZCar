@@ -13,4 +13,5 @@
 @property (weak, nonatomic) IBOutlet UILabel *shopName;
 @property (weak, nonatomic) IBOutlet UILabel *shopAdress;
 
+@property (weak, nonatomic) IBOutlet UILabel *juli;
 @end
