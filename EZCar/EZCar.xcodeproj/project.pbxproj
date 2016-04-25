@@ -59,6 +59,12 @@
 		C47AFFD11CCB6423003BB32B /* ReMenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C47AFFD01CCB6423003BB32B /* ReMenViewController.m */; };
 		C47AFFD41CCB645E003BB32B /* ReMenTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C47AFFD31CCB645E003BB32B /* ReMenTableViewCell.m */; };
 		C47AFFD71CCB7235003BB32B /* ReMenCSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C47AFFD61CCB7235003BB32B /* ReMenCSViewController.m */; };
+		C4EE70881CCDC3A000819E46 /* PhotoCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C4EE70831CCDC3A000819E46 /* PhotoCollectionViewCell.m */; };
+		C4EE70891CCDC3A000819E46 /* PlaceholderTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = C4EE70851CCDC3A000819E46 /* PlaceholderTextView.m */; };
+		C4EE708A1CCDC3A000819E46 /* UserFeedBackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4EE70871CCDC3A000819E46 /* UserFeedBackViewController.m */; };
+		C4EE708D1CCDC52D00819E46 /* FKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4EE708C1CCDC52D00819E46 /* FKViewController.m */; };
+		C4EE70911CCDC75F00819E46 /* 2.4意见反馈_03(1).png in Resources */ = {isa = PBXBuildFile; fileRef = C4EE708E1CCDC75F00819E46 /* 2.4意见反馈_03(1).png */; };
+		C4EE70921CCDC75F00819E46 /* AboutUsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4EE70901CCDC75F00819E46 /* AboutUsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -169,6 +175,17 @@
 		C47AFFD31CCB645E003BB32B /* ReMenTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReMenTableViewCell.m; sourceTree = "<group>"; };
 		C47AFFD51CCB7235003BB32B /* ReMenCSViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReMenCSViewController.h; sourceTree = "<group>"; };
 		C47AFFD61CCB7235003BB32B /* ReMenCSViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReMenCSViewController.m; sourceTree = "<group>"; };
+		C4EE70821CCDC3A000819E46 /* PhotoCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoCollectionViewCell.h; sourceTree = "<group>"; };
+		C4EE70831CCDC3A000819E46 /* PhotoCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoCollectionViewCell.m; sourceTree = "<group>"; };
+		C4EE70841CCDC3A000819E46 /* PlaceholderTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaceholderTextView.h; sourceTree = "<group>"; };
+		C4EE70851CCDC3A000819E46 /* PlaceholderTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaceholderTextView.m; sourceTree = "<group>"; };
+		C4EE70861CCDC3A000819E46 /* UserFeedBackViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserFeedBackViewController.h; sourceTree = "<group>"; };
+		C4EE70871CCDC3A000819E46 /* UserFeedBackViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserFeedBackViewController.m; sourceTree = "<group>"; };
+		C4EE708B1CCDC52D00819E46 /* FKViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FKViewController.h; sourceTree = "<group>"; };
+		C4EE708C1CCDC52D00819E46 /* FKViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FKViewController.m; sourceTree = "<group>"; };
+		C4EE708E1CCDC75F00819E46 /* 2.4意见反馈_03(1).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "2.4意见反馈_03(1).png"; sourceTree = "<group>"; };
+		C4EE708F1CCDC75F00819E46 /* AboutUsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutUsViewController.h; sourceTree = "<group>"; };
+		C4EE70901CCDC75F00819E46 /* AboutUsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutUsViewController.m; sourceTree = "<group>"; };
 		F361D44665A011FD4EACBC70 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -232,6 +249,7 @@
 		304BD80A1CC20F9600385489 /* EZCar */ = {
 			isa = PBXGroup;
 			children = (
+				C4EE70811CCDC37100819E46 /* 意见反馈 */,
 				304BD8611CC223F400385489 /* 3rd */,
 				304BD85F1CC223C700385489 /* Constant */,
 				304BD8441CC2211F00385489 /* Utility */,
@@ -338,6 +356,8 @@
 				30D8463C1CCCB8D000003F37 /* PKTableViewCell.m */,
 				30D846381CCCB8B700003F37 /* PKViewController.h */,
 				30D846391CCCB8B700003F37 /* PKViewController.m */,
+				C4EE708B1CCDC52D00819E46 /* FKViewController.h */,
+				C4EE708C1CCDC52D00819E46 /* FKViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -405,6 +425,22 @@
 				F361D44665A011FD4EACBC70 /* libPods.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C4EE70811CCDC37100819E46 /* 意见反馈 */ = {
+			isa = PBXGroup;
+			children = (
+				C4EE70821CCDC3A000819E46 /* PhotoCollectionViewCell.h */,
+				C4EE70831CCDC3A000819E46 /* PhotoCollectionViewCell.m */,
+				C4EE70841CCDC3A000819E46 /* PlaceholderTextView.h */,
+				C4EE70851CCDC3A000819E46 /* PlaceholderTextView.m */,
+				C4EE70861CCDC3A000819E46 /* UserFeedBackViewController.h */,
+				C4EE70871CCDC3A000819E46 /* UserFeedBackViewController.m */,
+				C4EE708E1CCDC75F00819E46 /* 2.4意见反馈_03(1).png */,
+				C4EE708F1CCDC75F00819E46 /* AboutUsViewController.h */,
+				C4EE70901CCDC75F00819E46 /* AboutUsViewController.m */,
+			);
+			name = "意见反馈";
 			sourceTree = "<group>";
 		};
 		CC7F3F720CAFBCA0DF78BC5F /* Pods */ = {
@@ -529,6 +565,7 @@
 				3FFFEA241CC64F310078655A /* 2.jpg in Resources */,
 				3FFFEA251CC64F310078655A /* 3.jpg in Resources */,
 				3F1035A51CCB89480084532C /* 1.plist in Resources */,
+				C4EE70911CCDC75F00819E46 /* 2.4意见反馈_03(1).png in Resources */,
 				304BD81B1CC20F9600385489 /* Assets.xcassets in Resources */,
 				304BD8161CC20F9600385489 /* Main.storyboard in Resources */,
 			);
@@ -605,11 +642,15 @@
 			files = (
 				A9F967011CC23ABD00A8593A /* SignInViewController.m in Sources */,
 				C47AFFD41CCB645E003BB32B /* ReMenTableViewCell.m in Sources */,
+				C4EE708A1CCDC3A000819E46 /* UserFeedBackViewController.m in Sources */,
 				3F44A9021CC37F4200A6A5AB /* LeftViewController.m in Sources */,
 				3FFFEA1D1CC64F190078655A /* KSGuideManager.m in Sources */,
 				304BD85D1CC2236F00385489 /* Utilities.m in Sources */,
+				C4EE70881CCDC3A000819E46 /* PhotoCollectionViewCell.m in Sources */,
 				3F1F02901CCA03C7003C52FE /* ShopXQViewController.m in Sources */,
+				C4EE70921CCDC75F00819E46 /* AboutUsViewController.m in Sources */,
 				C47AFFD71CCB7235003BB32B /* ReMenCSViewController.m in Sources */,
+				C4EE70891CCDC3A000819E46 /* PlaceholderTextView.m in Sources */,
 				3F1035A11CCB893A0084532C /* XRCollectionViewCell.m in Sources */,
 				301B43761CC4AE4300516B76 /* SecondTableViewCell.m in Sources */,
 				304BD8641CC25E7B00385489 /* TabViewController.m in Sources */,
@@ -624,6 +665,7 @@
 				300B15231CC39FB0000793FE /* FirstViewController.m in Sources */,
 				30D8463A1CCCB8B700003F37 /* PKViewController.m in Sources */,
 				302166A41CC49CCD002AB087 /* SecondViewController.m in Sources */,
+				C4EE708D1CCDC52D00819E46 /* FKViewController.m in Sources */,
 				301B43791CC4C59000516B76 /* XingHaoViewController.m in Sources */,
 				3080EBD31CC5D0C9007A81F8 /* XingHaoTableViewCell.m in Sources */,
 				A9F967041CC24FA600A8593A /* SignUpViewController.m in Sources */,
