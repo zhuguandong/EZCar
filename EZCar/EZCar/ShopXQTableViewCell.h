@@ -12,4 +12,6 @@
 
 @property (weak, nonatomic) IBOutlet UIImageView *carImage;
 @property (weak, nonatomic) IBOutlet UILabel *carName;
+
+
 @end

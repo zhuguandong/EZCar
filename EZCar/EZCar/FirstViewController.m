@@ -43,11 +43,6 @@
     [paths addObject:[[NSBundle mainBundle] pathForResource:@"3" ofType:@"jpg"]];
     [paths addObject:[[NSBundle mainBundle] pathForResource:@"4" ofType:@"jpg"]];
     [[KSGuideManager shared] showGuideViewWithImages:paths];
-
-    
-    
-    
-    
    
     //加上 搜索栏
     UIView *titleView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 200, 35)];//allocate titleView

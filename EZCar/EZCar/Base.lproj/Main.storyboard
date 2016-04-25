@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F1509" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="PnU-cc-D6H">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="PnU-cc-D6H">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
@@ -743,7 +743,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TOe-6A-RjM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1873" y="1142"/>
+            <point key="canvasLocation" x="1947" y="1072"/>
         </scene>
         <!--Xing Hao View Controller-->
         <scene sceneID="fdD-nj-jCr">
@@ -821,7 +821,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0H3-66-a0F" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2079" y="1142"/>
+            <point key="canvasLocation" x="2125" y="1072"/>
         </scene>
         <!--Can Shu View Controller-->
         <scene sceneID="wM2-Xd-l3F">
@@ -893,7 +893,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vZO-lw-RHO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2703" y="1142"/>
+            <point key="canvasLocation" x="2591" y="1072"/>
         </scene>
         <!--Kuan Shi View Controller-->
         <scene sceneID="tjM-FY-r4Y">
@@ -975,7 +975,71 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wbr-88-fJN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2330" y="1142"/>
+            <point key="canvasLocation" x="2352" y="1072"/>
+        </scene>
+        <!--ShopCS View Controller-->
+        <scene sceneID="XVF-JC-epw">
+            <objects>
+                <viewController id="3LR-Vo-SqW" customClass="ShopCSViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Bga-h9-Ykg"/>
+                        <viewControllerLayoutGuide type="bottom" id="WnU-PS-9qa"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="WGc-WQ-Nq0">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="cQp-yE-zXd">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" textLabel="Bx0-Ci-hqV" detailTextLabel="7kf-fx-S3R" style="IBUITableViewCellStyleValue1" id="xmb-uk-xLj">
+                                        <rect key="frame" x="0.0" y="92" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="xmb-uk-xLj" id="CzK-Zl-x2Y">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Bx0-Ci-hqV">
+                                                    <rect key="frame" x="15" y="12" width="32" height="20"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="7kf-fx-S3R">
+                                                    <rect key="frame" x="263" y="12" width="42" height="20"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="3LR-Vo-SqW" id="WTW-fA-8pe"/>
+                                    <outlet property="delegate" destination="3LR-Vo-SqW" id="hsg-Ui-uZU"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="cQp-yE-zXd" firstAttribute="top" secondItem="WGc-WQ-Nq0" secondAttribute="top" id="Ayb-8p-Eg8"/>
+                            <constraint firstAttribute="trailing" secondItem="cQp-yE-zXd" secondAttribute="trailing" id="Gog-hq-pUQ"/>
+                            <constraint firstItem="WnU-PS-9qa" firstAttribute="top" secondItem="cQp-yE-zXd" secondAttribute="bottom" id="VOR-4Q-W7m"/>
+                            <constraint firstItem="cQp-yE-zXd" firstAttribute="leading" secondItem="WGc-WQ-Nq0" secondAttribute="leading" id="hm4-mg-kVZ"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="tableView" destination="cQp-yE-zXd" id="nKP-3c-MN2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ovP-os-GAY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-8" y="1078"/>
         </scene>
         <!--ShopXQ View Controller-->
         <scene sceneID="5GD-Ol-rhd">
@@ -1125,6 +1189,7 @@
                                         <connections>
                                             <outlet property="carImage" destination="eUh-t1-Xm2" id="2QR-Xi-0Zf"/>
                                             <outlet property="carName" destination="1Pv-St-D43" id="Xhg-7o-bxG"/>
+                                            <segue destination="3LR-Vo-SqW" kind="show" id="Hzx-LP-3E9"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -1162,7 +1227,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Y3-en-CeC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="336" y="1199"/>
+            <point key="canvasLocation" x="398" y="1078"/>
         </scene>
         <!--首页-->
         <scene sceneID="QAQ-tx-reg">
@@ -1289,7 +1354,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4W5-Of-a7b" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="720" y="1199"/>
+            <point key="canvasLocation" x="678" y="1078"/>
         </scene>
         <!--Tab View Controller-->
         <scene sceneID="SpO-QV-KaI">
@@ -1348,7 +1413,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gI7-2x-b5T" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="937" y="1199"/>
+            <point key="canvasLocation" x="919" y="1072"/>
         </scene>
         <!--车型对比-->
         <scene sceneID="DQn-j0-TUK">
@@ -1581,7 +1646,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aSX-7o-URF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="865" y="1971"/>
+            <point key="canvasLocation" x="665" y="2069"/>
         </scene>
         <!--壁纸-->
         <scene sceneID="XpQ-RV-bUR">
@@ -1601,7 +1666,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="shF-qi-Z45" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1881" y="1971"/>
+            <point key="canvasLocation" x="1977" y="2069"/>
         </scene>
         <!--品牌大全-->
         <scene sceneID="Om4-2I-vSm">
@@ -1620,7 +1685,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Jg-62-OfG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1685" y="1142"/>
+            <point key="canvasLocation" x="1855" y="1078"/>
         </scene>
         <!--对比-->
         <scene sceneID="HxU-WZ-PDo">
@@ -1640,7 +1705,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="77a-L3-81H" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1204" y="1912"/>
+            <point key="canvasLocation" x="928" y="2069"/>
         </scene>
         <!--壁纸-->
         <scene sceneID="zRy-26-Nmi">
@@ -1660,7 +1725,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DfK-lc-Ja8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1784" y="1971"/>
+            <point key="canvasLocation" x="1810" y="2069"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="oNZ-Fp-Ph4">

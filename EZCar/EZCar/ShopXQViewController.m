@@ -10,6 +10,7 @@
 #import "FirstTableViewCell.h"
 #import "UIImageView+WebCache.h"
 #import "ShopXQTableViewCell.h"
+#import "ShopCSViewController.h"
 
 @interface ShopXQViewController ()
 
@@ -107,14 +108,21 @@
     }];
 }
 
-/*
+
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
+    
+    NSIndexPath *indexPath = _tableView.indexPathForSelectedRow;
+    PFObject *obj = _objectsForShow[indexPath.row];
+    
+     ShopCSViewController *csVC = segue.destinationViewController;
+    csVC.objectForCS = obj;
+    
 }
-*/
+
 
 @end
