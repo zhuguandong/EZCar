@@ -75,14 +75,14 @@
     NSString *photoURLStr = photoFile.url;
     NSURL *photoURL = [NSURL URLWithString:photoURLStr];
     //结合SDWebImage通过图片路径来实现异步加载和缓存（本案中加载到一个图片视图上）
-    [cell.image sd_setImageWithURL:photoURL placeholderImage:[UIImage imageNamed:@"Image-5"]];
+    [cell.image sd_setImageWithURL:photoURL placeholderImage:[UIImage imageNamed:@"bb"]];
     
     PFFile *photoFile2 = obj[@"photo"];
     //获取数据库中某个文件的网络路径1
     NSString *photoURLStr2 = photoFile2.url;
     NSURL *photoURL2 = [NSURL URLWithString:photoURLStr2];
     //结合SDWebImage通过图片路径来实现异步加载和缓存（本案中加载到一个图片视图上）
-    [_photoImage sd_setImageWithURL:photoURL2 placeholderImage:[UIImage imageNamed:@"Image-5"]];
+    [_photoImage sd_setImageWithURL:photoURL2 placeholderImage:[UIImage imageNamed:@"bb"]];
     
     
     

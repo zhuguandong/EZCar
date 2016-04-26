@@ -19,7 +19,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [super viewDidLoad];
-    _tableview.allowsSelection = NO;//让tableview不被按
+//    _tableview.allowsSelection = NO;//让tableview不被按
+    
+        UIImageView *imageView=[[UIImageView alloc]initWithImage:[UIImage imageNamed:@"111"]];
+        imageView.image=[UIImage imageNamed:@"111"];
+        [self.tableview setBackgroundView:imageView];
     
         _name.text = _objectForRM[@"info"][@"kuanshi"];
         _tableview.allowsSelection = NO;//让tableview不被按
@@ -157,7 +161,7 @@
     }
 
    
-    
+    cell.backgroundColor=[UIColor clearColor];
     return cell;
 }
 

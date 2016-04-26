@@ -30,9 +30,9 @@
     [self requestData];
     _tableView.tableFooterView = [[UITableView alloc]init];
     // Do any additional setup after loading the view.
-    UIImageView *imageView=[[UIImageView alloc]initWithImage:[UIImage imageNamed:@"dd"]];
-    imageView.image=[UIImage imageNamed:@"444"];
-    [self.tableView setBackgroundView:imageView];
+//    UIImageView *imageView=[[UIImageView alloc]initWithImage:[UIImage imageNamed:@"dd"]];
+//    imageView.image=[UIImage imageNamed:@"444"];
+//    [self.tableView setBackgroundView:imageView];
     //[imageView release];
 }
 
@@ -126,8 +126,8 @@
     NSURL *photoURL = [NSURL URLWithString:photoURLStr];
     //结合SDWebImage通过图片路径来实现异步加载和缓存（本案中加载到一个图片视图上）
     [cell.logoImage sd_setImageWithURL:photoURL placeholderImage:[UIImage imageNamed:@"Image-7"]];
-     cell.backgroundColor=[UIColor clearColor];
-    cell.carName.textColor = [UIColor whiteColor];
+//     cell.backgroundColor=[UIColor clearColor];
+
     
     
     return cell;

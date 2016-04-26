@@ -22,7 +22,12 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.navigationItem.title = _objectForCS[@"xinghao"];
-    _tableView.allowsSelection = NO;//让tableview不被按
+    
+    UIImageView *imageView=[[UIImageView alloc]initWithImage:[UIImage imageNamed:@"111"]];
+    imageView.image=[UIImage imageNamed:@"111"];
+    [self.tableView setBackgroundView:imageView];
+
+    //_tableView.allowsSelection = NO;//让tableview不被按
     //[_tableView setSeparatorColor:[UIColor grayColor]];  //设置分割线为蓝色
     
     _objiectForShow = @[@"品牌",@"厂商报价",@"上市年份",@"变速箱",@"车身结构",@"车型级别",@"排量",@"最大马力",@"油耗",@"燃料形式",@"驱动方式",@"进气形式",@"助力类型",@"前悬架类型",@"前轮胎规格",@"后轮胎规格",@"备胎规格",@"后悬架类型",@"主/副驾驶安全气囊",@"前/后排头部气囊(气帘)",@"前制动器类型",@"整车质保",@"ASB防抱死",@"方向盘调节",@"最大扭矩转速(rpm)",@"配气机构",@"行李厢容积(L)",@"长*宽*高(mm)",@"发动机",@"供油方式",@"座椅材质",@"环保标准",];
@@ -177,7 +182,7 @@
         default:
             break;
     }
-    
+    cell.backgroundColor=[UIColor clearColor];
     return cell;
 }
 
