@@ -38,13 +38,6 @@
     _objectsForShow = [NSMutableArray new];
     _objectForJL = [NSMutableArray new];
     
-    //下拉刷新
-    UIRefreshControl *rc = [[UIRefreshControl alloc] init];
-    rc.tag = 1001;
-    rc.tintColor = [UIColor darkGrayColor];
-    [rc addTarget:self action:@selector(canToRequestData) forControlEvents:UIControlEventValueChanged];
-    [_tableView addSubview:rc];
-    
     //引导页
     NSMutableArray *paths = [NSMutableArray new];
     [paths addObject:[[NSBundle mainBundle] pathForResource:@"1" ofType:@"jpg"]];
@@ -53,47 +46,45 @@
     [paths addObject:[[NSBundle mainBundle] pathForResource:@"4" ofType:@"jpg"]];
     [[KSGuideManager shared] showGuideViewWithImages:paths];
    
-    //加上 搜索栏
-    UIView *titleView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 200, 35)];//allocate titleView
-    UIColor *color =  self.navigationController.navigationBar.barTintColor;
+    //加上搜索栏
+//    UIView *titleView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 200, 35)];//allocate titleView
+//    UIColor *color =  self.navigationController.navigationBar.barTintColor;
+//    [titleView setBackgroundColor:color];
+//    UISearchBar *searchBar = [[UISearchBar alloc] init];
+//    searchBar.delegate = self;
+//    searchBar.frame = CGRectMake(0, 0, 220, 30);
+//    searchBar.backgroundColor = color;
+//    searchBar.layer.cornerRadius = 18;
+//    searchBar.layer.masksToBounds = YES;
+//    [searchBar.layer setBorderWidth:8];
+//    [searchBar.layer setBorderColor:[UIColor whiteColor].CGColor];//边框白色
+//    searchBar.placeholder = @"宝马4S店";
+//    [titleView addSubview:searchBar];
+//    //Set to titleView
+//    [self.navigationItem.titleView sizeToFit];
+//    self.navigationItem.titleView = titleView;
     
-    [titleView setBackgroundColor:color];
-    
-    UISearchBar *searchBar = [[UISearchBar alloc] init];
-    
-    searchBar.delegate = self;
-    searchBar.frame = CGRectMake(0, 0, 220, 30);
-    searchBar.backgroundColor = color;
-    searchBar.layer.cornerRadius = 18;
-    searchBar.layer.masksToBounds = YES;
-    [searchBar.layer setBorderWidth:8];
-    [searchBar.layer setBorderColor:[UIColor whiteColor].CGColor];  //设置边框为白色
-    searchBar.placeholder = @"宝马4S店";
-    [titleView addSubview:searchBar];
-    //Set to titleView
-    [self.navigationItem.titleView sizeToFit];
-    self.navigationItem.titleView = titleView;
-    
-
+    //轮播
     UIScrollView *demoContainerView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, -64, UI_SCREEN_W, 180 + 64)];
     demoContainerView.contentSize = CGSizeMake(UI_SCREEN_W, 180 + 64);
-    
     [_Upview addSubview:demoContainerView];
-    
-    
     NSArray *imageNames = @[@"aa",@"bb",@"cc", @"dd",@"ee"];
-    
     CGFloat w = self.view.bounds.size.width;
-    
     SDCycleScrollView *cycleScrollView = [SDCycleScrollView cycleScrollViewWithFrame:CGRectMake(0, 64, w, 180) delegate:self placeholderImage:[UIImage imageNamed:@"placeholder"]];
     cycleScrollView.currentPageDotImage = [UIImage imageNamed:@"pageControlCurrentDot"];
     cycleScrollView.pageDotImage = [UIImage imageNamed:@"pageControlDot"];
     cycleScrollView.imageURLStringsGroup = imageNames;
-    
     [demoContainerView addSubview:cycleScrollView];
     
+    //下拉刷新
+    UIRefreshControl *rc = [[UIRefreshControl alloc] init];
+    rc.tag = 1001;
+    rc.tintColor = [UIColor darkGrayColor];
+    [rc addTarget:self action:@selector(canToRequestData) forControlEvents:UIControlEventValueChanged];
+    [_tableView addSubview:rc];
     
     [self refreshData];
+    
 //    //将是否成功获取距离初始化为NO（没有）
 //    flag = NO;
 //    _tableView.tableFooterView = [[UITableView alloc]init];
@@ -138,7 +129,6 @@
         //当开始执行下拉刷新（包括刚来到页面执行的第一次请求）时将“是否正在加载数据”指针设为是
         
         isLoading = YES;
-        
        
         [self requestData];
     }
@@ -147,16 +137,13 @@
 
 
 - (void)requestData {
-    
-    [_objectsForShow removeAllObjects];
-
     PFQuery *query = [PFQuery queryWithClassName:@"Shop"];
     //让导航条失去交互能力
     self.navigationController.view.userInteractionEnabled = NO;
     //在根视图上创建一朵菊花，并转动
     //UIActivityIndicatorView *avi = [Utilities getCoverOnView:self.view];
     //查询语句
-    [query findObjectsInBackgroundWithBlock:^(NSArray * _Nullable objects, NSError * _Nullable error) {
+    [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
         
         isLoading = NO;
         //根据下标找到刷新器
@@ -168,6 +155,7 @@
         //停止菊花动画
         [_aiv stopAnimating];
         if (!error) {
+            [_objectsForShow removeAllObjects];
             _objectsForShow = [NSMutableArray arrayWithArray:objects];
             NSLog(@"objects = %@",_objectsForShow);
             
