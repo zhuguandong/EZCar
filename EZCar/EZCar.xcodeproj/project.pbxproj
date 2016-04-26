@@ -57,6 +57,7 @@
 		4AA9D874EF33A19F94C329C4 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F361D44665A011FD4EACBC70 /* libPods.a */; };
 		A9F967011CC23ABD00A8593A /* SignInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9F967001CC23ABD00A8593A /* SignInViewController.m */; };
 		A9F967041CC24FA600A8593A /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9F967031CC24FA600A8593A /* SignUpViewController.m */; };
+		B2F00E641CCF19ED00F2BA28 /* SouSuoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2F00E631CCF19ED00F2BA28 /* SouSuoViewController.m */; settings = {ASSET_TAGS = (); }; };
 		C47AFFD11CCB6423003BB32B /* ReMenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C47AFFD01CCB6423003BB32B /* ReMenViewController.m */; };
 		C47AFFD41CCB645E003BB32B /* ReMenTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C47AFFD31CCB645E003BB32B /* ReMenTableViewCell.m */; };
 		C47AFFD71CCB7235003BB32B /* ReMenCSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C47AFFD61CCB7235003BB32B /* ReMenCSViewController.m */; };
@@ -172,6 +173,8 @@
 		A9F967001CC23ABD00A8593A /* SignInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignInViewController.m; sourceTree = "<group>"; };
 		A9F967021CC24FA600A8593A /* SignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpViewController.h; sourceTree = "<group>"; };
 		A9F967031CC24FA600A8593A /* SignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpViewController.m; sourceTree = "<group>"; };
+		B2F00E621CCF19ED00F2BA28 /* SouSuoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SouSuoViewController.h; sourceTree = "<group>"; };
+		B2F00E631CCF19ED00F2BA28 /* SouSuoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SouSuoViewController.m; sourceTree = "<group>"; };
 		C47AFFCF1CCB6423003BB32B /* ReMenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReMenViewController.h; sourceTree = "<group>"; };
 		C47AFFD01CCB6423003BB32B /* ReMenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReMenViewController.m; sourceTree = "<group>"; };
 		C47AFFD21CCB645E003BB32B /* ReMenTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReMenTableViewCell.h; sourceTree = "<group>"; };
@@ -363,6 +366,8 @@
 				30D846391CCCB8B700003F37 /* PKViewController.m */,
 				C4EE708B1CCDC52D00819E46 /* FKViewController.h */,
 				C4EE708C1CCDC52D00819E46 /* FKViewController.m */,
+				B2F00E621CCF19ED00F2BA28 /* SouSuoViewController.h */,
+				B2F00E631CCF19ED00F2BA28 /* SouSuoViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -671,6 +676,7 @@
 				30D8463A1CCCB8B700003F37 /* PKViewController.m in Sources */,
 				302166A41CC49CCD002AB087 /* SecondViewController.m in Sources */,
 				C4EE708D1CCDC52D00819E46 /* FKViewController.m in Sources */,
+				B2F00E641CCF19ED00F2BA28 /* SouSuoViewController.m in Sources */,
 				3FCC47271CCE09B400A88726 /* ShopCSViewController.m in Sources */,
 				301B43791CC4C59000516B76 /* XingHaoViewController.m in Sources */,
 				3080EBD31CC5D0C9007A81F8 /* XingHaoTableViewCell.m in Sources */,
@@ -830,6 +836,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = EZCar/PrefixHeader.pch;
 				INFOPLIST_FILE = EZCar/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = EZ.EZCar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -848,6 +855,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = EZCar/PrefixHeader.pch;
 				INFOPLIST_FILE = EZCar/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = EZ.EZCar;
 				PRODUCT_NAME = "$(TARGET_NAME)";

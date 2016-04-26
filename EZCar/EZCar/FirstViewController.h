@@ -13,6 +13,7 @@
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 - (IBAction)menuAction:(UIButton *)sender forEvent:(UIEvent *)event;
+- (IBAction)ToSouSuo:(UIButton *)sender forEvent:(UIEvent *)event;
 
 @property (weak, nonatomic) IBOutlet UIView *Upview;
 

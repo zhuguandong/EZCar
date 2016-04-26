@@ -17,7 +17,7 @@
 #import <ECSlidingViewController/ECSlidingViewController.h>
 
 
-@interface FirstViewController ()<UISearchBarDelegate,SDCycleScrollViewDelegate,CLLocationManagerDelegate>{
+@interface FirstViewController ()<SDCycleScrollViewDelegate,CLLocationManagerDelegate>{
     BOOL flag;  //用来表示是否已经成功获取到了距离
     BOOL isLoading;
 }
@@ -46,23 +46,7 @@
     [paths addObject:[[NSBundle mainBundle] pathForResource:@"4" ofType:@"jpg"]];
     [[KSGuideManager shared] showGuideViewWithImages:paths];
    
-    //加上搜索栏
-//    UIView *titleView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 200, 35)];//allocate titleView
-//    UIColor *color =  self.navigationController.navigationBar.barTintColor;
-//    [titleView setBackgroundColor:color];
-//    UISearchBar *searchBar = [[UISearchBar alloc] init];
-//    searchBar.delegate = self;
-//    searchBar.frame = CGRectMake(0, 0, 220, 30);
-//    searchBar.backgroundColor = color;
-//    searchBar.layer.cornerRadius = 18;
-//    searchBar.layer.masksToBounds = YES;
-//    [searchBar.layer setBorderWidth:8];
-//    [searchBar.layer setBorderColor:[UIColor whiteColor].CGColor];//边框白色
-//    searchBar.placeholder = @"宝马4S店";
-//    [titleView addSubview:searchBar];
-//    //Set to titleView
-//    [self.navigationItem.titleView sizeToFit];
-//    self.navigationItem.titleView = titleView;
+  
     
     //轮播
     UIScrollView *demoContainerView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, -64, UI_SCREEN_W, 180 + 64)];
@@ -318,5 +302,10 @@
 
 - (IBAction)menuAction:(UIButton *)sender forEvent:(UIEvent *)event {
      [[NSNotificationCenter defaultCenter] postNotificationName:@"MenuSwitch" object:nil];
+}
+
+- (IBAction)ToSouSuo:(UIButton *)sender forEvent:(UIEvent *)event {
+    FirstViewController *tabVC = [Utilities getStoryboardInstance:@"Main" byIdentity:@"SS"];
+    [self presentViewController:tabVC animated:YES completion:nil];
 }
 @end
