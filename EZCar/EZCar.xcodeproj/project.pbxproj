@@ -36,6 +36,10 @@
 		3080EBD91CC60B69007A81F8 /* KuanShiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3080EBD81CC60B69007A81F8 /* KuanShiViewController.m */; };
 		3080EBDC1CC61942007A81F8 /* KuanShiTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3080EBDB1CC61942007A81F8 /* KuanShiTableViewCell.m */; };
 		3080EBDF1CC62CCB007A81F8 /* CanShuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3080EBDE1CC62CCB007A81F8 /* CanShuViewController.m */; };
+		30B3E4161CCF4A28002FF124 /* 444.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 30B3E4121CCF4A28002FF124 /* 444.jpg */; };
+		30B3E4171CCF4A28002FF124 /* 333.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 30B3E4131CCF4A28002FF124 /* 333.jpg */; };
+		30B3E4181CCF4A28002FF124 /* 222.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 30B3E4141CCF4A28002FF124 /* 222.jpg */; };
+		30B3E4191CCF4A28002FF124 /* 111.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 30B3E4151CCF4A28002FF124 /* 111.jpg */; };
 		30D8463A1CCCB8B700003F37 /* PKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D846391CCCB8B700003F37 /* PKViewController.m */; };
 		30D8463D1CCCB8D000003F37 /* PKTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D8463C1CCCB8D000003F37 /* PKTableViewCell.m */; };
 		3F10359B1CCB89180084532C /* XRWaterfallLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F10359A1CCB89180084532C /* XRWaterfallLayout.m */; };
@@ -57,7 +61,7 @@
 		4AA9D874EF33A19F94C329C4 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F361D44665A011FD4EACBC70 /* libPods.a */; };
 		A9F967011CC23ABD00A8593A /* SignInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9F967001CC23ABD00A8593A /* SignInViewController.m */; };
 		A9F967041CC24FA600A8593A /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9F967031CC24FA600A8593A /* SignUpViewController.m */; };
-		B2F00E641CCF19ED00F2BA28 /* SouSuoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2F00E631CCF19ED00F2BA28 /* SouSuoViewController.m */; settings = {ASSET_TAGS = (); }; };
+		B2F00E641CCF19ED00F2BA28 /* SouSuoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2F00E631CCF19ED00F2BA28 /* SouSuoViewController.m */; };
 		C47AFFD11CCB6423003BB32B /* ReMenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C47AFFD01CCB6423003BB32B /* ReMenViewController.m */; };
 		C47AFFD41CCB645E003BB32B /* ReMenTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C47AFFD31CCB645E003BB32B /* ReMenTableViewCell.m */; };
 		C47AFFD71CCB7235003BB32B /* ReMenCSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C47AFFD61CCB7235003BB32B /* ReMenCSViewController.m */; };
@@ -138,6 +142,10 @@
 		3080EBDB1CC61942007A81F8 /* KuanShiTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KuanShiTableViewCell.m; sourceTree = "<group>"; };
 		3080EBDD1CC62CCB007A81F8 /* CanShuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CanShuViewController.h; sourceTree = "<group>"; };
 		3080EBDE1CC62CCB007A81F8 /* CanShuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CanShuViewController.m; sourceTree = "<group>"; };
+		30B3E4121CCF4A28002FF124 /* 444.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 444.jpg; sourceTree = "<group>"; };
+		30B3E4131CCF4A28002FF124 /* 333.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 333.jpg; sourceTree = "<group>"; };
+		30B3E4141CCF4A28002FF124 /* 222.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 222.jpg; sourceTree = "<group>"; };
+		30B3E4151CCF4A28002FF124 /* 111.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 111.jpg; sourceTree = "<group>"; };
 		30D846381CCCB8B700003F37 /* PKViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKViewController.h; sourceTree = "<group>"; };
 		30D846391CCCB8B700003F37 /* PKViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKViewController.m; sourceTree = "<group>"; };
 		30D8463B1CCCB8D000003F37 /* PKTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKTableViewCell.h; sourceTree = "<group>"; };
@@ -413,9 +421,13 @@
 			isa = PBXGroup;
 			children = (
 				3FFFEA1F1CC64F310078655A /* 1.jpg */,
+				3FFFEA221CC64F310078655A /* 4.jpg */,
 				3FFFEA201CC64F310078655A /* 2.jpg */,
 				3FFFEA211CC64F310078655A /* 3.jpg */,
-				3FFFEA221CC64F310078655A /* 4.jpg */,
+				30B3E4121CCF4A28002FF124 /* 444.jpg */,
+				30B3E4131CCF4A28002FF124 /* 333.jpg */,
+				30B3E4141CCF4A28002FF124 /* 222.jpg */,
+				30B3E4151CCF4A28002FF124 /* 111.jpg */,
 			);
 			name = image;
 			sourceTree = "<group>";
@@ -568,8 +580,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30B3E4161CCF4A28002FF124 /* 444.jpg in Resources */,
+				30B3E4191CCF4A28002FF124 /* 111.jpg in Resources */,
+				30B3E4181CCF4A28002FF124 /* 222.jpg in Resources */,
 				304BD81E1CC20F9600385489 /* LaunchScreen.storyboard in Resources */,
 				3FFFEA261CC64F310078655A /* 4.jpg in Resources */,
+				30B3E4171CCF4A28002FF124 /* 333.jpg in Resources */,
 				3F1035A21CCB893A0084532C /* XRCollectionViewCell.xib in Resources */,
 				3FFFEA231CC64F310078655A /* 1.jpg in Resources */,
 				3FFFEA241CC64F310078655A /* 2.jpg in Resources */,
