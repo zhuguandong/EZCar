@@ -44,12 +44,12 @@ static NSString *identifier = @"Cell";
     
     button.hidden = YES;
     [button setFrame:CGRectMake(0, 0, 200, 44)];
-    [button setTitle:@"Next" forState:UIControlStateNormal];
-    [button setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
+    [button setTitle:@"进入 》》" forState:UIControlStateNormal];
+    [button setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [button.layer setCornerRadius:5];
-    [button.layer setBorderColor:[UIColor grayColor].CGColor];
+    [button.layer setBorderColor:[UIColor clearColor].CGColor];
     [button.layer setBorderWidth:1.0f];
-    [button setBackgroundColor:[UIColor lightTextColor]];
+    [button setBackgroundColor:[UIColor clearColor]];
     
     self.button = button;
     
