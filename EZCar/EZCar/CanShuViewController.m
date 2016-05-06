@@ -207,7 +207,7 @@
         PFObject *obj = [PFObject objectWithClassName:@"Vs"];
         PFUser *user = [PFUser currentUser];
         obj[@"user"] = user;
-        obj[@"activity"] = _object;
+        obj[@"canshu"] = _object;
         
         
         UIActivityIndicatorView *avi =[Utilities getCoverOnView:self.view];
