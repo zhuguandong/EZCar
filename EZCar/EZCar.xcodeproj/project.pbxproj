@@ -36,6 +36,7 @@
 		3080EBD91CC60B69007A81F8 /* KuanShiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3080EBD81CC60B69007A81F8 /* KuanShiViewController.m */; };
 		3080EBDC1CC61942007A81F8 /* KuanShiTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3080EBDB1CC61942007A81F8 /* KuanShiTableViewCell.m */; };
 		3080EBDF1CC62CCB007A81F8 /* CanShuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3080EBDE1CC62CCB007A81F8 /* CanShuViewController.m */; };
+		30B230641CDC491B006545B9 /* ShouCangViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30B230631CDC491B006545B9 /* ShouCangViewController.m */; };
 		30B3E4161CCF4A28002FF124 /* 444.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 30B3E4121CCF4A28002FF124 /* 444.jpg */; };
 		30B3E4171CCF4A28002FF124 /* 333.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 30B3E4131CCF4A28002FF124 /* 333.jpg */; };
 		30B3E4181CCF4A28002FF124 /* 222.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 30B3E4141CCF4A28002FF124 /* 222.jpg */; };
@@ -142,6 +143,8 @@
 		3080EBDB1CC61942007A81F8 /* KuanShiTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KuanShiTableViewCell.m; sourceTree = "<group>"; };
 		3080EBDD1CC62CCB007A81F8 /* CanShuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CanShuViewController.h; sourceTree = "<group>"; };
 		3080EBDE1CC62CCB007A81F8 /* CanShuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CanShuViewController.m; sourceTree = "<group>"; };
+		30B230621CDC491B006545B9 /* ShouCangViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShouCangViewController.h; sourceTree = "<group>"; };
+		30B230631CDC491B006545B9 /* ShouCangViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShouCangViewController.m; sourceTree = "<group>"; };
 		30B3E4121CCF4A28002FF124 /* 444.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 444.jpg; sourceTree = "<group>"; };
 		30B3E4131CCF4A28002FF124 /* 333.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 333.jpg; sourceTree = "<group>"; };
 		30B3E4141CCF4A28002FF124 /* 222.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 222.jpg; sourceTree = "<group>"; };
@@ -376,6 +379,8 @@
 				C4EE708C1CCDC52D00819E46 /* FKViewController.m */,
 				B2F00E621CCF19ED00F2BA28 /* SouSuoViewController.h */,
 				B2F00E631CCF19ED00F2BA28 /* SouSuoViewController.m */,
+				30B230621CDC491B006545B9 /* ShouCangViewController.h */,
+				30B230631CDC491B006545B9 /* ShouCangViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -695,6 +700,7 @@
 				B2F00E641CCF19ED00F2BA28 /* SouSuoViewController.m in Sources */,
 				3FCC47271CCE09B400A88726 /* ShopCSViewController.m in Sources */,
 				301B43791CC4C59000516B76 /* XingHaoViewController.m in Sources */,
+				30B230641CDC491B006545B9 /* ShouCangViewController.m in Sources */,
 				3080EBD31CC5D0C9007A81F8 /* XingHaoTableViewCell.m in Sources */,
 				A9F967041CC24FA600A8593A /* SignUpViewController.m in Sources */,
 				3F1F02931CCA0E17003C52FE /* ShopXQTableViewCell.m in Sources */,

@@ -11,6 +11,7 @@
 @interface CanShuViewController : UIViewController
 @property(strong,nonatomic) PFObject *objectForCS;
 
+- (IBAction)addAction:(UIBarButtonItem *)sender;
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 @end

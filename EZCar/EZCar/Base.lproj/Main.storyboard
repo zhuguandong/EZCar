@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="PnU-cc-D6H">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F1509" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="PnU-cc-D6H">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
@@ -149,7 +149,7 @@
                                 <rect key="frame" x="49" y="217" width="115" height="32"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
-                                <state key="normal" title="我的收藏">
+                                <state key="normal" title="对比收藏">
                                     <color key="titleColor" red="0.7036377399" green="0.25930377399999999" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -157,6 +157,9 @@
                                         <integer key="value" value="7"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="kcS-Jw-ZKz" kind="show" id="Qju-tM-cLk"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EwS-p4-fEs">
                                 <rect key="frame" x="77" y="62" width="58" height="58"/>
@@ -222,6 +225,58 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xTD-t6-aOr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2816" y="-256"/>
+        </scene>
+        <!--对比收藏-->
+        <scene sceneID="3Hq-Sd-Hjb">
+            <objects>
+                <viewController id="wQ4-kY-grc" customClass="ShouCangViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="e1b-lc-vkW"/>
+                        <viewControllerLayoutGuide type="bottom" id="tEY-C9-RR5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8Ty-Pe-jtX">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="que-xH-aiD">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" id="WOO-It-wXh">
+                                        <rect key="frame" x="0.0" y="92" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="WOO-It-wXh" id="cuW-eI-UcD">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="wQ4-kY-grc" id="irX-JX-xXG"/>
+                                    <outlet property="delegate" destination="wQ4-kY-grc" id="KzL-gu-v9W"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="tEY-C9-RR5" firstAttribute="top" secondItem="que-xH-aiD" secondAttribute="bottom" id="fpN-AL-5mp"/>
+                            <constraint firstAttribute="trailing" secondItem="que-xH-aiD" secondAttribute="trailing" id="irG-SW-YJB"/>
+                            <constraint firstItem="que-xH-aiD" firstAttribute="leading" secondItem="8Ty-Pe-jtX" secondAttribute="leading" id="kO8-lz-Wet"/>
+                            <constraint firstItem="que-xH-aiD" firstAttribute="top" secondItem="8Ty-Pe-jtX" secondAttribute="top" id="zYM-eV-uX1"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="对比收藏" id="KKr-a3-dS3">
+                        <barButtonItem key="leftBarButtonItem" systemItem="reply" id="aOd-ib-qyo">
+                            <connections>
+                                <action selector="backAction:" destination="wQ4-kY-grc" id="ZVm-m7-QMI"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cgy-1G-Fhe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3531" y="77"/>
         </scene>
         <!--Re Men View Controller-->
         <scene sceneID="i04-Xg-JNc">
@@ -326,7 +381,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rLd-cX-p1z" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3153" y="-251"/>
+            <point key="canvasLocation" x="3154" y="-568"/>
         </scene>
         <!--Re MenCS View Controller-->
         <scene sceneID="zYC-Fa-SFq">
@@ -432,7 +487,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sgO-BH-2yv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3533" y="-251"/>
+            <point key="canvasLocation" x="3489" y="-568"/>
         </scene>
         <!--登录-->
         <scene sceneID="tne-QT-ifu">
@@ -917,7 +972,13 @@
                             </mask>
                         </variation>
                     </view>
-                    <navigationItem key="navigationItem" id="bX3-WF-aN0"/>
+                    <navigationItem key="navigationItem" id="bX3-WF-aN0">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="4bk-3d-SQe">
+                            <connections>
+                                <action selector="addAction:" destination="Q1E-21-6oc" id="WIq-l5-4zZ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <nil key="simulatedBottomBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
@@ -1978,6 +2039,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bPS-vG-alp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2295" y="-256"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="K8O-Rd-qlS">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="kcS-Jw-ZKz" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="IXd-r5-thE">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="wQ4-kY-grc" kind="relationship" relationship="rootViewController" id="Pkw-RG-d9u"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ItR-gY-wzV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3172" y="77"/>
         </scene>
     </scenes>
     <resources>

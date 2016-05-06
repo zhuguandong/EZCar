@@ -200,4 +200,63 @@
 
 
 
+- (IBAction)addAction:(UIBarButtonItem *)sender {
+    PFUser *currentUser = [PFUser currentUser];
+    NSLog(@"currentUser = %@", currentUser);
+    if (currentUser) {
+        PFObject *obj = [PFObject objectWithClassName:@"Vs"];
+        PFUser *user = [PFUser currentUser];
+        obj[@"user"] = user;
+        obj[@"activity"] = _object;
+        
+        
+        UIActivityIndicatorView *avi =[Utilities getCoverOnView:self.view];
+        self.navigationController.view.userInteractionEnabled = NO;
+        
+        [obj saveInBackgroundWithBlock:^(BOOL succeeded, NSError * _Nullable error) {
+            [avi stopAnimating];
+            self.navigationController.view.userInteractionEnabled =YES;
+            
+            if (succeeded) {
+                //创建刷新“我的预定”页面的通知
+                //NSNotification *note = [NSNotification notificationWithName:@"RefreshMyBooking" object:nil];
+                //结合线程触发上述通知（让通知要完成的事先执行完以后执行触发通知这一行代码后面的代码）
+                //[[NSNotificationCenter defaultCenter] performSelectorOnMainThread:@selector(postNotification:) withObject:note waitUntilDone:YES];
+                
+                UIAlertController *alertView = [UIAlertController alertControllerWithTitle:@"添加对比成功！" message:nil preferredStyle:UIAlertControllerStyleAlert];
+                UIAlertAction *ok = [UIAlertAction actionWithTitle:@"朕知晓" style:UIAlertActionStyleCancel handler:nil];
+                [alertView addAction:ok];
+                
+                [self presentViewController:alertView animated:YES completion:nil];
+                
+            }else {
+                NSLog(@"Error: %@",error.description);
+                [Utilities popUpAlertViewWithMsg:@"网络繁忙，稍后再试" andTitle:nil onView:self];
+                
+                
+            }
+            
+        }];
+        
+    }else{
+        
+        NSLog(@"当前用户没登录");
+        UIAlertController *alertView = [UIAlertController alertControllerWithTitle:@"当前未登录，是否前往登录？" message:nil preferredStyle:UIAlertControllerStyleAlert];
+        UIAlertAction *ConfirmAction = [UIAlertAction actionWithTitle:@"确认" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action){
+            UINavigationController *tabVC = [Utilities getStoryboardInstance:@"Main" byIdentity:@"sigin"];
+            [self presentViewController:tabVC animated:YES completion:nil];
+            
+            
+        }];
+        UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:nil];
+        
+        [alertView addAction:ConfirmAction];
+        [alertView addAction:cancelAction];
+        
+        [self presentViewController:alertView animated:YES completion:nil];
+        
+        
+    }
+
+}
 @end
