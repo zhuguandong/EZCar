@@ -19,6 +19,7 @@
     [super viewDidLoad];
     [self requestData];
     _ShouCangForShow = [NSMutableArray new];
+    _tableView.tableFooterView = [[UITableView alloc]init];
     // Do any additional setup after loading the view.
 }
 

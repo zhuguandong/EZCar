@@ -13,6 +13,7 @@
 
 @property (strong, nonatomic) PFObject *object;
 @property NSArray *objiectForShow;
+@property (nonatomic, strong)UIButton *rightBtn;//右按钮
 
 @end
 
@@ -33,8 +34,89 @@
     _objiectForShow = @[@"品牌",@"厂商报价",@"上市年份",@"变速箱",@"车身结构",@"车型级别",@"排量",@"最大马力",@"油耗",@"燃料形式",@"驱动方式",@"进气形式",@"助力类型",@"前悬架类型",@"前轮胎规格",@"后轮胎规格",@"备胎规格",@"后悬架类型",@"主/副驾驶安全气囊",@"前/后排头部气囊(气帘)",@"前制动器类型",@"整车质保",@"ASB防抱死",@"方向盘调节",@"最大扭矩转速(rpm)",@"配气机构",@"行李厢容积(L)",@"长*宽*高(mm)",@"发动机",@"供油方式",@"座椅材质",@"环保标准",];
     
     //[self request];
+    UIBarButtonItem *rightBarButton = [[UIBarButtonItem alloc] initWithCustomView:self.rightBtn];
+    
+    //[rightBarButton addTarget:self action:@selector(setviewinfo) forControlEvents:UIControlEventTouchUpInside];
+    
+    [self.navigationItem setRightBarButtonItem:rightBarButton];
+
     
 }
+
+//rightBtn的懒加载
+- (UIButton *)rightBtn
+{
+    if (_rightBtn == nil) {
+        _rightBtn = [[UIButton alloc] initWithFrame:CGRectMake(180, 0, 30, 30)];
+        //[_rightBtn setBackgroundImage:[UIImage imageNamed:@"buttonbar_action@2x"] forState:UIControlStateNormal];
+        [_rightBtn setTitleColor:[UIColor grayColor] forState:UIControlStateNormal];
+        [_rightBtn setTitle:@"+" forState:UIControlStateNormal];
+        _rightBtn.titleLabel.font = [UIFont systemFontOfSize:30];
+        [_rightBtn setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
+
+        [_rightBtn addTarget:self action:@selector(addAction) forControlEvents:UIControlEventTouchUpInside];
+    }
+    return _rightBtn;
+}
+-(void)addAction{
+    PFUser *currentUser = [PFUser currentUser];
+    NSLog(@"currentUser = %@", currentUser);
+    if (currentUser) {
+        PFObject *obj = [PFObject objectWithClassName:@"Vs"];
+        PFUser *user = [PFUser currentUser];
+        obj[@"user"] = user;
+        obj[@"canshu"] = _objectForCS;
+        
+        
+        UIActivityIndicatorView *avi =[Utilities getCoverOnView:self.view];
+        self.navigationController.view.userInteractionEnabled = NO;
+        
+        [obj saveInBackgroundWithBlock:^(BOOL succeeded, NSError * _Nullable error) {
+            [avi stopAnimating];
+            self.navigationController.view.userInteractionEnabled =YES;
+            
+            if (succeeded) {
+                //创建刷新“我的预定”页面的通知
+                //NSNotification *note = [NSNotification notificationWithName:@"RefreshMyBooking" object:nil];
+                //结合线程触发上述通知（让通知要完成的事先执行完以后执行触发通知这一行代码后面的代码）
+                //[[NSNotificationCenter defaultCenter] performSelectorOnMainThread:@selector(postNotification:) withObject:note waitUntilDone:YES];
+                
+                UIAlertController *alertView = [UIAlertController alertControllerWithTitle:@"添加对比成功！" message:nil preferredStyle:UIAlertControllerStyleAlert];
+                UIAlertAction *ok = [UIAlertAction actionWithTitle:@"朕知晓" style:UIAlertActionStyleCancel handler:nil];
+                [alertView addAction:ok];
+                
+                [self presentViewController:alertView animated:YES completion:nil];
+                
+            }else {
+                NSLog(@"Error: %@",error.description);
+                [Utilities popUpAlertViewWithMsg:@"网络繁忙，稍后再试" andTitle:nil onView:self];
+                
+                
+            }
+            
+        }];
+        
+    }else{
+        
+        NSLog(@"当前用户没登录");
+        UIAlertController *alertView = [UIAlertController alertControllerWithTitle:@"当前未登录，是否前往登录？" message:nil preferredStyle:UIAlertControllerStyleAlert];
+        UIAlertAction *ConfirmAction = [UIAlertAction actionWithTitle:@"确认" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action){
+            UINavigationController *tabVC = [Utilities getStoryboardInstance:@"Main" byIdentity:@"sigin"];
+            [self presentViewController:tabVC animated:YES completion:nil];
+            
+            
+        }];
+        UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:nil];
+        
+        [alertView addAction:ConfirmAction];
+        [alertView addAction:cancelAction];
+        
+        [self presentViewController:alertView animated:YES completion:nil];
+        
+        
+    }
+}
+
 
 
 //-(void)request{

@@ -86,7 +86,10 @@
 //    //打开定位开关
 //    [_locationManager startUpdatingLocation];
 //   
-//    
+//   //导航条不透明
+    self.navigationController.navigationBar.translucent = NO;
+    self.edgesForExtendedLayout = UIRectEdgeNone;
+    
 }
 
 - (void)didReceiveMemoryWarning {
