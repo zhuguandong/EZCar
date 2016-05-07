@@ -79,5 +79,40 @@
 
 
 
+- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
+    return YES;
+}
 
+- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    return YES;//返回是否同意tabliview中的行被移动数据
+}
+
+- (NSString *)tableView:(UITableView *)tableView titleForDeleteConfirmationButtonForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    return @"删除";
+    
+}
+
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    if (editingStyle == UITableViewCellEditingStyleDelete) {
+        
+        //[_ShouCangForShow removeObjectAtIndex:indexPath.row]; //本地数组删除
+        
+        //[tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade]; //本地行数删除
+        
+        
+        [_ShouCangForShow[indexPath.row] deleteInBackground];
+        [_ShouCangForShow removeObjectAtIndex:indexPath.row]; //本地数组删除
+        //[self requestData];
+        [tableView reloadData];
+
+        
+    }
+    else if (editingStyle == UITableViewCellEditingStyleInsert) {
+        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view.
+    }
+}
+//[ShouCangForShow removeObjectAtIndex:indexPath.row];
 @end

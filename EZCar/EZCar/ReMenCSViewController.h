@@ -14,5 +14,6 @@
 - (IBAction)BackAction:(UIButton *)sender forEvent:(UIEvent *)event;
 @property (weak, nonatomic) IBOutlet UILabel *name;
 
+- (IBAction)addAction:(UIButton *)sender forEvent:(UIEvent *)event;
 
 @end
