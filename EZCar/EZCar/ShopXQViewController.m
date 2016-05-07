@@ -26,11 +26,9 @@
      //Do any additional setup after loading the view.
     NSString *shopName =_obj[@"shopname"];
     NSString *shopAdress = _obj[@"address"];
-    NSString *quYu = _obj[@"quming"];
     NSString *shopPhone = _obj[@"tel"];
     NSString *miaoShu = _obj[@"describe"];
     _shopName.text = [NSString stringWithFormat:@"店名:%@",shopName];
-     _quYu.text = [NSString stringWithFormat:@"区域:%@",quYu];
     _shopAdress.text = [NSString stringWithFormat:@"地址:%@",shopAdress];;
     _shopPhone.text = [NSString stringWithFormat:@"联系电话:%@",shopPhone];;
     _miaoShu.text = [NSString stringWithFormat:@"描述:%@",miaoShu];;

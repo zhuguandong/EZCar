@@ -237,6 +237,8 @@
     
     NSString *shopName = obj[@"shopname"];
     NSString *address = obj[@"address"];
+    NSString *quYu = obj[@"quming"];
+    cell.juli.text = quYu;
     cell.shopName.text = shopName;
     cell.shopAdress.text = address;
     

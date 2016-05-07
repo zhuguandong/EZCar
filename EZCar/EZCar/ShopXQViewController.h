@@ -14,7 +14,6 @@
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (weak, nonatomic) IBOutlet UIImageView *shopImage;
-@property (weak, nonatomic) IBOutlet UILabel *quYu;
 @property (weak, nonatomic) IBOutlet UILabel *shopName;
 @property (weak, nonatomic) IBOutlet UILabel *shopAdress;
 @property (weak, nonatomic) IBOutlet UILabel *shopPhone;
