@@ -218,10 +218,7 @@
             self.navigationController.view.userInteractionEnabled =YES;
             
             if (succeeded) {
-                //创建刷新“我的预定”页面的通知
-                //NSNotification *note = [NSNotification notificationWithName:@"RefreshMyBooking" object:nil];
-                //结合线程触发上述通知（让通知要完成的事先执行完以后执行触发通知这一行代码后面的代码）
-                //[[NSNotificationCenter defaultCenter] performSelectorOnMainThread:@selector(postNotification:) withObject:note waitUntilDone:YES];
+                
                 
                 UIAlertController *alertView = [UIAlertController alertControllerWithTitle:@"添加对比成功！" message:nil preferredStyle:UIAlertControllerStyleAlert];
                 UIAlertAction *ok = [UIAlertAction actionWithTitle:@"朕知晓" style:UIAlertActionStyleCancel handler:nil];

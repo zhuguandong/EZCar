@@ -41,9 +41,29 @@
         [avi stopAnimating];
         if (!error) {
             NSLog(@"objects = %@",objects);
+            if (objects.count == 0 ) {
+                UIAlertController *alertView = [UIAlertController alertControllerWithTitle:@"您当前没有任何收藏哦～" message:nil preferredStyle:UIAlertControllerStyleAlert];
+                UIAlertAction *ConfirmAction = [UIAlertAction actionWithTitle:@"确认" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action){
+                    
+                    [self dismissViewControllerAnimated:YES completion:nil];
+                    
+                }];
+               
+                
+                [alertView addAction:ConfirmAction];
+                
+                
+                [self presentViewController:alertView animated:YES completion:nil];
+                
+                
+            }else {
+                _ShouCangForShow = [NSMutableArray arrayWithArray:objects];
+                [_tableView reloadData];
+            }
+                
             
-            _ShouCangForShow = [NSMutableArray arrayWithArray:objects];
-            [_tableView reloadData];
+            
+        
             
         }else {
             NSLog(@"Error: %@",error.userInfo);
