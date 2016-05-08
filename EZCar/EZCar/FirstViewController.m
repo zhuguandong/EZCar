@@ -13,6 +13,8 @@
 #import "KSGuideManager.h"
 #import "ShopXQViewController.h"
 #import <CoreLocation/CoreLocation.h>
+#import "Public.h"
+#import "ViewController.h"
 
 #import <ECSlidingViewController/ECSlidingViewController.h>
 
@@ -312,5 +314,17 @@
 - (IBAction)ToSouSuo:(UIButton *)sender forEvent:(UIEvent *)event {
     FirstViewController *tabVC = [Utilities getStoryboardInstance:@"Main" byIdentity:@"SS"];
     [self presentViewController:tabVC animated:YES completion:nil];
+}
+
+- (IBAction)chooseAction:(UIBarButtonItem *)sender {
+    ViewController *vc=[[ViewController alloc]init];
+    
+    [vc returnText:^(NSString *cityname) {
+        //[_chooseAction setTitle:cityname forState:UIControlStateNormal];
+        [_chooseAction setTitle:cityname];
+        //_chooseAction.titleLabel.text=cityname;
+    }];
+    
+    [self.navigationController pushViewController:vc animated:NO];
 }
 @end

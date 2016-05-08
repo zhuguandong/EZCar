@@ -41,6 +41,28 @@
 		30B3E4171CCF4A28002FF124 /* 333.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 30B3E4131CCF4A28002FF124 /* 333.jpg */; };
 		30B3E4181CCF4A28002FF124 /* 222.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 30B3E4141CCF4A28002FF124 /* 222.jpg */; };
 		30B3E4191CCF4A28002FF124 /* 111.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 30B3E4151CCF4A28002FF124 /* 111.jpg */; };
+		30C132281CDF2D33006FD2F5 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30C132271CDF2D33006FD2F5 /* MapKit.framework */; };
+		30C132481CDF3241006FD2F5 /* ChineseInclude.m in Sources */ = {isa = PBXBuildFile; fileRef = 30C132391CDF3241006FD2F5 /* ChineseInclude.m */; };
+		30C132491CDF3241006FD2F5 /* ChineseToPinyinResource.m in Sources */ = {isa = PBXBuildFile; fileRef = 30C1323B1CDF3241006FD2F5 /* ChineseToPinyinResource.m */; };
+		30C1324A1CDF3241006FD2F5 /* HanyuPinyinOutputFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = 30C1323D1CDF3241006FD2F5 /* HanyuPinyinOutputFormat.m */; };
+		30C1324B1CDF3241006FD2F5 /* NSString+PinYin4Cocoa.m in Sources */ = {isa = PBXBuildFile; fileRef = 30C1323F1CDF3241006FD2F5 /* NSString+PinYin4Cocoa.m */; };
+		30C1324C1CDF3241006FD2F5 /* PinyinFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 30C132421CDF3241006FD2F5 /* PinyinFormatter.m */; };
+		30C1324D1CDF3241006FD2F5 /* PinYinForObjc.m in Sources */ = {isa = PBXBuildFile; fileRef = 30C132441CDF3241006FD2F5 /* PinYinForObjc.m */; };
+		30C1324E1CDF3241006FD2F5 /* PinyinHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 30C132461CDF3241006FD2F5 /* PinyinHelper.m */; };
+		30C1324F1CDF3241006FD2F5 /* unicode_to_hanyu_pinyin.txt in Resources */ = {isa = PBXBuildFile; fileRef = 30C132471CDF3241006FD2F5 /* unicode_to_hanyu_pinyin.txt */; };
+		30C132521CDF324C006FD2F5 /* NSMutableArray+FilterElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 30C132511CDF324C006FD2F5 /* NSMutableArray+FilterElement.m */; };
+		30C132601CDF3264006FD2F5 /* CityViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 30C132541CDF3264006FD2F5 /* CityViewCell.m */; };
+		30C132611CDF3264006FD2F5 /* CityViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 30C132551CDF3264006FD2F5 /* CityViewCell.xib */; };
+		30C132621CDF3264006FD2F5 /* HeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 30C132571CDF3264006FD2F5 /* HeadView.m */; };
+		30C132631CDF3264006FD2F5 /* HeadView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 30C132581CDF3264006FD2F5 /* HeadView.xib */; };
+		30C132641CDF3264006FD2F5 /* ItemViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 30C1325A1CDF3264006FD2F5 /* ItemViewCell.m */; };
+		30C132651CDF3264006FD2F5 /* ItemViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 30C1325B1CDF3264006FD2F5 /* ItemViewCell.xib */; };
+		30C132661CDF3264006FD2F5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30C1325D1CDF3264006FD2F5 /* ViewController.m */; };
+		30C132671CDF3264006FD2F5 /* ZWCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 30C1325F1CDF3264006FD2F5 /* ZWCollectionViewFlowLayout.m */; };
+		30C1326E1CDF3273006FD2F5 /* NBSearchController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30C132691CDF3273006FD2F5 /* NBSearchController.m */; };
+		30C1326F1CDF3273006FD2F5 /* NBSearchResultController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30C1326B1CDF3273006FD2F5 /* NBSearchResultController.m */; };
+		30C132701CDF3273006FD2F5 /* SearchResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 30C1326D1CDF3273006FD2F5 /* SearchResult.m */; };
+		30C132731CDF3F78006FD2F5 /* citydict.plist in Resources */ = {isa = PBXBuildFile; fileRef = 30C132711CDF3F78006FD2F5 /* citydict.plist */; };
 		30D8463A1CCCB8B700003F37 /* PKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D846391CCCB8B700003F37 /* PKViewController.m */; };
 		30D8463D1CCCB8D000003F37 /* PKTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D8463C1CCCB8D000003F37 /* PKTableViewCell.m */; };
 		3F10359B1CCB89180084532C /* XRWaterfallLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F10359A1CCB89180084532C /* XRWaterfallLayout.m */; };
@@ -149,6 +171,46 @@
 		30B3E4131CCF4A28002FF124 /* 333.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 333.jpg; sourceTree = "<group>"; };
 		30B3E4141CCF4A28002FF124 /* 222.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 222.jpg; sourceTree = "<group>"; };
 		30B3E4151CCF4A28002FF124 /* 111.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 111.jpg; sourceTree = "<group>"; };
+		30C132271CDF2D33006FD2F5 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		30C132381CDF3241006FD2F5 /* ChineseInclude.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ChineseInclude.h; path = "城市选择/Lib/PinYin/ChineseInclude.h"; sourceTree = SOURCE_ROOT; };
+		30C132391CDF3241006FD2F5 /* ChineseInclude.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ChineseInclude.m; path = "城市选择/Lib/PinYin/ChineseInclude.m"; sourceTree = SOURCE_ROOT; };
+		30C1323A1CDF3241006FD2F5 /* ChineseToPinyinResource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ChineseToPinyinResource.h; path = "城市选择/Lib/PinYin/ChineseToPinyinResource.h"; sourceTree = SOURCE_ROOT; };
+		30C1323B1CDF3241006FD2F5 /* ChineseToPinyinResource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ChineseToPinyinResource.m; path = "城市选择/Lib/PinYin/ChineseToPinyinResource.m"; sourceTree = SOURCE_ROOT; };
+		30C1323C1CDF3241006FD2F5 /* HanyuPinyinOutputFormat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HanyuPinyinOutputFormat.h; path = "城市选择/Lib/PinYin/HanyuPinyinOutputFormat.h"; sourceTree = SOURCE_ROOT; };
+		30C1323D1CDF3241006FD2F5 /* HanyuPinyinOutputFormat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HanyuPinyinOutputFormat.m; path = "城市选择/Lib/PinYin/HanyuPinyinOutputFormat.m"; sourceTree = SOURCE_ROOT; };
+		30C1323E1CDF3241006FD2F5 /* NSString+PinYin4Cocoa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+PinYin4Cocoa.h"; path = "城市选择/Lib/PinYin/NSString+PinYin4Cocoa.h"; sourceTree = SOURCE_ROOT; };
+		30C1323F1CDF3241006FD2F5 /* NSString+PinYin4Cocoa.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+PinYin4Cocoa.m"; path = "城市选择/Lib/PinYin/NSString+PinYin4Cocoa.m"; sourceTree = SOURCE_ROOT; };
+		30C132401CDF3241006FD2F5 /* PinYin4Objc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PinYin4Objc.h; path = "城市选择/Lib/PinYin/PinYin4Objc.h"; sourceTree = SOURCE_ROOT; };
+		30C132411CDF3241006FD2F5 /* PinyinFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PinyinFormatter.h; path = "城市选择/Lib/PinYin/PinyinFormatter.h"; sourceTree = SOURCE_ROOT; };
+		30C132421CDF3241006FD2F5 /* PinyinFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PinyinFormatter.m; path = "城市选择/Lib/PinYin/PinyinFormatter.m"; sourceTree = SOURCE_ROOT; };
+		30C132431CDF3241006FD2F5 /* PinYinForObjc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PinYinForObjc.h; path = "城市选择/Lib/PinYin/PinYinForObjc.h"; sourceTree = SOURCE_ROOT; };
+		30C132441CDF3241006FD2F5 /* PinYinForObjc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PinYinForObjc.m; path = "城市选择/Lib/PinYin/PinYinForObjc.m"; sourceTree = SOURCE_ROOT; };
+		30C132451CDF3241006FD2F5 /* PinyinHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PinyinHelper.h; path = "城市选择/Lib/PinYin/PinyinHelper.h"; sourceTree = SOURCE_ROOT; };
+		30C132461CDF3241006FD2F5 /* PinyinHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PinyinHelper.m; path = "城市选择/Lib/PinYin/PinyinHelper.m"; sourceTree = SOURCE_ROOT; };
+		30C132471CDF3241006FD2F5 /* unicode_to_hanyu_pinyin.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = unicode_to_hanyu_pinyin.txt; path = "城市选择/Lib/PinYin/unicode_to_hanyu_pinyin.txt"; sourceTree = SOURCE_ROOT; };
+		30C132501CDF324C006FD2F5 /* NSMutableArray+FilterElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSMutableArray+FilterElement.h"; path = "城市选择/Lib/Category/NSMutableArray+FilterElement.h"; sourceTree = SOURCE_ROOT; };
+		30C132511CDF324C006FD2F5 /* NSMutableArray+FilterElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSMutableArray+FilterElement.m"; path = "城市选择/Lib/Category/NSMutableArray+FilterElement.m"; sourceTree = SOURCE_ROOT; };
+		30C132531CDF3264006FD2F5 /* CityViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CityViewCell.h; path = "城市选择/城市列表/CityViewCell.h"; sourceTree = SOURCE_ROOT; };
+		30C132541CDF3264006FD2F5 /* CityViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CityViewCell.m; path = "城市选择/城市列表/CityViewCell.m"; sourceTree = SOURCE_ROOT; };
+		30C132551CDF3264006FD2F5 /* CityViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CityViewCell.xib; path = "城市选择/城市列表/CityViewCell.xib"; sourceTree = SOURCE_ROOT; };
+		30C132561CDF3264006FD2F5 /* HeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HeadView.h; path = "城市选择/城市列表/HeadView.h"; sourceTree = SOURCE_ROOT; };
+		30C132571CDF3264006FD2F5 /* HeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HeadView.m; path = "城市选择/城市列表/HeadView.m"; sourceTree = SOURCE_ROOT; };
+		30C132581CDF3264006FD2F5 /* HeadView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = HeadView.xib; path = "城市选择/城市列表/HeadView.xib"; sourceTree = SOURCE_ROOT; };
+		30C132591CDF3264006FD2F5 /* ItemViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ItemViewCell.h; path = "城市选择/城市列表/ItemViewCell.h"; sourceTree = SOURCE_ROOT; };
+		30C1325A1CDF3264006FD2F5 /* ItemViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ItemViewCell.m; path = "城市选择/城市列表/ItemViewCell.m"; sourceTree = SOURCE_ROOT; };
+		30C1325B1CDF3264006FD2F5 /* ItemViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ItemViewCell.xib; path = "城市选择/城市列表/ItemViewCell.xib"; sourceTree = SOURCE_ROOT; };
+		30C1325C1CDF3264006FD2F5 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = "城市选择/城市列表/ViewController.h"; sourceTree = SOURCE_ROOT; };
+		30C1325D1CDF3264006FD2F5 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = "城市选择/城市列表/ViewController.m"; sourceTree = SOURCE_ROOT; };
+		30C1325E1CDF3264006FD2F5 /* ZWCollectionViewFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZWCollectionViewFlowLayout.h; path = "城市选择/城市列表/ZWCollectionViewFlowLayout.h"; sourceTree = SOURCE_ROOT; };
+		30C1325F1CDF3264006FD2F5 /* ZWCollectionViewFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZWCollectionViewFlowLayout.m; path = "城市选择/城市列表/ZWCollectionViewFlowLayout.m"; sourceTree = SOURCE_ROOT; };
+		30C132681CDF3273006FD2F5 /* NBSearchController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NBSearchController.h; path = "城市选择/搜索结果/NBSearchController.h"; sourceTree = SOURCE_ROOT; };
+		30C132691CDF3273006FD2F5 /* NBSearchController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NBSearchController.m; path = "城市选择/搜索结果/NBSearchController.m"; sourceTree = SOURCE_ROOT; };
+		30C1326A1CDF3273006FD2F5 /* NBSearchResultController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NBSearchResultController.h; path = "城市选择/搜索结果/NBSearchResultController.h"; sourceTree = SOURCE_ROOT; };
+		30C1326B1CDF3273006FD2F5 /* NBSearchResultController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NBSearchResultController.m; path = "城市选择/搜索结果/NBSearchResultController.m"; sourceTree = SOURCE_ROOT; };
+		30C1326C1CDF3273006FD2F5 /* SearchResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SearchResult.h; path = "城市选择/搜索结果/SearchResult.h"; sourceTree = SOURCE_ROOT; };
+		30C1326D1CDF3273006FD2F5 /* SearchResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SearchResult.m; path = "城市选择/搜索结果/SearchResult.m"; sourceTree = SOURCE_ROOT; };
+		30C132711CDF3F78006FD2F5 /* citydict.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = citydict.plist; path = "城市选择/Lib/citydict.plist"; sourceTree = SOURCE_ROOT; };
+		30C132721CDF3F78006FD2F5 /* Public.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Public.h; path = "城市选择/Lib/Public.h"; sourceTree = SOURCE_ROOT; };
 		30D846381CCCB8B700003F37 /* PKViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKViewController.h; sourceTree = "<group>"; };
 		30D846391CCCB8B700003F37 /* PKViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKViewController.m; sourceTree = "<group>"; };
 		30D8463B1CCCB8D000003F37 /* PKTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKTableViewCell.h; sourceTree = "<group>"; };
@@ -211,6 +273,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30C132281CDF2D33006FD2F5 /* MapKit.framework in Frameworks */,
 				304BD8551CC2224D00385489 /* Bolts.framework in Frameworks */,
 				304BD8561CC2224D00385489 /* Parse.framework in Frameworks */,
 				304BD8521CC2220D00385489 /* Accounts.framework in Frameworks */,
@@ -266,6 +329,7 @@
 		304BD80A1CC20F9600385489 /* EZCar */ = {
 			isa = PBXGroup;
 			children = (
+				30C132291CDF2D5A006FD2F5 /* ChooseCity */,
 				C4EE70811CCDC37100819E46 /* 意见反馈 */,
 				304BD8611CC223F400385489 /* 3rd */,
 				304BD85F1CC223C700385489 /* Constant */,
@@ -422,6 +486,92 @@
 			name = 3rd;
 			sourceTree = "<group>";
 		};
+		30C132291CDF2D5A006FD2F5 /* ChooseCity */ = {
+			isa = PBXGroup;
+			children = (
+				30C132351CDF3107006FD2F5 /* Lib */,
+				30C132341CDF30FB006FD2F5 /* 城市列表 */,
+				30C132331CDF30E3006FD2F5 /* 搜索结果 */,
+			);
+			name = ChooseCity;
+			sourceTree = "<group>";
+		};
+		30C132331CDF30E3006FD2F5 /* 搜索结果 */ = {
+			isa = PBXGroup;
+			children = (
+				30C132681CDF3273006FD2F5 /* NBSearchController.h */,
+				30C132691CDF3273006FD2F5 /* NBSearchController.m */,
+				30C1326A1CDF3273006FD2F5 /* NBSearchResultController.h */,
+				30C1326B1CDF3273006FD2F5 /* NBSearchResultController.m */,
+				30C1326C1CDF3273006FD2F5 /* SearchResult.h */,
+				30C1326D1CDF3273006FD2F5 /* SearchResult.m */,
+			);
+			name = "搜索结果";
+			sourceTree = "<group>";
+		};
+		30C132341CDF30FB006FD2F5 /* 城市列表 */ = {
+			isa = PBXGroup;
+			children = (
+				30C132531CDF3264006FD2F5 /* CityViewCell.h */,
+				30C132541CDF3264006FD2F5 /* CityViewCell.m */,
+				30C132551CDF3264006FD2F5 /* CityViewCell.xib */,
+				30C132561CDF3264006FD2F5 /* HeadView.h */,
+				30C132571CDF3264006FD2F5 /* HeadView.m */,
+				30C132581CDF3264006FD2F5 /* HeadView.xib */,
+				30C132591CDF3264006FD2F5 /* ItemViewCell.h */,
+				30C1325A1CDF3264006FD2F5 /* ItemViewCell.m */,
+				30C1325B1CDF3264006FD2F5 /* ItemViewCell.xib */,
+				30C1325C1CDF3264006FD2F5 /* ViewController.h */,
+				30C1325D1CDF3264006FD2F5 /* ViewController.m */,
+				30C1325E1CDF3264006FD2F5 /* ZWCollectionViewFlowLayout.h */,
+				30C1325F1CDF3264006FD2F5 /* ZWCollectionViewFlowLayout.m */,
+			);
+			name = "城市列表";
+			sourceTree = "<group>";
+		};
+		30C132351CDF3107006FD2F5 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				30C132711CDF3F78006FD2F5 /* citydict.plist */,
+				30C132721CDF3F78006FD2F5 /* Public.h */,
+				30C132371CDF31FE006FD2F5 /* PinYin */,
+				30C132361CDF31F7006FD2F5 /* Category */,
+			);
+			name = Lib;
+			sourceTree = "<group>";
+		};
+		30C132361CDF31F7006FD2F5 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				30C132501CDF324C006FD2F5 /* NSMutableArray+FilterElement.h */,
+				30C132511CDF324C006FD2F5 /* NSMutableArray+FilterElement.m */,
+			);
+			name = Category;
+			sourceTree = "<group>";
+		};
+		30C132371CDF31FE006FD2F5 /* PinYin */ = {
+			isa = PBXGroup;
+			children = (
+				30C132381CDF3241006FD2F5 /* ChineseInclude.h */,
+				30C132391CDF3241006FD2F5 /* ChineseInclude.m */,
+				30C1323A1CDF3241006FD2F5 /* ChineseToPinyinResource.h */,
+				30C1323B1CDF3241006FD2F5 /* ChineseToPinyinResource.m */,
+				30C1323C1CDF3241006FD2F5 /* HanyuPinyinOutputFormat.h */,
+				30C1323D1CDF3241006FD2F5 /* HanyuPinyinOutputFormat.m */,
+				30C1323E1CDF3241006FD2F5 /* NSString+PinYin4Cocoa.h */,
+				30C1323F1CDF3241006FD2F5 /* NSString+PinYin4Cocoa.m */,
+				30C132401CDF3241006FD2F5 /* PinYin4Objc.h */,
+				30C132411CDF3241006FD2F5 /* PinyinFormatter.h */,
+				30C132421CDF3241006FD2F5 /* PinyinFormatter.m */,
+				30C132431CDF3241006FD2F5 /* PinYinForObjc.h */,
+				30C132441CDF3241006FD2F5 /* PinYinForObjc.m */,
+				30C132451CDF3241006FD2F5 /* PinyinHelper.h */,
+				30C132461CDF3241006FD2F5 /* PinyinHelper.m */,
+				30C132471CDF3241006FD2F5 /* unicode_to_hanyu_pinyin.txt */,
+			);
+			name = PinYin;
+			sourceTree = "<group>";
+		};
 		3FFFEA1E1CC64F1C0078655A /* image */ = {
 			isa = PBXGroup;
 			children = (
@@ -440,6 +590,7 @@
 		AD4DBC324B9C1ED7581284F2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				30C132271CDF2D33006FD2F5 /* MapKit.framework */,
 				304BD8531CC2224D00385489 /* Bolts.framework */,
 				304BD8541CC2224D00385489 /* Parse.framework */,
 				304BD8511CC2220D00385489 /* Accounts.framework */,
@@ -590,12 +741,17 @@
 				30B3E4181CCF4A28002FF124 /* 222.jpg in Resources */,
 				304BD81E1CC20F9600385489 /* LaunchScreen.storyboard in Resources */,
 				3FFFEA261CC64F310078655A /* 4.jpg in Resources */,
+				30C132731CDF3F78006FD2F5 /* citydict.plist in Resources */,
+				30C132651CDF3264006FD2F5 /* ItemViewCell.xib in Resources */,
+				30C132611CDF3264006FD2F5 /* CityViewCell.xib in Resources */,
 				30B3E4171CCF4A28002FF124 /* 333.jpg in Resources */,
 				3F1035A21CCB893A0084532C /* XRCollectionViewCell.xib in Resources */,
 				3FFFEA231CC64F310078655A /* 1.jpg in Resources */,
+				30C132631CDF3264006FD2F5 /* HeadView.xib in Resources */,
 				3FFFEA241CC64F310078655A /* 2.jpg in Resources */,
 				3FFFEA251CC64F310078655A /* 3.jpg in Resources */,
 				3F1035A51CCB89480084532C /* 1.plist in Resources */,
+				30C1324F1CDF3241006FD2F5 /* unicode_to_hanyu_pinyin.txt in Resources */,
 				C4EE70911CCDC75F00819E46 /* 2.4意见反馈_03(1).png in Resources */,
 				304BD81B1CC20F9600385489 /* Assets.xcassets in Resources */,
 				304BD8161CC20F9600385489 /* Main.storyboard in Resources */,
@@ -671,28 +827,38 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30C132661CDF3264006FD2F5 /* ViewController.m in Sources */,
 				A9F967011CC23ABD00A8593A /* SignInViewController.m in Sources */,
 				C47AFFD41CCB645E003BB32B /* ReMenTableViewCell.m in Sources */,
 				C4EE708A1CCDC3A000819E46 /* UserFeedBackViewController.m in Sources */,
 				3F44A9021CC37F4200A6A5AB /* LeftViewController.m in Sources */,
 				3FFFEA1D1CC64F190078655A /* KSGuideManager.m in Sources */,
 				304BD85D1CC2236F00385489 /* Utilities.m in Sources */,
+				30C1324A1CDF3241006FD2F5 /* HanyuPinyinOutputFormat.m in Sources */,
 				C4EE70881CCDC3A000819E46 /* PhotoCollectionViewCell.m in Sources */,
 				3F1F02901CCA03C7003C52FE /* ShopXQViewController.m in Sources */,
 				C4EE70921CCDC75F00819E46 /* AboutUsViewController.m in Sources */,
 				C47AFFD71CCB7235003BB32B /* ReMenCSViewController.m in Sources */,
 				C4EE70891CCDC3A000819E46 /* PlaceholderTextView.m in Sources */,
 				3F1035A11CCB893A0084532C /* XRCollectionViewCell.m in Sources */,
+				30C1326F1CDF3273006FD2F5 /* NBSearchResultController.m in Sources */,
+				30C132641CDF3264006FD2F5 /* ItemViewCell.m in Sources */,
 				301B43761CC4AE4300516B76 /* SecondTableViewCell.m in Sources */,
+				30C1324B1CDF3241006FD2F5 /* NSString+PinYin4Cocoa.m in Sources */,
 				304BD8641CC25E7B00385489 /* TabViewController.m in Sources */,
 				C47AFFD11CCB6423003BB32B /* ReMenViewController.m in Sources */,
 				3080EBDC1CC61942007A81F8 /* KuanShiTableViewCell.m in Sources */,
 				3080EBD61CC5DA36007A81F8 /* ChineseToPinyin.m in Sources */,
+				30C1324C1CDF3241006FD2F5 /* PinyinFormatter.m in Sources */,
 				304BD8101CC20F9600385489 /* AppDelegate.m in Sources */,
 				304BD80D1CC20F9600385489 /* main.m in Sources */,
 				3080EBDF1CC62CCB007A81F8 /* CanShuViewController.m in Sources */,
+				30C132491CDF3241006FD2F5 /* ChineseToPinyinResource.m in Sources */,
 				304BD8191CC20F9600385489 /* EZCar.xcdatamodeld in Sources */,
+				30C1326E1CDF3273006FD2F5 /* NBSearchController.m in Sources */,
 				3F1035A31CCB893A0084532C /* XRImage.m in Sources */,
+				30C132701CDF3273006FD2F5 /* SearchResult.m in Sources */,
+				30C1324D1CDF3241006FD2F5 /* PinYinForObjc.m in Sources */,
 				300B15231CC39FB0000793FE /* FirstViewController.m in Sources */,
 				30D8463A1CCCB8B700003F37 /* PKViewController.m in Sources */,
 				302166A41CC49CCD002AB087 /* SecondViewController.m in Sources */,
@@ -700,15 +866,21 @@
 				B2F00E641CCF19ED00F2BA28 /* SouSuoViewController.m in Sources */,
 				3FCC47271CCE09B400A88726 /* ShopCSViewController.m in Sources */,
 				301B43791CC4C59000516B76 /* XingHaoViewController.m in Sources */,
+				30C1324E1CDF3241006FD2F5 /* PinyinHelper.m in Sources */,
+				30C132671CDF3264006FD2F5 /* ZWCollectionViewFlowLayout.m in Sources */,
 				30B230641CDC491B006545B9 /* ShouCangViewController.m in Sources */,
 				3080EBD31CC5D0C9007A81F8 /* XingHaoTableViewCell.m in Sources */,
 				A9F967041CC24FA600A8593A /* SignUpViewController.m in Sources */,
+				30C132521CDF324C006FD2F5 /* NSMutableArray+FilterElement.m in Sources */,
+				30C132621CDF3264006FD2F5 /* HeadView.m in Sources */,
 				3F1F02931CCA0E17003C52FE /* ShopXQTableViewCell.m in Sources */,
 				3F7A81D91CC4E0CD00ABA3E1 /* FirstTableViewCell.m in Sources */,
 				3F1035A81CCB899C0084532C /* ImageViewController.m in Sources */,
 				3080EBD91CC60B69007A81F8 /* KuanShiViewController.m in Sources */,
 				3F10359B1CCB89180084532C /* XRWaterfallLayout.m in Sources */,
 				30D8463D1CCCB8D000003F37 /* PKTableViewCell.m in Sources */,
+				30C132601CDF3264006FD2F5 /* CityViewCell.m in Sources */,
+				30C132481CDF3241006FD2F5 /* ChineseInclude.m in Sources */,
 				304BD85C1CC2236F00385489 /* StorageMgr.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

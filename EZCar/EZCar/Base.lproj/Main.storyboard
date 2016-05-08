@@ -1481,11 +1481,16 @@
                                 <action selector="ToSouSuo:forEvent:" destination="nG6-vP-EfO" eventType="touchUpInside" id="Nt6-mN-9bU"/>
                             </connections>
                         </button>
-                        <barButtonItem key="rightBarButtonItem" title="无锡" id="cQz-Y1-Utr"/>
+                        <barButtonItem key="rightBarButtonItem" title="无锡" id="cQz-Y1-Utr">
+                            <connections>
+                                <action selector="chooseAction:" destination="nG6-vP-EfO" id="hv6-Zc-ZJI"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="Upview" destination="Cod-rn-oYJ" id="YCU-dZ-Ci8"/>
+                        <outlet property="chooseAction" destination="cQz-Y1-Utr" id="wGj-rQ-n3j"/>
                         <outlet property="tableView" destination="suw-P2-Ipk" id="InE-JK-TkI"/>
                     </connections>
                 </viewController>
