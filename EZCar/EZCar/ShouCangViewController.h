@@ -10,5 +10,11 @@
 
 @interface ShouCangViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
+//@property BOOL completed;
+
+- (IBAction)chooseAction:(UIButton *)sender forEvent:(UIEvent *)event;
+- (IBAction)goVSAction:(UIButton *)sender forEvent:(UIEvent *)event;
+
+@property (weak, nonatomic) IBOutlet UIButton *chooce;
 
 @end

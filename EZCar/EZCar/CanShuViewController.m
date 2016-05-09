@@ -222,6 +222,7 @@
                 
                 UIAlertController *alertView = [UIAlertController alertControllerWithTitle:@"添加对比成功！" message:nil preferredStyle:UIAlertControllerStyleAlert];
                 UIAlertAction *ok = [UIAlertAction actionWithTitle:@"朕知晓" style:UIAlertActionStyleCancel handler:nil];
+                
                 [alertView addAction:ok];
                 
                 [self presentViewController:alertView animated:YES completion:nil];

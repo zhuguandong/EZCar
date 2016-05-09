@@ -69,7 +69,7 @@
     [rc addTarget:self action:@selector(canToRequestData) forControlEvents:UIControlEventValueChanged];
     [_tableView addSubview:rc];
     
-    [self refreshData];
+    //[self refreshData];
     
 //    //将是否成功获取距离初始化为NO（没有）
 //    flag = NO;
@@ -328,4 +328,6 @@
     
     [self.navigationController pushViewController:vc animated:NO];
 }
+
+
 @end

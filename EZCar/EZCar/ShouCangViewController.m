@@ -20,6 +20,7 @@
     [self requestData];
     _ShouCangForShow = [NSMutableArray new];
     _tableView.tableFooterView = [[UITableView alloc]init];
+    _tableView.allowsMultipleSelectionDuringEditing=YES;
     // Do any additional setup after loading the view.
 }
 
@@ -91,14 +92,34 @@
     PFObject *obj = _ShouCangForShow[indexPath.row];
     cell.textLabel.text = obj[@"canshu"][@"xinghao"];
     
+        
     return cell;
 }
+
+////当tableview中任意某一行被触摸时调用以下方法
+//- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+//
+//{
+//    
+//
+//    [tableView deselectRowAtIndexPath:indexPath animated:YES];//当选中某一行后，立即将是否选中状态恢复为未选中
+//    
+//}
 
 - (IBAction)backAction:(UIBarButtonItem *)sender {
     [ self dismissViewControllerAnimated: YES completion: nil ];
 }
 
-
+-(UITableViewCellEditingStyle)tableView:(UITableView *)tableView editingStyleForRowAtIndexPath:(NSIndexPath *)indexPath{
+    //实现编辑状态多选
+    if (self.tableView.editing) {
+        return UITableViewCellEditingStyleInsert|UITableViewCellEditingStyleDelete;
+    }
+    //普通状态左滑删除
+    else{
+        return UITableViewCellEditingStyleDelete;
+    }
+}
 
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
     return YES;
@@ -132,8 +153,26 @@
         
     }
     else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view.
+        
     }
 }
-//[ShouCangForShow removeObjectAtIndex:indexPath.row];
+
+- (IBAction)chooseAction:(UIButton *)sender forEvent:(UIEvent *)event {
+    [self.tableView setEditing:!self.tableView.editing animated:YES];
+    NSString *tag = self.tableView.editing ? @"取消":@"选择对比";
+    
+    [_chooce setTitle:tag forState:UIControlStateNormal];
+}
+
+
+
+
+- (IBAction)goVSAction:(UIButton *)sender forEvent:(UIEvent *)event {
+    NSArray *arr = self.tableView.indexPathsForSelectedRows;
+    
+    
+    
+   
+    NSLog(@"arr = %@",arr);
+}
 @end

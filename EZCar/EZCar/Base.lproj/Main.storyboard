@@ -239,8 +239,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="que-xH-aiD">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="468"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="sectionIndexBackgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" id="WOO-It-wXh">
                                         <rect key="frame" x="0.0" y="92" width="320" height="44"/>
@@ -256,14 +257,54 @@
                                     <outlet property="delegate" destination="wQ4-kY-grc" id="KzL-gu-v9W"/>
                                 </connections>
                             </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l0m-hS-wXZ">
+                                <rect key="frame" x="0.0" y="538" width="320" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Raw-U2-Dz4">
+                                        <rect key="frame" x="245" y="0.0" width="60" height="30"/>
+                                        <state key="normal" title="选择对比"/>
+                                        <connections>
+                                            <action selector="chooseAction:forEvent:" destination="wQ4-kY-grc" eventType="touchUpInside" id="hmg-cO-BWO"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="Raw-U2-Dz4" firstAttribute="centerY" secondItem="l0m-hS-wXZ" secondAttribute="centerY" id="AOd-Rw-i7h"/>
+                                    <constraint firstAttribute="height" constant="30" id="ecV-AP-y2R"/>
+                                    <constraint firstAttribute="trailing" secondItem="Raw-U2-Dz4" secondAttribute="trailing" constant="15" id="os3-u4-Rxv"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B00-eE-za2">
+                                <rect key="frame" x="10" y="498" width="300" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="开始对比">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="goVSAction:forEvent:" destination="wQ4-kY-grc" eventType="touchUpInside" id="vy5-wm-VNB"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="B00-eE-za2" firstAttribute="top" secondItem="que-xH-aiD" secondAttribute="bottom" constant="30" id="2F5-ib-xzF"/>
+                            <constraint firstAttribute="trailing" secondItem="l0m-hS-wXZ" secondAttribute="trailing" id="ERt-HW-bfl"/>
+                            <constraint firstItem="B00-eE-za2" firstAttribute="leading" secondItem="8Ty-Pe-jtX" secondAttribute="leading" constant="10" id="MnI-8e-Tf2"/>
+                            <constraint firstItem="l0m-hS-wXZ" firstAttribute="top" secondItem="B00-eE-za2" secondAttribute="bottom" constant="10" id="Olu-np-d8R"/>
                             <constraint firstItem="tEY-C9-RR5" firstAttribute="top" secondItem="que-xH-aiD" secondAttribute="bottom" id="fpN-AL-5mp"/>
                             <constraint firstAttribute="trailing" secondItem="que-xH-aiD" secondAttribute="trailing" id="irG-SW-YJB"/>
                             <constraint firstItem="que-xH-aiD" firstAttribute="leading" secondItem="8Ty-Pe-jtX" secondAttribute="leading" id="kO8-lz-Wet"/>
+                            <constraint firstAttribute="trailing" secondItem="B00-eE-za2" secondAttribute="trailing" constant="10" id="mxq-Di-g9u"/>
+                            <constraint firstItem="tEY-C9-RR5" firstAttribute="top" secondItem="l0m-hS-wXZ" secondAttribute="bottom" id="qh9-Ue-kTF"/>
+                            <constraint firstItem="l0m-hS-wXZ" firstAttribute="leading" secondItem="8Ty-Pe-jtX" secondAttribute="leading" id="yp6-MW-wFg"/>
                             <constraint firstItem="que-xH-aiD" firstAttribute="top" secondItem="8Ty-Pe-jtX" secondAttribute="top" id="zYM-eV-uX1"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="fpN-AL-5mp"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" title="对比收藏" id="KKr-a3-dS3">
                         <barButtonItem key="leftBarButtonItem" systemItem="reply" id="aOd-ib-qyo">
@@ -274,6 +315,7 @@
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
+                        <outlet property="chooce" destination="Raw-U2-Dz4" id="A5b-GC-Iea"/>
                         <outlet property="tableView" destination="que-xH-aiD" id="Old-s4-WDu"/>
                     </connections>
                 </viewController>
@@ -2071,7 +2113,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="IXd-r5-thE">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.84729947449999998" green="0.93827247339999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
