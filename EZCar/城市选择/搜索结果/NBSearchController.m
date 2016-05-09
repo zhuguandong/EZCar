@@ -24,7 +24,7 @@
     if (self) {
         
 
-       self.hidesNavigationBarDuringPresentation = YES;
+       self.hidesNavigationBarDuringPresentation = NO;
         
         self.searchBar.frame = CGRectMake(self.searchBar.frame.origin.x, self.searchBar.frame.origin.y, self.searchBar.frame.size.width, 44.0);
         self.searchBar.placeholder = @"城市/行政区/拼音";
@@ -42,8 +42,16 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    
+    
+    
+    
 }
 
+//-(void)viewDidAppear:(BOOL)animated{
+//    [super viewDidAppear:animated];
+//    self.navigationController.navigationBar.hidden = YES;
+//}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     

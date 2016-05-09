@@ -324,6 +324,7 @@
         [_chooseAction setTitle:cityname];
         //_chooseAction.titleLabel.text=cityname;
     }];
+    vc.hidesBottomBarWhenPushed = YES;
     
     [self.navigationController pushViewController:vc animated:NO];
 }
