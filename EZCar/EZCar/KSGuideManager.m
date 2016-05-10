@@ -45,11 +45,11 @@ static NSString *identifier = @"Cell";
     button.hidden = YES;
     [button setFrame:CGRectMake(0, 0, 200, 44)];
     [button setTitle:@"立即体验" forState:UIControlStateNormal];
-    [button setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    [button setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     [button.layer setCornerRadius:5];
-    [button.layer setBorderColor:[UIColor clearColor].CGColor];
+    [button.layer setBorderColor:[UIColor lightTextColor].CGColor];
     [button.layer setBorderWidth:1.0f];
-    [button setBackgroundColor:[UIColor clearColor]];
+    [button setBackgroundColor:[UIColor lightTextColor]];
     
     self.button = button;
     

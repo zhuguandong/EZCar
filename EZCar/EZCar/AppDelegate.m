@@ -54,6 +54,10 @@
     //modal方式跳转到上述页面
     [self.window setRootViewController:_slidingVC];
     
+    [NSThread sleepForTimeInterval:1.0];
+    [_window makeKeyAndVisible];
+    
+    // Override point for customization after application launch.
     return YES;
     
 }
