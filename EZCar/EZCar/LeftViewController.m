@@ -53,7 +53,25 @@
     }];
 }
 
+- (IBAction)ReMenAction:(UIButton *)sender forEvent:(UIEvent *)event {
+    //根据故事版的名称和故事版中页面的名称获得这个页面
+    TabViewController *tabVC = [Utilities getStoryboardInstance:@"Main" byIdentity:@"RM"];
+    [self presentViewController:tabVC animated:YES completion:nil];
+
+}
+
 - (IBAction)headAction:(UIButton *)sender forEvent:(UIEvent *)event {
+    dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, 0.25 * NSEC_PER_SEC);
+    dispatch_after(popTime, dispatch_get_main_queue(), ^{
+        POPBasicAnimation *headDownAnimation = [POPBasicAnimation animation];
+        headDownAnimation.property = [POPAnimatableProperty propertyWithName:kPOPViewScaleXY];
+        headDownAnimation.duration = 0.25f;
+        //终态根据控件本身属性作为参照来设置
+        headDownAnimation.toValue = [NSValue valueWithCGSize:CGSizeMake(1, 1)];
+        //让_zoomButton执行上述动画并给上述动画起键名
+        [_headbutton pop_addAnimation:headDownAnimation forKey:@"headDownAnimation"];
+    });
+    
     PFUser *user = [PFUser currentUser];
     if (user) {
         //        _headbutton.titleLabel.text = user.username;
@@ -64,13 +82,28 @@
     }
 }
 
-- (IBAction)ReMenAction:(UIButton *)sender forEvent:(UIEvent *)event {
-    //根据故事版的名称和故事版中页面的名称获得这个页面
-    TabViewController *tabVC = [Utilities getStoryboardInstance:@"Main" byIdentity:@"RM"];
-    [self presentViewController:tabVC animated:YES completion:nil];
-
+- (IBAction)headDownAction:(UIButton *)sender forEvent:(UIEvent *)event {
+    //初始化一个POP动画制作器
+    POPBasicAnimation *headUpAnimation = [POPBasicAnimation animation];
+    //设置动画类型（通过propertyWithName方法根据动画名字或者枚举来设置)(这里设置为缩放动画)
+    headUpAnimation.property = [POPAnimatableProperty propertyWithName:kPOPViewScaleXY];
+    //设置动画的时间
+    headUpAnimation.duration = 0.25f;
+    //设置动画的终态（不同的动画类型下，终态的设置方法截然不同）
+    headUpAnimation.toValue = [NSValue valueWithCGSize:CGSizeMake(1.2, 1.2)];
+    //让_zoomButton执行上述动画并给上述动画起键名
+    [_headbutton pop_addAnimation:headUpAnimation forKey:@"headUpAnimation"];
 }
 
+- (IBAction)headOutAction:(UIButton *)sender forEvent:(UIEvent *)event {
+    POPBasicAnimation *headDownAnimation = [POPBasicAnimation animation];
+    headDownAnimation.property = [POPAnimatableProperty propertyWithName:kPOPViewScaleXY];
+    headDownAnimation.duration = 0.25f;
+    //终态根据控件本身属性作为参照来设置
+    headDownAnimation.toValue = [NSValue valueWithCGSize:CGSizeMake(1, 1)];
+    //让_zoomButton执行上述动画并给上述动画起键名
+    [_headbutton pop_addAnimation:headDownAnimation forKey:@"headDownAnimation"];
+}
 
 -(void)viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
