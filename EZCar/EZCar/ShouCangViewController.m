@@ -176,7 +176,7 @@
 - (IBAction)goVSAction:(UIButton *)sender forEvent:(UIEvent *)event {
     NSArray *arr = self.tableView.indexPathsForSelectedRows;
     for (NSIndexPath *indexPath in arr) {
-        //NSLog(@"-->%@",indexPath);
+        
         [_chooseForShow addObject:_ShouCangForShow[indexPath.row]];
     }
     NSLog(@"%@",_chooseForShow);
@@ -184,7 +184,7 @@
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    PKViewController *vc = [[PKViewController alloc]init];
-    //car1CS.text = _object[@"canshu"][@"info"][@"info"][@"carname"];
-}
+//    NSIndexPath *indexPath = _tableView.indexPathForSelectedRow;
+//    PKViewController *vc = [[PKViewController alloc]init];
+    }
 @end
