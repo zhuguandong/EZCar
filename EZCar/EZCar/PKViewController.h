@@ -10,5 +10,9 @@
 
 @interface PKViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UITableView *tableview;
+@property(strong,nonatomic) PFObject *object;
+
+@property (weak, nonatomic) IBOutlet UILabel *car1Name;
+
 
 @end

@@ -11,5 +11,6 @@
 @interface PKTableViewCell : UITableViewCell
 
 @property (weak, nonatomic) IBOutlet UILabel *name;
+@property (weak, nonatomic) IBOutlet UILabel *car1CS;
 
 @end

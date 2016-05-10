@@ -7,9 +7,13 @@
 //
 
 #import "ShouCangViewController.h"
+#import "PrefixHeader.pch"
+#import "PKViewController.h"
 
 @interface ShouCangViewController ()
+
 @property(strong,nonatomic) NSMutableArray *ShouCangForShow;
+@property(strong, nonatomic)NSMutableArray *chooseForShow;
 
 @end
 
@@ -19,6 +23,8 @@
     [super viewDidLoad];
     [self requestData];
     _ShouCangForShow = [NSMutableArray new];
+    _chooseForShow = [NSMutableArray new];
+    
     _tableView.tableFooterView = [[UITableView alloc]init];
     _tableView.allowsMultipleSelectionDuringEditing=YES;
     // Do any additional setup after loading the view.
@@ -169,12 +175,16 @@
 
 - (IBAction)goVSAction:(UIButton *)sender forEvent:(UIEvent *)event {
     NSArray *arr = self.tableView.indexPathsForSelectedRows;
+    for (NSIndexPath *indexPath in arr) {
+        //NSLog(@"-->%@",indexPath);
+        [_chooseForShow addObject:_ShouCangForShow[indexPath.row]];
+    }
+    NSLog(@"%@",_chooseForShow);
     
-    NSString *arr1 = _ShouCangForShow[1];
-    
-    
-    
-   
-    NSLog(@"arr = %@",arr1);
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    PKViewController *vc = [[PKViewController alloc]init];
+    //car1CS.text = _object[@"canshu"][@"info"][@"info"][@"carname"];
 }
 @end

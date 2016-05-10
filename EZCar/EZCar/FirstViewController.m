@@ -317,7 +317,7 @@
 }
 
 - (IBAction)chooseAction:(UIBarButtonItem *)sender {
-    ViewController *vc=[[ViewController alloc]init];
+    ViewController *vc = [[ViewController alloc]init];
     
     [vc returnText:^(NSString *cityname) {
         //[_chooseAction setTitle:cityname forState:UIControlStateNormal];
