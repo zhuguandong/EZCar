@@ -12,5 +12,9 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *name;
 @property (weak, nonatomic) IBOutlet UILabel *car1CS;
+@property (weak, nonatomic) IBOutlet UILabel *car2CS;
+@property (weak, nonatomic) IBOutlet UILabel *car3CS;
+@property (weak, nonatomic) IBOutlet UILabel *car4CS;
+@property (weak, nonatomic) IBOutlet UILabel *car5CS;
 
 @end

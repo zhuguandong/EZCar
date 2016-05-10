@@ -11,6 +11,10 @@
 
 @interface PKViewController ()
 @property NSArray *objiectForShow;
+@property(strong,nonatomic) NSMutableArray *Car1ForShow;
+@property(strong,nonatomic) NSMutableArray *Car2ForShow;
+//@property(strong,nonatomic) NSString *c1;
+
 
 
 
@@ -22,11 +26,58 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     _tableview.allowsSelection = NO;//让tableview不被按
+     _Car1ForShow = [NSMutableArray new];
+     _Car2ForShow = [NSMutableArray new];
     _objiectForShow = @[@"品牌",@"厂商报价",@"上市年份",@"变速箱",@"车身结构",@"车型级别",@"排量",@"最大马力",@"油耗",@"燃料形式",@"驱动方式",@"进气形式",@"助力类型",@"前悬架类型",@"前轮胎规格",@"后轮胎规格",@"备胎规格",@"后悬架类型",@"主/副驾驶安全气囊",@"前/后排头部气囊(气帘)",@"前制动器类型",@"整车质保",@"ASB防抱死",@"方向盘调节",@"最大扭矩转速(rpm)",@"配气机构",@"行李厢容积(L)",@"长*宽*高(mm)",@"发动机",@"供油方式",@"座椅材质",@"环保标准",];
+    //[self requestData];
    
     
    
 }
+-(void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    NSUserDefaults * userDefaultes = [NSUserDefaults standardUserDefaults];
+    NSMutableArray * mutableArray = [NSMutableArray arrayWithArray:[userDefaultes objectForKey:@"myArray"]];
+    NSLog(@"arr = %@",mutableArray);
+    if (mutableArray.count == 2) {
+       NSString *c1 = mutableArray[0];
+        _car1Name.text = c1;
+    }
+    
+    //清空UserDefaults
+    NSString *appDomain = [[NSBundle mainBundle] bundleIdentifier]; [[NSUserDefaults standardUserDefaults] removePersistentDomainForName:appDomain];
+    
+    
+    
+}
+//
+//- (void)requestData {
+//    
+//    
+//    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"objectId = %@", _c1];
+//    
+//  
+//    PFQuery *query = [PFQuery queryWithClassName:@"CanShu" predicate:predicate];
+//    
+//    self.navigationController.view.userInteractionEnabled = NO;
+//    UIActivityIndicatorView *avi = [Utilities getCoverOnView:self.view];
+//    [query findObjectsInBackgroundWithBlock:^(NSArray * _Nullable objects, NSError * _Nullable error) {
+//        self.navigationController.view.userInteractionEnabled = YES;
+//        [avi stopAnimating];
+//        if (!error) {
+//            NSLog(@"objects = %@",objects);
+//            
+//            _Car1ForShow = [NSMutableArray arrayWithArray:objects];
+//            [_tableview reloadData];
+//            
+//        }else {
+//            NSLog(@"Error: %@",error.userInfo);
+//            [Utilities popUpAlertViewWithMsg:@"请保持网络连接畅通" andTitle:nil onView:self];
+//        }
+//        
+//    }];
+//    
+//}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

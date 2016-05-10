@@ -14,6 +14,7 @@
 
 @property(strong,nonatomic) NSMutableArray *ShouCangForShow;
 @property(strong, nonatomic)NSMutableArray *chooseForShow;
+@property(strong, nonatomic)NSMutableArray *chooseForID;
 
 @end
 
@@ -24,6 +25,7 @@
     [self requestData];
     _ShouCangForShow = [NSMutableArray new];
     _chooseForShow = [NSMutableArray new];
+    _chooseForID = [NSMutableArray new];
     
     _tableView.tableFooterView = [[UITableView alloc]init];
     _tableView.allowsMultipleSelectionDuringEditing=YES;
@@ -184,7 +186,19 @@
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-//    NSIndexPath *indexPath = _tableView.indexPathForSelectedRow;
-//    PKViewController *vc = [[PKViewController alloc]init];
+    for (PFObject *object in _chooseForShow) {
+        NSString *ID = object.objectId;
+        NSLog(@"ID = %@",ID);
+        [_chooseForID addObject:ID];
+        
+        NSLog(@"_chooseForID = %@", _chooseForID);
+        
+        NSArray *qq = [NSArray arrayWithArray:_chooseForID];
+        
+        NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+        [userDefaults setObject:qq forKey:@"myArray"];
+        [userDefaults synchronize];
     }
+}
 @end
+
