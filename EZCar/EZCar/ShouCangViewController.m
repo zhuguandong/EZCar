@@ -170,9 +170,11 @@
 - (IBAction)goVSAction:(UIButton *)sender forEvent:(UIEvent *)event {
     NSArray *arr = self.tableView.indexPathsForSelectedRows;
     
+    NSString *arr1 = _ShouCangForShow[1];
+    
     
     
    
-    NSLog(@"arr = %@",arr);
+    NSLog(@"arr = %@",arr1);
 }
 @end
