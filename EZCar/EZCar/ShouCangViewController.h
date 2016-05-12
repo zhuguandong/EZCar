@@ -16,5 +16,6 @@
 - (IBAction)goVSAction:(UIButton *)sender forEvent:(UIEvent *)event;
 
 @property (weak, nonatomic) IBOutlet UIButton *chooce;
+- (IBAction)removeAction:(UIButton *)sender forEvent:(UIEvent *)event;
 
 @end

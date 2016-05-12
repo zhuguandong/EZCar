@@ -26,6 +26,7 @@
     _ShouCangForShow = [NSMutableArray new];
     _chooseForShow = [NSMutableArray new];
     _chooseForID = [NSMutableArray new];
+    _tableView.allowsSelection = NO;//让tableview不被按
     
     _tableView.tableFooterView = [[UITableView alloc]init];
     _tableView.allowsMultipleSelectionDuringEditing=YES;
@@ -36,6 +37,7 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
 
 - (void)requestData {
     [_ShouCangForShow removeAllObjects];
@@ -99,6 +101,9 @@
     UITableViewCell *cell=[tableView dequeueReusableCellWithIdentifier:cellIndentifier];
     PFObject *obj = _ShouCangForShow[indexPath.row];
     cell.textLabel.text = obj[@"canshu"][@"xinghao"];
+    UIFont *newFont = [UIFont fontWithName:@"Arial" size:13.0];
+    //创建完字体格式之后就告诉cell
+    cell.textLabel.font = newFont;
     
         
     return cell;
@@ -167,7 +172,7 @@
 
 - (IBAction)chooseAction:(UIButton *)sender forEvent:(UIEvent *)event {
     [self.tableView setEditing:!self.tableView.editing animated:YES];
-    NSString *tag = self.tableView.editing ? @"取消":@"选择对比";
+    NSString *tag = self.tableView.editing ? @"取消":@"编辑";
     
     [_chooce setTitle:tag forState:UIControlStateNormal];
 }
@@ -181,24 +186,61 @@
         
         [_chooseForShow addObject:_ShouCangForShow[indexPath.row]];
     }
-    NSLog(@"%@",_chooseForShow);
+    if (_chooseForShow.count <= 5 && _chooseForShow.count >= 2 ) {
+        [self performSegueWithIdentifier:@"goPK" sender:self];
+    }else {
+        UIAlertController *alertView = [UIAlertController alertControllerWithTitle:@"选择车辆需在2～5之间" message:nil preferredStyle:UIAlertControllerStyleAlert];
+        UIAlertAction *ConfirmAction = [UIAlertAction actionWithTitle:@"确认" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action){
+            
+            [_chooseForShow removeAllObjects];
+            
+        }];
+    
+        [alertView addAction:ConfirmAction];
+        
+        [self presentViewController:alertView animated:YES completion:nil];
+    }
+    
+    
+    NSLog(@"chooseForShow>>>>>%@",_chooseForShow);
+    [self.tableView setEditing:NO ];
+    [_chooce setTitle:@"编辑" forState:UIControlStateNormal];
+    
+    
     
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     for (PFObject *object in _chooseForShow) {
-        NSString *ID = object.objectId;
-        NSLog(@"ID = %@",ID);
-        [_chooseForID addObject:ID];
+        NSString *name = object[@"canshu"][@"xinghao"];
+        NSLog(@"ID = %@",name);
+        [_chooseForID addObject:name];
         
         NSLog(@"_chooseForID = %@", _chooseForID);
-        
+
         NSArray *qq = [NSArray arrayWithArray:_chooseForID];
         
         NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
         [userDefaults setObject:qq forKey:@"myArray"];
         [userDefaults synchronize];
+        
     }
 }
+- (IBAction)removeAction:(UIButton *)sender forEvent:(UIEvent *)event {
+    NSArray *arr = self.tableView.indexPathsForSelectedRows;
+    //此处从数组删除注意：按照arr 顺序删除会造成越界崩溃、、
+    
+    NSMutableIndexSet *set = [NSMutableIndexSet indexSet];
+    for (NSIndexPath *indexP in arr) {
+        [set addIndex:indexP.row];
+    }
+    
+    
+    [self.ShouCangForShow removeObjectsAtIndexes:set];
+    [self.tableView deleteRowsAtIndexPaths:arr withRowAnimation:UITableViewRowAnimationAutomatic];//仅本地移除
+    
+}
+
+
 @end
 

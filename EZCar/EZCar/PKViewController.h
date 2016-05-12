@@ -19,5 +19,7 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *car4Name;
 @property (weak, nonatomic) IBOutlet UILabel *car5Name;
+- (IBAction)清空:(UIBarButtonItem *)sender;
+
 
 @end
