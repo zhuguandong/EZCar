@@ -39,6 +39,7 @@
 }
 
 
+
 - (void)requestData {
     [_ShouCangForShow removeAllObjects];
     PFUser *currentUser = [PFUser currentUser];
@@ -185,11 +186,39 @@
     for (NSIndexPath *indexPath in arr) {
         
         [_chooseForShow addObject:_ShouCangForShow[indexPath.row]];
+        
     }
-    if (_chooseForShow.count <= 5 && _chooseForShow.count >= 2 ) {
+    NSUserDefaults * userDefaultes = [NSUserDefaults standardUserDefaults];
+    NSMutableArray * mutableArray = [NSMutableArray arrayWithArray:[userDefaultes objectForKey:@"yuan"]];
+    switch (mutableArray.count) {
+        case 0:
+            _cunzaiLbl.text = @"0";
+            break;
+        case 1:
+            _cunzaiLbl.text = @"1";
+            break;
+        case 2:
+            _cunzaiLbl.text = @"2";
+            break;
+        case 3:
+            _cunzaiLbl.text = @"3";
+            break;
+        case 4:
+            _cunzaiLbl.text = @"4";
+            break;
+        case 5:
+            _cunzaiLbl.text = @"5";
+            break;
+            
+        default:
+            break;
+    }
+    
+    if (_chooseForShow.count <= 5 && _chooseForShow.count >= 1 &&  _chooseForShow.count + mutableArray.count <= 5) {
         [self performSegueWithIdentifier:@"goPK" sender:self];
+        [_chooseForShow removeAllObjects];
     }else {
-        UIAlertController *alertView = [UIAlertController alertControllerWithTitle:@"选择车辆需在2～5之间" message:nil preferredStyle:UIAlertControllerStyleAlert];
+        UIAlertController *alertView = [UIAlertController alertControllerWithTitle:@"选择车辆需在1～5之间\n对比车辆最多5辆" message:nil preferredStyle:UIAlertControllerStyleAlert];
         UIAlertAction *ConfirmAction = [UIAlertAction actionWithTitle:@"确认" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action){
             
             [_chooseForShow removeAllObjects];

@@ -12,6 +12,7 @@
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 //@property BOOL completed;
 
+@property (weak, nonatomic) IBOutlet UILabel *cunzaiLbl;
 - (IBAction)chooseAction:(UIButton *)sender forEvent:(UIEvent *)event;
 - (IBAction)goVSAction:(UIButton *)sender forEvent:(UIEvent *)event;
 

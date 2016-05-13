@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface LeftViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UIButton *singOut;
 
 - (IBAction)signOutAction:(UIButton *)sender forEvent:(UIEvent *)event;
 @property (weak, nonatomic) IBOutlet UIButton *headbutton;

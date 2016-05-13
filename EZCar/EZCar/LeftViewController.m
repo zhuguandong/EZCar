@@ -19,6 +19,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self signOut];
     // Do any additional setup after loading the view.
 }
 
@@ -37,7 +38,15 @@
 }
 */
 
-
+-(void)signOut {
+    PFUser *currentUser = [PFUser currentUser];
+    NSLog(@"currentUser = %@", currentUser);
+    if (!currentUser) {
+        _singOut.enabled = NO;
+        _singOut.hidden = YES;
+    }
+    
+}
 
 - (IBAction)signOutAction:(UIButton *)sender forEvent:(UIEvent *)event {
     //退出登录
