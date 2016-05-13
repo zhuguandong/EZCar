@@ -17,6 +17,7 @@
 @property (strong, nonatomic) PFObject *object4;
 @property (strong, nonatomic) PFObject *object5;
 
+
 //@property(strong,nonatomic) NSString *c1;
 
 
@@ -26,6 +27,23 @@
 @end
 
 @implementation PKViewController
+-(void)qq{
+    NSString *appDomain = [[NSBundle mainBundle] bundleIdentifier]; [[NSUserDefaults standardUserDefaults] removePersistentDomainForName:appDomain];
+     NSLog(@"清空被按了");
+    
+    _object1 = nil;
+    _object2 = nil;
+    _object3 = nil;
+    _object4 = nil;
+    _object5 = nil;
+    _car1Name.text = nil;
+    _car2Name.text = nil;
+    _car3Name.text = nil;
+    _car4Name.text = nil;
+    _car5Name.text = nil;
+    [_tableview reloadData];
+    
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -39,6 +57,9 @@
         
         
     }
+    [[NSNotificationCenter defaultCenter ] addObserver:self selector:@selector(qq) name:@"removeAll" object:nil];
+    //初始化一个BOOL型的单例化全局变量来表示是否是收藏跳转过来的，默认为否
+    [[StorageMgr singletonStorageMgr] addKey:@"fromSC" andValue:@NO];
     
     
    
@@ -173,6 +194,7 @@
         
     }
     
+    
     //清空UserDefaults
    // NSString *appDomain = [[NSBundle mainBundle] bundleIdentifier]; [[NSUserDefaults standardUserDefaults] removePersistentDomainForName:appDomain];
     
@@ -180,7 +202,9 @@
     
     
 }
+
 -(void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
     PFUser *currentUser = [PFUser currentUser];
     NSLog(@"currentUser = %@", currentUser);
     if (currentUser) {
@@ -188,6 +212,16 @@
         
         
     }
+    //判断是否是注册成功后回到的这个登录页面
+    if ([[[StorageMgr singletonStorageMgr] objectForKey:@"fromSC"] boolValue] == YES) {
+        NSLog(@"我来啦，，，，，，，");
+        //在自动登录前将flag设置为no
+        [[StorageMgr singletonStorageMgr] removeObjectForKey:@"fromSC"];
+        [[StorageMgr singletonStorageMgr] addKey:@"fromSC" andValue:@NO];
+        
+    }
+    
+
 
 }
 
@@ -1012,14 +1046,19 @@
     _object3 = nil;
     _object4 = nil;
     _object5 = nil;
-    _car1Name.text = @" ";
-    _car2Name.text = @" ";
-    _car3Name.text = @" ";
-    _car4Name.text = @" ";
-    _car5Name.text = @" ";
+    _car1Name.text = nil;
+    _car2Name.text = nil;
+    _car3Name.text = nil;
+    _car4Name.text = nil;
+    _car5Name.text = nil;
     
     
     [_tableview reloadData];
 }
+
+    //NSLog(@"清空被按了");
+    //[[NSNotificationCenter defaultCenter ] addObserver:self selector:@selector(清空:) name:@"removeAll" object:nil];
+
+
 
 @end

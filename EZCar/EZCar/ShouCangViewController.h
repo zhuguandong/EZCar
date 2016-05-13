@@ -18,5 +18,6 @@
 
 @property (weak, nonatomic) IBOutlet UIButton *chooce;
 - (IBAction)removeAction:(UIButton *)sender forEvent:(UIEvent *)event;
+- (IBAction)removeDB:(UIButton *)sender forEvent:(UIEvent *)event;
 
 @end

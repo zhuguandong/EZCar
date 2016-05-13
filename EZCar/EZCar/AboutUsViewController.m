@@ -62,7 +62,7 @@
         _infoLabel.textAlignment = NSTextAlignmentCenter;
         _infoLabel.font = [UIFont systemFontOfSize:12.0];
         _infoLabel.textColor = [UIColor lightGrayColor];
-        _infoLabel.text = @"微信号：\nQQ号码：";
+        _infoLabel.text = @"如果您发现应用有涉及版权问题，请发送邮件至376058691@qq.com，谢谢！";
     }
     return _infoLabel;
 }

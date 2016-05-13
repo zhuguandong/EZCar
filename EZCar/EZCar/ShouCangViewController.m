@@ -28,6 +28,10 @@
     _chooseForID = [NSMutableArray new];
     _tableView.allowsSelection = NO;//让tableview不被按
     
+    UIImageView *imageView=[[UIImageView alloc]initWithImage:[UIImage imageNamed:@"111"]];
+    imageView.image=[UIImage imageNamed:@"2333"];
+    [self.tableView setBackgroundView:imageView];
+    
     _tableView.tableFooterView = [[UITableView alloc]init];
     _tableView.allowsMultipleSelectionDuringEditing=YES;
     // Do any additional setup after loading the view.
@@ -105,6 +109,7 @@
     UIFont *newFont = [UIFont fontWithName:@"Arial" size:13.0];
     //创建完字体格式之后就告诉cell
     cell.textLabel.font = newFont;
+    //cell.backgroundColor=[UIColor clearColor];
     
         
     return cell;
@@ -178,7 +183,33 @@
     [_chooce setTitle:tag forState:UIControlStateNormal];
 }
 
-
+-(void)viewDidAppear:(BOOL)animated {
+    NSUserDefaults * userDefaultes = [NSUserDefaults standardUserDefaults];
+    NSMutableArray * mutableArray = [NSMutableArray arrayWithArray:[userDefaultes objectForKey:@"yuan"]];
+    switch (mutableArray.count) {
+        case 0:
+            _cunzaiLbl.text = @"0";
+            break;
+        case 1:
+            _cunzaiLbl.text = @"1";
+            break;
+        case 2:
+            _cunzaiLbl.text = @"2";
+            break;
+        case 3:
+            _cunzaiLbl.text = @"3";
+            break;
+        case 4:
+            _cunzaiLbl.text = @"4";
+            break;
+        case 5:
+            _cunzaiLbl.text = @"5";
+            break;
+            
+        default:
+            break;
+    }
+}
 
 
 - (IBAction)goVSAction:(UIButton *)sender forEvent:(UIEvent *)event {
@@ -235,6 +266,12 @@
     [self.tableView setEditing:NO ];
     [_chooce setTitle:@"编辑" forState:UIControlStateNormal];
     
+    //先将fromSC这个在单例化全局变量中的flag删除以保证flag的唯一性
+    [[StorageMgr singletonStorageMgr]removeObjectForKey:@"fromSC"];
+    //然后将这个flag设置为YES来表示是从收藏过去的
+    [[StorageMgr singletonStorageMgr] addKey:@"fromSC" andValue:@YES];
+
+    
     
     
 }
@@ -253,6 +290,7 @@
         [userDefaults setObject:qq forKey:@"myArray"];
         [userDefaults synchronize];
         
+        
     }
 }
 - (IBAction)removeAction:(UIButton *)sender forEvent:(UIEvent *)event {
@@ -268,6 +306,12 @@
     [self.ShouCangForShow removeObjectsAtIndexes:set];
     [self.tableView deleteRowsAtIndexPaths:arr withRowAnimation:UITableViewRowAnimationAutomatic];//仅本地移除
     
+}
+
+- (IBAction)removeDB:(UIButton *)sender forEvent:(UIEvent *)event {
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"removeAll" object:nil];
+    [_chooseForID removeAllObjects];
+    _cunzaiLbl.text = @"0";
 }
 
 
