@@ -2,7 +2,6 @@
 //  ShouCangViewController.m
 //  EZCar
 //
-//  Created by 欧阳 on 16/5/6.
 //  Copyright © 2016年 EZone. All rights reserved.
 //
 
@@ -77,10 +76,6 @@
                 _ShouCangForShow = [NSMutableArray arrayWithArray:objects];
                 [_tableView reloadData];
             }
-                
-            
-            
-        
             
         }else {
             NSLog(@"Error: %@",error.userInfo);
@@ -90,12 +85,6 @@
     }];
     
 }
-
-
-
-
-
-
 
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -110,21 +99,10 @@
     UIFont *newFont = [UIFont fontWithName:@"Arial" size:13.0];
     //创建完字体格式之后就告诉cell
     cell.textLabel.font = newFont;
-    //cell.backgroundColor=[UIColor clearColor];
     
-        
     return cell;
 }
 
-////当tableview中任意某一行被触摸时调用以下方法
-//- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-//
-//{
-//    
-//
-//    [tableView deselectRowAtIndexPath:indexPath animated:YES];//当选中某一行后，立即将是否选中状态恢复为未选中
-//    
-//}
 
 - (IBAction)backAction:(UIBarButtonItem *)sender {
     [ self dismissViewControllerAnimated: YES completion: nil ];
@@ -163,7 +141,6 @@
         //[_ShouCangForShow removeObjectAtIndex:indexPath.row]; //本地数组删除
         
         //[tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade]; //本地行数删除
-        
         
         [_ShouCangForShow[indexPath.row] deleteInBackground];
         [_ShouCangForShow removeObjectAtIndex:indexPath.row]; //本地数组删除
@@ -273,10 +250,6 @@
     NSLog(@"chooseForShow>>>>>%@",_chooseForShow);
     [self.tableView setEditing:NO ];
     [_chooce setTitle:@"编辑" forState:UIControlStateNormal];
-    
-    
-
-    
     
     
 }

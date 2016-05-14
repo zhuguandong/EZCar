@@ -79,17 +79,7 @@
     
     
 }
-//
-//- (NSArray *)sectionIndexTitlesForTableView:(UITableView *)tableView {
-//    NSMutableArray *sectionIndex = [NSMutableArray new];
-//    for (int i = 0; i < _carNameForShow.count; i ++) {
-//        NSArray *arr = _carNameForShow[i];
-//        if (arr.count > 0) {
-//            [sectionIndex addObject:_sectionTitles[i]];
-//        }
-//    }
-//    return sectionIndex;
-//}
+
 
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
@@ -142,7 +132,7 @@
 
 #pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
+
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.

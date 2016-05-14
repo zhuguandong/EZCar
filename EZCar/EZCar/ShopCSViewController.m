@@ -76,10 +76,7 @@
             self.navigationController.view.userInteractionEnabled =YES;
             
             if (succeeded) {
-                //创建刷新“我的预定”页面的通知
-                //NSNotification *note = [NSNotification notificationWithName:@"RefreshMyBooking" object:nil];
-                //结合线程触发上述通知（让通知要完成的事先执行完以后执行触发通知这一行代码后面的代码）
-                //[[NSNotificationCenter defaultCenter] performSelectorOnMainThread:@selector(postNotification:) withObject:note waitUntilDone:YES];
+                
                 
                 UIAlertController *alertView = [UIAlertController alertControllerWithTitle:@"添加对比成功！" message:nil preferredStyle:UIAlertControllerStyleAlert];
                 UIAlertAction *ok = [UIAlertAction actionWithTitle:@"朕知晓" style:UIAlertActionStyleCancel handler:nil];
@@ -119,29 +116,6 @@
 
 
 
-//-(void)request{
-//    _CanShuForShow = [NSMutableArray new];
-//    PFQuery *query = [PFQuery queryWithClassName:@"CanShu"];
-//    [query whereKey:@"info" equalTo:_objectForCS];
-//    [query includeKey:@"info.info.info"];
-//    self.navigationController.view.userInteractionEnabled = NO;
-//    UIActivityIndicatorView *avi = [Utilities getCoverOnView:self.view];
-//    [query findObjectsInBackgroundWithBlock:^(NSArray * _Nullable objects, NSError * _Nullable error) {
-//        self.navigationController.view.userInteractionEnabled = YES;
-//        [avi stopAnimating];
-//        if (!error) {
-//            NSLog(@"objects = %@",objects);
-//            _object = objects.firstObject;
-//            //_CanShuForShow = [NSMutableArray arrayWithArray:objects];
-//            [_tableView reloadData];
-//            
-//        }else {
-//            NSLog(@"Error: %@",error.userInfo);
-//            [Utilities popUpAlertViewWithMsg:@"请保持网络连接畅通" andTitle:nil onView:self];
-//        }
-//        
-//    }];
-//}
 
 //tableView  多少行
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -157,8 +131,7 @@
     NSString *content=_objiectForShow[indexPath.row];//根据协议条款中indexPath参数可以获得表格中当前正在渲染的细胞的组与行的信息，根据其中的信息可以获得该行在_objiectForShow数组中所对应的文字
     cell.textLabel.text = content;
     
-    //    NSString *content2=_objiectForShow[indexPath.row];
-    //        cell.detailTextLabel.text = content2 ;
+    
     switch (indexPath.row) {
         case 0:
             cell.detailTextLabel.text = _objectForCS[@"info"][@"info"][@"info"][@"carname"];;
@@ -273,14 +246,5 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

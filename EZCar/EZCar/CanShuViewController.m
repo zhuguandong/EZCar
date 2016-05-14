@@ -28,7 +28,7 @@
         imageView.image=[UIImage imageNamed:@"111"];
         [self.tableView setBackgroundView:imageView];
     
-//    _tableView.allowsSelection = NO;//让tableview不被按
+     // _tableView.allowsSelection = NO;//让tableview不被按
     //[_tableView setSeparatorColor:[UIColor grayColor]];  //设置分割线为蓝色
 
     _objiectForShow = @[@"品牌",@"厂商报价",@"上市年份",@"变速箱",@"车身结构",@"车型级别",@"排量",@"最大马力",@"油耗",@"燃料形式",@"驱动方式",@"进气形式",@"助力类型",@"前悬架类型",@"前轮胎规格",@"后轮胎规格",@"备胎规格",@"后悬架类型",@"主/副驾驶安全气囊",@"前/后排头部气囊(气帘)",@"前制动器类型",@"整车质保",@"ASB防抱死",@"方向盘调节",@"最大扭矩转速(rpm)",@"配气机构",@"行李厢容积(L)",@"长*宽*高(mm)",@"发动机",@"供油方式",@"座椅材质",@"环保标准",];
@@ -80,9 +80,7 @@
     }
     NSString *content=_objiectForShow[indexPath.row];//根据协议条款中indexPath参数可以获得表格中当前正在渲染的细胞的组与行的信息，根据其中的信息可以获得该行在_objiectForShow数组中所对应的文字
     cell.textLabel.text = content;
-    
-//    NSString *content2=_objiectForShow[indexPath.row];
-//        cell.detailTextLabel.text = content2 ;
+
     switch (indexPath.row) {
         case 0:
             cell.detailTextLabel.text = _object[@"info"][@"info"][@"info"][@"carname"];;
@@ -191,12 +189,6 @@
     cell.backgroundColor=[UIColor clearColor];
     return cell;
 }
-
-//- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(nonnull NSIndexPath *)indexPath{
-//    //按钮取消选中
-//    [tableView deselectRowAtIndexPath:indexPath animated:YES];
-//    
-//}
 
 
 

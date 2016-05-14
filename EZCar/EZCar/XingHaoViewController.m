@@ -78,9 +78,6 @@
     //结合SDWebImage通过图片路径来实现异步加载和缓存（本案中加载到一个图片视图上）
     [cell.image sd_setImageWithURL:photoURL placeholderImage:[UIImage imageNamed:@"bb"]];
     
-    
-    
-    
     return cell;
 }
 
@@ -89,8 +86,6 @@
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
 }
-
-
 
 #pragma mark - Navigation
 

@@ -77,10 +77,6 @@
 		3F7A81D91CC4E0CD00ABA3E1 /* FirstTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F7A81D81CC4E0CD00ABA3E1 /* FirstTableViewCell.m */; };
 		3FCC47271CCE09B400A88726 /* ShopCSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FCC47261CCE09B400A88726 /* ShopCSViewController.m */; };
 		3FFFEA1D1CC64F190078655A /* KSGuideManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FFFEA1C1CC64F190078655A /* KSGuideManager.m */; };
-		3FFFEA231CC64F310078655A /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3FFFEA1F1CC64F310078655A /* 1.jpg */; };
-		3FFFEA241CC64F310078655A /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3FFFEA201CC64F310078655A /* 2.jpg */; };
-		3FFFEA251CC64F310078655A /* 3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3FFFEA211CC64F310078655A /* 3.jpg */; };
-		3FFFEA261CC64F310078655A /* 4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3FFFEA221CC64F310078655A /* 4.jpg */; };
 		4AA9D874EF33A19F94C329C4 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F361D44665A011FD4EACBC70 /* libPods.a */; };
 		A9F967011CC23ABD00A8593A /* SignInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9F967001CC23ABD00A8593A /* SignInViewController.m */; };
 		A9F967041CC24FA600A8593A /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9F967031CC24FA600A8593A /* SignUpViewController.m */; };
@@ -238,10 +234,6 @@
 		3FCC47261CCE09B400A88726 /* ShopCSViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShopCSViewController.m; sourceTree = "<group>"; };
 		3FFFEA1B1CC64F190078655A /* KSGuideManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSGuideManager.h; sourceTree = "<group>"; };
 		3FFFEA1C1CC64F190078655A /* KSGuideManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSGuideManager.m; sourceTree = "<group>"; };
-		3FFFEA1F1CC64F310078655A /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
-		3FFFEA201CC64F310078655A /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpg; sourceTree = "<group>"; };
-		3FFFEA211CC64F310078655A /* 3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3.jpg; sourceTree = "<group>"; };
-		3FFFEA221CC64F310078655A /* 4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 4.jpg; sourceTree = "<group>"; };
 		A9F966FF1CC23ABD00A8593A /* SignInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignInViewController.h; sourceTree = "<group>"; };
 		A9F967001CC23ABD00A8593A /* SignInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignInViewController.m; sourceTree = "<group>"; };
 		A9F967021CC24FA600A8593A /* SignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpViewController.h; sourceTree = "<group>"; };
@@ -329,14 +321,14 @@
 		304BD80A1CC20F9600385489 /* EZCar */ = {
 			isa = PBXGroup;
 			children = (
+				304BD8411CC2209F00385489 /* Model */,
+				304BD8421CC220FC00385489 /* View */,
+				304BD8431CC2210A00385489 /* Controller */,
 				30C132291CDF2D5A006FD2F5 /* ChooseCity */,
 				C4EE70811CCDC37100819E46 /* 意见反馈 */,
 				304BD8611CC223F400385489 /* 3rd */,
 				304BD85F1CC223C700385489 /* Constant */,
 				304BD8441CC2211F00385489 /* Utility */,
-				304BD8431CC2210A00385489 /* Controller */,
-				304BD8421CC220FC00385489 /* View */,
-				304BD8411CC2209F00385489 /* Model */,
 				304BD80B1CC20F9600385489 /* Supporting Files */,
 			);
 			path = EZCar;
@@ -575,10 +567,6 @@
 		3FFFEA1E1CC64F1C0078655A /* image */ = {
 			isa = PBXGroup;
 			children = (
-				3FFFEA1F1CC64F310078655A /* 1.jpg */,
-				3FFFEA221CC64F310078655A /* 4.jpg */,
-				3FFFEA201CC64F310078655A /* 2.jpg */,
-				3FFFEA211CC64F310078655A /* 3.jpg */,
 				30B3E4121CCF4A28002FF124 /* 444.jpg */,
 				30B3E4131CCF4A28002FF124 /* 333.jpg */,
 				30B3E4141CCF4A28002FF124 /* 222.jpg */,
@@ -740,16 +728,12 @@
 				30B3E4191CCF4A28002FF124 /* 111.jpg in Resources */,
 				30B3E4181CCF4A28002FF124 /* 222.jpg in Resources */,
 				304BD81E1CC20F9600385489 /* LaunchScreen.storyboard in Resources */,
-				3FFFEA261CC64F310078655A /* 4.jpg in Resources */,
 				30C132731CDF3F78006FD2F5 /* citydict.plist in Resources */,
 				30C132651CDF3264006FD2F5 /* ItemViewCell.xib in Resources */,
 				30C132611CDF3264006FD2F5 /* CityViewCell.xib in Resources */,
 				30B3E4171CCF4A28002FF124 /* 333.jpg in Resources */,
 				3F1035A21CCB893A0084532C /* XRCollectionViewCell.xib in Resources */,
-				3FFFEA231CC64F310078655A /* 1.jpg in Resources */,
 				30C132631CDF3264006FD2F5 /* HeadView.xib in Resources */,
-				3FFFEA241CC64F310078655A /* 2.jpg in Resources */,
-				3FFFEA251CC64F310078655A /* 3.jpg in Resources */,
 				3F1035A51CCB89480084532C /* 1.plist in Resources */,
 				30C1324F1CDF3241006FD2F5 /* unicode_to_hanyu_pinyin.txt in Resources */,
 				C4EE70911CCDC75F00819E46 /* 2.4意见反馈_03(1).png in Resources */,

@@ -175,16 +175,12 @@
         
         NSUserDefaults *userDefaults1 = [NSUserDefaults standardUserDefaults];
         [userDefaults1 setObject:c1 forKey:@"car1Name"];
-        //NSUserDefaults *userDefaults2 = [NSUserDefaults standardUserDefaults];
         [userDefaults1 setObject:c2 forKey:@"car2Name"];
-        //NSUserDefaults *userDefaults3 = [NSUserDefaults standardUserDefaults];
         [userDefaults1 setObject:c3 forKey:@"car3Name"];
         [userDefaults1 setObject:c4 forKey:@"car4Name"];
         [userDefaults1 setObject:c5 forKey:@"car5Name"];
-        
+    
         [userDefaults1 synchronize];
-        //[userDefaults2 synchronize];
-        //[userDefaults3 synchronize];
         
         [self requestData1];
         [self requestData2];
@@ -193,13 +189,7 @@
         [self requestData5];
         
     }
-    
-    
-    //清空UserDefaults
-   // NSString *appDomain = [[NSBundle mainBundle] bundleIdentifier]; [[NSUserDefaults standardUserDefaults] removePersistentDomainForName:appDomain];
-    
-    
-    
+  
     
 }
 
@@ -210,11 +200,7 @@
     if (currentUser) {
         [self show];
         
-        
     }
-    
-    
-
 
 }
 
@@ -223,11 +209,7 @@
     NSString *car1Name = [userDefaultes stringForKey:@"car1Name"];
     NSLog(@"-------->%@",car1Name);
     
-    
     NSPredicate *predicate = [NSPredicate predicateWithFormat:@"xinghao = %@",car1Name];
-    
-    
-  
     PFQuery *query = [PFQuery queryWithClassName:@"CanShu" predicate:predicate];
     [query includeKey:@"info.info.info"];
     
@@ -319,9 +301,6 @@
     
     
     NSPredicate *predicate = [NSPredicate predicateWithFormat:@"xinghao = %@",car4Name];
-    
-    
-    
     PFQuery *query = [PFQuery queryWithClassName:@"CanShu" predicate:predicate];
     [query includeKey:@"info.info.info"];
     
@@ -1049,8 +1028,7 @@
     [_tableview reloadData];
 }
 
-    //NSLog(@"清空被按了");
-    //[[NSNotificationCenter defaultCenter ] addObserver:self selector:@selector(清空:) name:@"removeAll" object:nil];
+
 
 
 
