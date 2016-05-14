@@ -190,7 +190,8 @@
     }
 }
 
--(void)viewDidAppear:(BOOL)animated {
+-(void)viewWillAppear:(BOOL)animated {
+    _removeAction.hidden = YES;
     NSUserDefaults * userDefaultes = [NSUserDefaults standardUserDefaults];
     NSMutableArray * mutableArray = [NSMutableArray arrayWithArray:[userDefaultes objectForKey:@"yuan"]];
     switch (mutableArray.count) {
