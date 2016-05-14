@@ -22,6 +22,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    _removeAction.hidden = YES;
     [self requestData];
     _ShouCangForShow = [NSMutableArray new];
     _chooseForShow = [NSMutableArray new];
@@ -181,6 +182,12 @@
     NSString *tag = self.tableView.editing ? @"取消":@"编辑";
     
     [_chooce setTitle:tag forState:UIControlStateNormal];
+    if (_tableView.editing) {
+        _removeAction.hidden = NO;
+    }else {
+        _removeAction.hidden = YES;
+
+    }
 }
 
 -(void)viewDidAppear:(BOOL)animated {
@@ -245,7 +252,7 @@
             break;
     }
     
-    if (_chooseForShow.count <= 5 && _chooseForShow.count >= 1 &&  _chooseForShow.count + mutableArray.count <= 5) {
+    if (_chooseForShow.count <= 5 && _chooseForShow.count >= 1 &&  _chooseForShow.count + mutableArray.count <= 5 && _chooseForShow.count + mutableArray.count >= 2) {
         [self performSegueWithIdentifier:@"goPK" sender:self];
         [_chooseForShow removeAllObjects];
     }else {
@@ -266,10 +273,7 @@
     [self.tableView setEditing:NO ];
     [_chooce setTitle:@"编辑" forState:UIControlStateNormal];
     
-    //先将fromSC这个在单例化全局变量中的flag删除以保证flag的唯一性
-    [[StorageMgr singletonStorageMgr]removeObjectForKey:@"fromSC"];
-    //然后将这个flag设置为YES来表示是从收藏过去的
-    [[StorageMgr singletonStorageMgr] addKey:@"fromSC" andValue:@YES];
+    
 
     
     
@@ -294,18 +298,30 @@
     }
 }
 - (IBAction)removeAction:(UIButton *)sender forEvent:(UIEvent *)event {
-    NSArray *arr = self.tableView.indexPathsForSelectedRows;
+    NSArray *indexPaths = _tableView.indexPathsForSelectedRows;
+    for (NSIndexPath *indexPath in indexPaths) {
+        [_ShouCangForShow[indexPath.row] deleteInBackground];
+        [self.tableView setEditing:NO ];
+        [_chooce setTitle:@"编辑" forState:UIControlStateNormal];
+        //[self requestData];
+        
+        [_tableView reloadData];
+    }
+    
+    //NSArray *arr = self.tableView.indexPathsForSelectedRows;
     //此处从数组删除注意：按照arr 顺序删除会造成越界崩溃、、
     
     NSMutableIndexSet *set = [NSMutableIndexSet indexSet];
-    for (NSIndexPath *indexP in arr) {
+    for (NSIndexPath *indexP in indexPaths) {
         [set addIndex:indexP.row];
     }
     
     
     [self.ShouCangForShow removeObjectsAtIndexes:set];
-    [self.tableView deleteRowsAtIndexPaths:arr withRowAnimation:UITableViewRowAnimationAutomatic];//仅本地移除
+    [self.tableView deleteRowsAtIndexPaths:indexPaths withRowAnimation:UITableViewRowAnimationAutomatic];//仅本地移除
+    _removeAction.hidden = YES;
     
+   
 }
 
 - (IBAction)removeDB:(UIButton *)sender forEvent:(UIEvent *)event {

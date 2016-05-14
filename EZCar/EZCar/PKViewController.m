@@ -27,7 +27,7 @@
 @end
 
 @implementation PKViewController
--(void)qq{
+-(void)removeAll{
     NSString *appDomain = [[NSBundle mainBundle] bundleIdentifier]; [[NSUserDefaults standardUserDefaults] removePersistentDomainForName:appDomain];
      NSLog(@"清空被按了");
     
@@ -57,15 +57,15 @@
         
         
     }
-    [[NSNotificationCenter defaultCenter ] addObserver:self selector:@selector(qq) name:@"removeAll" object:nil];
-    //初始化一个BOOL型的单例化全局变量来表示是否是收藏跳转过来的，默认为否
-    [[StorageMgr singletonStorageMgr] addKey:@"fromSC" andValue:@NO];
+    [[NSNotificationCenter defaultCenter ] addObserver:self selector:@selector(removeAll) name:@"removeAll" object:nil];
+    
     
     
    
     
    
 }
+
 -(void)show {
     
     NSUserDefaults * userDefaultes = [NSUserDefaults standardUserDefaults];
@@ -83,7 +83,7 @@
     
     if (mutableArray.count == 0) {
         
-        UIAlertController *alertView = [UIAlertController alertControllerWithTitle:@"空空如也！\n您可以前往 首页->菜单->对比收藏 添加对比车辆哦～" message:nil preferredStyle:UIAlertControllerStyleAlert];
+        UIAlertController *alertView = [UIAlertController alertControllerWithTitle:@"空空的！" message:@"您可以前往 首页->菜单->对比收藏 添加对比车辆哦～" preferredStyle:UIAlertControllerStyleAlert];
         UIAlertAction *ok = [UIAlertAction actionWithTitle:@"朕知晓" style:UIAlertActionStyleCancel handler:nil];
         
         [alertView addAction:ok];
@@ -212,14 +212,7 @@
         
         
     }
-    //判断是否是注册成功后回到的这个登录页面
-    if ([[[StorageMgr singletonStorageMgr] objectForKey:@"fromSC"] boolValue] == YES) {
-        NSLog(@"我来啦，，，，，，，");
-        //在自动登录前将flag设置为no
-        [[StorageMgr singletonStorageMgr] removeObjectForKey:@"fromSC"];
-        [[StorageMgr singletonStorageMgr] addKey:@"fromSC" andValue:@NO];
-        
-    }
+    
     
 
 
