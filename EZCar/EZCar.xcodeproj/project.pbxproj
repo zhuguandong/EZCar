@@ -37,10 +37,6 @@
 		3080EBDC1CC61942007A81F8 /* KuanShiTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3080EBDB1CC61942007A81F8 /* KuanShiTableViewCell.m */; };
 		3080EBDF1CC62CCB007A81F8 /* CanShuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3080EBDE1CC62CCB007A81F8 /* CanShuViewController.m */; };
 		30B230641CDC491B006545B9 /* ShouCangViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30B230631CDC491B006545B9 /* ShouCangViewController.m */; };
-		30B3E4161CCF4A28002FF124 /* 444.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 30B3E4121CCF4A28002FF124 /* 444.jpg */; };
-		30B3E4171CCF4A28002FF124 /* 333.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 30B3E4131CCF4A28002FF124 /* 333.jpg */; };
-		30B3E4181CCF4A28002FF124 /* 222.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 30B3E4141CCF4A28002FF124 /* 222.jpg */; };
-		30B3E4191CCF4A28002FF124 /* 111.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 30B3E4151CCF4A28002FF124 /* 111.jpg */; };
 		30C132281CDF2D33006FD2F5 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30C132271CDF2D33006FD2F5 /* MapKit.framework */; };
 		30C132481CDF3241006FD2F5 /* ChineseInclude.m in Sources */ = {isa = PBXBuildFile; fileRef = 30C132391CDF3241006FD2F5 /* ChineseInclude.m */; };
 		30C132491CDF3241006FD2F5 /* ChineseToPinyinResource.m in Sources */ = {isa = PBXBuildFile; fileRef = 30C1323B1CDF3241006FD2F5 /* ChineseToPinyinResource.m */; };
@@ -76,7 +72,6 @@
 		3F44A9021CC37F4200A6A5AB /* LeftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F44A9011CC37F4200A6A5AB /* LeftViewController.m */; };
 		3F7A81D91CC4E0CD00ABA3E1 /* FirstTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F7A81D81CC4E0CD00ABA3E1 /* FirstTableViewCell.m */; };
 		3FCC47271CCE09B400A88726 /* ShopCSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FCC47261CCE09B400A88726 /* ShopCSViewController.m */; };
-		3FFFEA1D1CC64F190078655A /* KSGuideManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FFFEA1C1CC64F190078655A /* KSGuideManager.m */; };
 		4AA9D874EF33A19F94C329C4 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F361D44665A011FD4EACBC70 /* libPods.a */; };
 		A9F967011CC23ABD00A8593A /* SignInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9F967001CC23ABD00A8593A /* SignInViewController.m */; };
 		A9F967041CC24FA600A8593A /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9F967031CC24FA600A8593A /* SignUpViewController.m */; };
@@ -163,10 +158,6 @@
 		3080EBDE1CC62CCB007A81F8 /* CanShuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CanShuViewController.m; sourceTree = "<group>"; };
 		30B230621CDC491B006545B9 /* ShouCangViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShouCangViewController.h; sourceTree = "<group>"; };
 		30B230631CDC491B006545B9 /* ShouCangViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShouCangViewController.m; sourceTree = "<group>"; };
-		30B3E4121CCF4A28002FF124 /* 444.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 444.jpg; sourceTree = "<group>"; };
-		30B3E4131CCF4A28002FF124 /* 333.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 333.jpg; sourceTree = "<group>"; };
-		30B3E4141CCF4A28002FF124 /* 222.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 222.jpg; sourceTree = "<group>"; };
-		30B3E4151CCF4A28002FF124 /* 111.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 111.jpg; sourceTree = "<group>"; };
 		30C132271CDF2D33006FD2F5 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		30C132381CDF3241006FD2F5 /* ChineseInclude.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ChineseInclude.h; path = "城市选择/Lib/PinYin/ChineseInclude.h"; sourceTree = SOURCE_ROOT; };
 		30C132391CDF3241006FD2F5 /* ChineseInclude.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ChineseInclude.m; path = "城市选择/Lib/PinYin/ChineseInclude.m"; sourceTree = SOURCE_ROOT; };
@@ -232,8 +223,6 @@
 		3F7A81D81CC4E0CD00ABA3E1 /* FirstTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstTableViewCell.m; sourceTree = "<group>"; };
 		3FCC47251CCE09B400A88726 /* ShopCSViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShopCSViewController.h; sourceTree = "<group>"; };
 		3FCC47261CCE09B400A88726 /* ShopCSViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShopCSViewController.m; sourceTree = "<group>"; };
-		3FFFEA1B1CC64F190078655A /* KSGuideManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSGuideManager.h; sourceTree = "<group>"; };
-		3FFFEA1C1CC64F190078655A /* KSGuideManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSGuideManager.m; sourceTree = "<group>"; };
 		A9F966FF1CC23ABD00A8593A /* SignInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignInViewController.h; sourceTree = "<group>"; };
 		A9F967001CC23ABD00A8593A /* SignInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignInViewController.m; sourceTree = "<group>"; };
 		A9F967021CC24FA600A8593A /* SignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpViewController.h; sourceTree = "<group>"; };
@@ -465,9 +454,6 @@
 		304BD8611CC223F400385489 /* 3rd */ = {
 			isa = PBXGroup;
 			children = (
-				3FFFEA1E1CC64F1C0078655A /* image */,
-				3FFFEA1B1CC64F190078655A /* KSGuideManager.h */,
-				3FFFEA1C1CC64F190078655A /* KSGuideManager.m */,
 				3F1035991CCB89180084532C /* XRWaterfallLayout.h */,
 				3F10359A1CCB89180084532C /* XRWaterfallLayout.m */,
 				3F10359C1CCB893A0084532C /* XRCollectionViewCell.h */,
@@ -562,17 +548,6 @@
 				30C132471CDF3241006FD2F5 /* unicode_to_hanyu_pinyin.txt */,
 			);
 			name = PinYin;
-			sourceTree = "<group>";
-		};
-		3FFFEA1E1CC64F1C0078655A /* image */ = {
-			isa = PBXGroup;
-			children = (
-				30B3E4121CCF4A28002FF124 /* 444.jpg */,
-				30B3E4131CCF4A28002FF124 /* 333.jpg */,
-				30B3E4141CCF4A28002FF124 /* 222.jpg */,
-				30B3E4151CCF4A28002FF124 /* 111.jpg */,
-			);
-			name = image;
 			sourceTree = "<group>";
 		};
 		AD4DBC324B9C1ED7581284F2 /* Frameworks */ = {
@@ -724,14 +699,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				30B3E4161CCF4A28002FF124 /* 444.jpg in Resources */,
-				30B3E4191CCF4A28002FF124 /* 111.jpg in Resources */,
-				30B3E4181CCF4A28002FF124 /* 222.jpg in Resources */,
 				304BD81E1CC20F9600385489 /* LaunchScreen.storyboard in Resources */,
 				30C132731CDF3F78006FD2F5 /* citydict.plist in Resources */,
 				30C132651CDF3264006FD2F5 /* ItemViewCell.xib in Resources */,
 				30C132611CDF3264006FD2F5 /* CityViewCell.xib in Resources */,
-				30B3E4171CCF4A28002FF124 /* 333.jpg in Resources */,
 				3F1035A21CCB893A0084532C /* XRCollectionViewCell.xib in Resources */,
 				30C132631CDF3264006FD2F5 /* HeadView.xib in Resources */,
 				3F1035A51CCB89480084532C /* 1.plist in Resources */,
@@ -816,7 +787,6 @@
 				C47AFFD41CCB645E003BB32B /* ReMenTableViewCell.m in Sources */,
 				C4EE708A1CCDC3A000819E46 /* UserFeedBackViewController.m in Sources */,
 				3F44A9021CC37F4200A6A5AB /* LeftViewController.m in Sources */,
-				3FFFEA1D1CC64F190078655A /* KSGuideManager.m in Sources */,
 				304BD85D1CC2236F00385489 /* Utilities.m in Sources */,
 				30C1324A1CDF3241006FD2F5 /* HanyuPinyinOutputFormat.m in Sources */,
 				C4EE70881CCDC3A000819E46 /* PhotoCollectionViewCell.m in Sources */,

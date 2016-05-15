@@ -10,7 +10,6 @@
 #import <SDCycleScrollView.h>
 #import "FirstTableViewCell.h"
 #import "UIImageView+WebCache.h"
-#import "KSGuideManager.h"
 #import "ShopXQViewController.h"
 #import <CoreLocation/CoreLocation.h>
 #import "Public.h"
@@ -39,16 +38,6 @@
     
     _objectsForShow = [NSMutableArray new];
     _objectForJL = [NSMutableArray new];
-    
-    //引导页
-    NSMutableArray *paths = [NSMutableArray new];
-    [paths addObject:[[NSBundle mainBundle] pathForResource:@"111" ofType:@"jpg"]];
-    [paths addObject:[[NSBundle mainBundle] pathForResource:@"222" ofType:@"jpg"]];
-    [paths addObject:[[NSBundle mainBundle] pathForResource:@"333" ofType:@"jpg"]];
-    [paths addObject:[[NSBundle mainBundle] pathForResource:@"444" ofType:@"jpg"]];
-    [[KSGuideManager shared] showGuideViewWithImages:paths];
-   
-  
     
     //轮播
     UIScrollView *demoContainerView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, -64, UI_SCREEN_W, 180 + 64)];
