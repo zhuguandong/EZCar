@@ -186,6 +186,10 @@
     [self sigInWithUsername:username andPassword:password];
 }
 
+- (IBAction)gogogo:(UIButton *)sender forEvent:(UIEvent *)event {
+    [self popUpHome ];
+}
+
 
 //当键盘右下角按钮被按后执行的方法
 -(BOOL)texrFieldShouldReturn:(UITextField *)textField{

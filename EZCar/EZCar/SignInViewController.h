@@ -13,6 +13,7 @@
 @property (weak, nonatomic) IBOutlet UITextField *passwordTF;
 - (IBAction)siginInAction:(UIButton *)sender forEvent:(UIEvent *)event;
 
+- (IBAction)gogogo:(UIButton *)sender forEvent:(UIEvent *)event;
 
 
 @end

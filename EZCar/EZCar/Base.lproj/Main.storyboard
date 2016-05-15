@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="PnU-cc-D6H">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F1509" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="PnU-cc-D6H">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
@@ -726,6 +726,16 @@
                                     <constraint firstItem="9SH-qt-C5F" firstAttribute="top" secondItem="B0v-am-JP0" secondAttribute="top" constant="68" id="sb3-8v-P45"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RMz-h6-vof">
+                                <rect key="frame" x="240" y="421" width="60" height="27"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" title="免登录进入">
+                                    <color key="titleColor" red="0.26970403609999999" green="0.43111808740000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="gogogo:forEvent:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EyA-cE-9hc"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -740,9 +750,11 @@
                             <constraint firstAttribute="trailing" secondItem="B0v-am-JP0" secondAttribute="trailing" constant="90" id="P6w-SL-YXf"/>
                             <constraint firstItem="5yo-S7-Iyf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="18" id="Q4V-pN-WvK"/>
                             <constraint firstItem="ASD-bY-b7x" firstAttribute="top" secondItem="B0v-am-JP0" secondAttribute="bottom" constant="1" id="QBB-Ci-yFR"/>
+                            <constraint firstItem="RMz-h6-vof" firstAttribute="top" secondItem="8ST-Rh-ObV" secondAttribute="bottom" constant="5" id="Vqo-nO-ehg"/>
                             <constraint firstItem="ASD-bY-b7x" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ZAC-2f-8WZ"/>
                             <constraint firstItem="5yo-S7-Iyf" firstAttribute="top" secondItem="6rn-6x-N0s" secondAttribute="bottom" constant="3" id="ago-6H-oGW"/>
                             <constraint firstAttribute="trailing" secondItem="5yo-S7-Iyf" secondAttribute="trailing" constant="18" id="cno-RM-FaM"/>
+                            <constraint firstAttribute="trailing" secondItem="RMz-h6-vof" secondAttribute="trailing" constant="20" id="f57-PQ-dbx"/>
                             <constraint firstItem="8ST-Rh-ObV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="23" id="gXh-eY-Rnf"/>
                             <constraint firstAttribute="trailing" secondItem="8ST-Rh-ObV" secondAttribute="trailing" constant="23" id="i84-ui-FYj"/>
                             <constraint firstItem="8ST-Rh-ObV" firstAttribute="leading" secondItem="ASD-bY-b7x" secondAttribute="leading" id="jH2-H4-8bO"/>
@@ -1832,6 +1844,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="tOn-gE-twP" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="首页" image="first" selectedImage="first" id="G15-se-hVa"/>
                     <toolbarItems/>
+                    <navigationItem key="navigationItem" id="Fkc-bg-qaB"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ICy-s9-NqW">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>

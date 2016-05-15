@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "304BD8071CC20F9600385489"
-               BuildableName = "EZCar.app"
+               BuildableName = "&#x8f66;&#x65e0;&#x5fe7;.app"
                BlueprintName = "EZCar"
                ReferencedContainer = "container:EZCar.xcodeproj">
             </BuildableReference>
@@ -53,7 +53,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "304BD8071CC20F9600385489"
-            BuildableName = "EZCar.app"
+            BuildableName = "&#x8f66;&#x65e0;&#x5fe7;.app"
             BlueprintName = "EZCar"
             ReferencedContainer = "container:EZCar.xcodeproj">
          </BuildableReference>
@@ -76,7 +76,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "304BD8071CC20F9600385489"
-            BuildableName = "EZCar.app"
+            BuildableName = "&#x8f66;&#x65e0;&#x5fe7;.app"
             BlueprintName = "EZCar"
             ReferencedContainer = "container:EZCar.xcodeproj">
          </BuildableReference>
@@ -95,7 +95,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "304BD8071CC20F9600385489"
-            BuildableName = "EZCar.app"
+            BuildableName = "&#x8f66;&#x65e0;&#x5fe7;.app"
             BlueprintName = "EZCar"
             ReferencedContainer = "container:EZCar.xcodeproj">
          </BuildableReference>
