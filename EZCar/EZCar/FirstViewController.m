@@ -69,7 +69,7 @@
     [rc addTarget:self action:@selector(canToRequestData) forControlEvents:UIControlEventValueChanged];
     [_tableView addSubview:rc];
     
-    //[self refreshData];
+    [self refreshData];
     
 //    //将是否成功获取距离初始化为NO（没有）
 //    flag = NO;
@@ -262,9 +262,7 @@
 //    //将餐馆的名称显示在细胞的主标签上（左侧）
 //    cell.juli.text = distance;
     
-    
-    
-    
+
     return cell;
 }
 

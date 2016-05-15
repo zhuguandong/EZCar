@@ -28,7 +28,7 @@
     NSString *shopAdress = _obj[@"address"];
     NSString *shopPhone = _obj[@"tel"];
     NSString *miaoShu = _obj[@"describe"];
-    _shopName.text = [NSString stringWithFormat:@"店名:%@",shopName];
+    _shopName.text = [NSString stringWithFormat:@"店名: %@",shopName];
     _shopAdress.text = [NSString stringWithFormat:@"地址:%@",shopAdress];;
     _shopPhone.text = [NSString stringWithFormat:@"联系电话:%@",shopPhone];;
     _miaoShu.text = [NSString stringWithFormat:@"描述:%@",miaoShu];;
@@ -120,5 +120,30 @@
     
 }
 
+
+- (IBAction)dialAction:(UIButton *)sender forEvent:(UIEvent *)event {
+    NSString *phone = [self subString:_shopPhone.text fromCharacter:@":"];
+    NSLog(@"phone = %@",phone);
+    //该地址字符串将实现先询问是否拨打电话再根据用户的选择去拨打或取消拨打
+    NSString *dailStr= [NSString stringWithFormat:@"telprompt://%@",phone];
+    //将字符串转换成NSURl对象
+    NSURL *dialURL = [NSURL URLWithString:dailStr];
+    //用openURL方法执行这个链接点调用（这里是通话功能的调用）
+    [[UIApplication sharedApplication]openURL:dialURL];
+}
+
+//从string这个字符串内根据character字符去截取string中character之后的部分（不包含character的值）
+-(NSString *)subString:(NSString *)string fromCharacter:(NSString *)character {
+    NSString *result = nil;
+    //获取string字符串中character字符的位置
+    NSRange range = [string rangeOfString:character];
+    //判断range是否存在（判断string中如果包含character）
+    if (range.location != NSNotFound) {
+        //从character的range获得character之后部分的位置，然后根据这个位置截取这个之后部分
+        result = [string substringFromIndex:(range.location + range.length)];
+    }
+    
+    return result;
+}
 
 @end

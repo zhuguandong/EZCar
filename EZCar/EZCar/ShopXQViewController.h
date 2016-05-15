@@ -19,4 +19,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *shopPhone;
 @property (weak, nonatomic) IBOutlet UILabel *miaoShu;
 
+- (IBAction)dialAction:(UIButton *)sender forEvent:(UIEvent *)event;
+
 @end
