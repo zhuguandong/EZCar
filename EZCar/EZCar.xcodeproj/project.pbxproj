@@ -119,7 +119,7 @@
 		301B43781CC4C59000516B76 /* XingHaoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XingHaoViewController.m; sourceTree = "<group>"; };
 		302166A21CC49CCD002AB087 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
 		302166A31CC49CCD002AB087 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
-		304BD8081CC20F9600385489 /* EZCar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EZCar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		304BD8081CC20F9600385489 /* 车无忧.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "车无忧.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		304BD80C1CC20F9600385489 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		304BD80E1CC20F9600385489 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		304BD80F1CC20F9600385489 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -311,7 +311,7 @@
 		304BD8091CC20F9600385489 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				304BD8081CC20F9600385489 /* EZCar.app */,
+				304BD8081CC20F9600385489 /* 车无忧.app */,
 				304BD8241CC20F9600385489 /* EZCarTests.xctest */,
 				304BD82F1CC20F9600385489 /* EZCarUITests.xctest */,
 			);
@@ -638,7 +638,7 @@
 			);
 			name = EZCar;
 			productName = EZCar;
-			productReference = 304BD8081CC20F9600385489 /* EZCar.app */;
+			productReference = 304BD8081CC20F9600385489 /* 车无忧.app */;
 			productType = "com.apple.product-type.application";
 		};
 		304BD8231CC20F9600385489 /* EZCarTests */ = {
@@ -1018,7 +1018,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = EZ.EZCar;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "车无忧";
 			};
 			name = Debug;
 		};
@@ -1038,7 +1038,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = EZ.EZCar;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "车无忧";
 			};
 			name = Release;
 		};
